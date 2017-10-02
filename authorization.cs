@@ -31,6 +31,7 @@ public class Autotests {
     driver.findElement(By.id("password")).clear();
     driver.findElement(By.id("password")).sendKeys("admin");
     driver.findElement(By.xpath("//button[@type='button']")).click();
+	driver.findElement(By.xpath("//[@id="authorization"]/div/div[2]/div[1]/div/div/span[2]/button/span")).click();
   }
 
   @After
