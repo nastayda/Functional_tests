@@ -1,5 +1,5 @@
 package com.example.tests;
-
+//http://automated-testing.info/t/razbiraemsya-v-zapuske-testov-v-jenkins-maven-testng-webdriver-na-java-ili-tutorial-novichka/1901
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
 import org.junit.*;
@@ -31,7 +31,7 @@ public class Autotests {
     driver.findElement(By.id("password")).clear();
     driver.findElement(By.id("password")).sendKeys("admin");
     driver.findElement(By.xpath("//button[@type='button']")).click();
-	driver.findElement(By.xpath("//[@id="authorization"]/div/div[2]/div[1]/div/div/span[2]/button/span")).click();
+	//driver.findElement(By.xpath("//[@id="authorization"]/div/div[2]/div[1]/div/div/span[2]/button/span")).click();
   }
 
   @After
