@@ -39,8 +39,8 @@
       <file leaf-file-name="TestAuthorizationNew.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestAuthorizationNew.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+            <state relative-caret-position="153">
+              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#setUp#0;class#TestAuthorizationNew#0" expanded="false" />
@@ -64,11 +64,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testng.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/testng.xml">
+      <file leaf-file-name="testng-auth.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/testng-auth.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testng-auth2.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/testng-auth2.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test1.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/test1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="60" lean-forward="false" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -77,8 +97,8 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="357">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -162,6 +182,10 @@
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="testAuth" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Assembles main classes." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="classes" />
@@ -195,6 +219,10 @@
                 <option name="description" value="Generates Javadoc API documentation for the main source code." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="testAuth1" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Creates OS specific scripts to run the project as a JVM application." />
@@ -318,8 +346,8 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="1507190695624" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="1940170979" />
+        <entry key="$PROJECT_DIR$" value="1507193620363" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="3081249132" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -435,13 +463,17 @@
         <option value="$PROJECT_DIR$/src/test/java/test1.java" />
         <option value="$PROJECT_DIR$/src/main/java/WriteReadFromFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/test.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/testng.xml" />
         <option value="$PROJECT_DIR$/src/resources/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/java/TestAuthorizationNew.java" />
         <option value="$PROJECT_DIR$/src/test/java/WriteReadFromFile.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testng.fxml" />
         <option value="$PROJECT_DIR$/src/test/resources/testng.xml" />
+        <option value="$PROJECT_DIR$/src/test/resources/testng-auth1.xml" />
+        <option value="$PROJECT_DIR$/src/test/resources/auth2.xml" />
+        <option value="$PROJECT_DIR$/src/test/resources/testng-auth2.xml" />
+        <option value="$PROJECT_DIR$/src/test/resources/testng-auth.xml" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
   </component>
@@ -513,6 +545,13 @@
               <item name="autotests" type="b2602c69:ProjectViewProjectNode" />
               <item name="autotests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="autotests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="autotests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -548,6 +587,10 @@
       <recent name="testPac" />
       <recent name="testAuth" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\danilkinaas\Documents\GitHub\FunctionalTests\autotests\src\test\resources" />
+      <recent name="C:\Users\danilkinaas\Documents\GitHub\FunctionalTests\autotests\src\res" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\danilkinaas\Documents\GitHub\FunctionalTests\autotests\src\test" />
       <recent name="C:\Users\danilkinaas\Documents\GitHub\FunctionalTests\autotests\src\resources" />
@@ -565,13 +608,67 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/danilkinaas/Documents/GitHub/FunctionalTests/autotests/src/test/resources/testng.xml">
+  <component name="RunManager" selected="TestNG.C:/Users/danilkinaas/Documents/GitHub/FunctionalTests/autotests/src/test/resources/testng-auth2.xml">
     <configuration name="C:/Users/danilkinaas/Documents/GitHub/FunctionalTests/autotests/src/resources/testng.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="autotests" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/resources/testng.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="C:/Users/danilkinaas/Documents/GitHub/FunctionalTests/autotests/src/test/resources/testng-auth1.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="autotests_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng-auth1.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="C:/Users/danilkinaas/Documents/GitHub/FunctionalTests/autotests/src/test/resources/testng-auth2.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="autotests_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng-auth2.xml" />
       <option name="PACKAGE_NAME" />
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
@@ -631,33 +728,6 @@
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="TestAuthorizationNew.TestAuthorizationNew" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="Desktop-autotests_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestAuthorizationNew" />
-      <option name="METHOD_NAME" value="TestAuthorizationNew" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -783,35 +853,21 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="test" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Desktop-autotests_main" />
-      <envs />
-    </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="TestNG.TestAuthorizationNew" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.TestAuthorizationNew.TestAuthorizationNew" />
-      <item index="2" class="java.lang.String" itemvalue="Application.WriteReadFromFile" />
-      <item index="3" class="java.lang.String" itemvalue="Application.test (1)" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.C:/Users/danilkinaas/Documents/GitHub/FunctionalTests/autotests/src/resources/testng.xml" />
-      <item index="5" class="java.lang.String" itemvalue="TestNG.C:/Users/danilkinaas/Documents/GitHub/FunctionalTests/autotests/src/test/resources/testng.xml" />
+      <item index="1" class="java.lang.String" itemvalue="Application.WriteReadFromFile" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.C:/Users/danilkinaas/Documents/GitHub/FunctionalTests/autotests/src/resources/testng.xml" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.C:/Users/danilkinaas/Documents/GitHub/FunctionalTests/autotests/src/test/resources/testng.xml" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.C:/Users/danilkinaas/Documents/GitHub/FunctionalTests/autotests/src/test/resources/testng-auth1.xml" />
+      <item index="5" class="java.lang.String" itemvalue="TestNG.C:/Users/danilkinaas/Documents/GitHub/FunctionalTests/autotests/src/test/resources/testng-auth2.xml" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.C:/Users/danilkinaas/Documents/GitHub/FunctionalTests/autotests/src/test/resources/testng.xml" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.C:/Users/danilkinaas/Documents/GitHub/FunctionalTests/autotests/src/resources/testng.xml" />
-        <item index="2" class="java.lang.String" itemvalue="Application.WriteReadFromFile" />
-        <item index="3" class="java.lang.String" itemvalue="Application.test (1)" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.TestAuthorizationNew.TestAuthorizationNew" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.C:/Users/danilkinaas/Documents/GitHub/FunctionalTests/autotests/src/test/resources/testng-auth2.xml" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.C:/Users/danilkinaas/Documents/GitHub/FunctionalTests/autotests/src/test/resources/testng-auth1.xml" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.C:/Users/danilkinaas/Documents/GitHub/FunctionalTests/autotests/src/test/resources/testng.xml" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.C:/Users/danilkinaas/Documents/GitHub/FunctionalTests/autotests/src/resources/testng.xml" />
+        <item index="4" class="java.lang.String" itemvalue="Application.WriteReadFromFile" />
       </list>
     </recent_temporary>
   </component>
@@ -835,20 +891,20 @@
     <history-entry file="C__Users_danilkinaas_Documents_GitHub_FunctionalTests_autotests_src_resources_testng_xml - 2017.10.05 at 11h 32m 48s.xml">
       <configuration name="C:/Users/danilkinaas/Documents/GitHub/FunctionalTests/autotests/src/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="C__Users_danilkinaas_Documents_GitHub_FunctionalTests_autotests_src_test_resources_testng-auth1_xml - 2017.10.05 at 11h 48m 38s.xml">
+      <configuration name="C:/Users/danilkinaas/Documents/GitHub/FunctionalTests/autotests/src/test/resources/testng-auth1.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_danilkinaas_Documents_GitHub_FunctionalTests_autotests_src_test_resources_testng-auth2_xml - 2017.10.05 at 11h 56m 17s.xml">
+      <configuration name="C:/Users/danilkinaas/Documents/GitHub/FunctionalTests/autotests/src/test/resources/testng-auth2.xml" configurationId="TestNG" />
+    </history-entry>
     <history-entry file="C__Users_danilkinaas_Documents_GitHub_FunctionalTests_autotests_src_test_resources_testng_xml - 2017.10.05 at 11h 33m 10s.xml">
       <configuration name="C:/Users/danilkinaas/Documents/GitHub/FunctionalTests/autotests/src/test/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAuthorizationNew - 2017.10.04 at 18h 23m 20s.xml">
-      <configuration name="TestAuthorizationNew" configurationId="TestNG" />
+    <history-entry file="C__Users_danilkinaas_Documents_GitHub_FunctionalTests_autotests_src_test_resources_testng_xml - 2017.10.05 at 11h 39m 31s.xml">
+      <configuration name="C:/Users/danilkinaas/Documents/GitHub/FunctionalTests/autotests/src/test/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAuthorizationNew - 2017.10.04 at 18h 24m 25s.xml">
-      <configuration name="TestAuthorizationNew" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestAuthorizationNew - 2017.10.04 at 18h 25m 17s.xml">
-      <configuration name="TestAuthorizationNew" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestAuthorizationNew - 2017.10.04 at 18h 25m 46s.xml">
-      <configuration name="TestAuthorizationNew" configurationId="TestNG" />
+    <history-entry file="C__Users_danilkinaas_Documents_GitHub_FunctionalTests_autotests_src_test_resources_testng_xml - 2017.10.05 at 11h 40m 00s.xml">
+      <configuration name="C:/Users/danilkinaas/Documents/GitHub/FunctionalTests/autotests/src/test/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
     <history-entry file="TestAuthorizationNew - 2017.10.04 at 18h 26m 02s.xml">
       <configuration name="TestAuthorizationNew" configurationId="TestNG" />
@@ -869,14 +925,14 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25976768" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25976768" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25976768" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1055,48 +1111,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="60" lean-forward="false" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestAuthorizationNew.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#setUp#0;class#TestAuthorizationNew#0" expanded="false" />
-            <element signature="method#login#0;class#TestAuthorizationNew#0" expanded="false" />
-            <element signature="method#isAlertPresent#0;class#TestAuthorizationNew#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1122,10 +1141,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/testng.xml">
+    <entry file="file://$PROJECT_DIR$/src/res/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/asd-asd.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-auth2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-auth.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestAuthorizationNew.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setUp#0;class#TestAuthorizationNew#0" expanded="false" />
+            <element signature="method#login#0;class#TestAuthorizationNew#0" expanded="false" />
+            <element signature="method#isAlertPresent#0;class#TestAuthorizationNew#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="60" lean-forward="false" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-auth2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>

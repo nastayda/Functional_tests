@@ -7,7 +7,7 @@
         </classes>
     </test>
 
-    <test name="Auth1">
+    <test name="Auth2">
         <classes>
             <class name="TestAuthorizationNew" />
         </classes>
