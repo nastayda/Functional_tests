@@ -9,7 +9,7 @@ dependencies{
     compile 'org.seleniumhq.selenium:selenium-java:3.6.0'
 }
 tasks.withType(Test){
-    systemProperty ("http.proyHost", "proxy.mdi.ru")
+    systemProperty ("http.proxyHost", "proxy.mdi.ru")
     systemProperty ("http.proxyPort", "3128")
 }
 task testAuth(type: Test){
