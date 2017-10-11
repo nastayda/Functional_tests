@@ -18,4 +18,6 @@ task testAuth1(type: Test){
         suites 'src/test/resources/testng-auth2.xml'
     }
 }
-
+clean {
+    delete = ['build/libs', 'build/tmp']
+}
