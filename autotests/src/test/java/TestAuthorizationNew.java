@@ -16,7 +16,7 @@ public class TestAuthorizationNew {
 
     @BeforeMethod
     public void setUp() throws Exception {
-        Authenticator.setDefault(new ProxyAuthenticator("manuhin", "123"));
+        Authenticator.setDefault(new ProxyAuthenticator("ADMDI\\manuhin", "123"));
         System.setProperty("http.proxyHost", "proxy.mdi.ru");
         System.setProperty("http.proxyPort", "3128");
 
