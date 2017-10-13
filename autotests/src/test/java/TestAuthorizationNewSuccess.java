@@ -10,9 +10,8 @@ import ru.yandex.qatools.allure.annotations.Title;
 import java.net.Authenticator;
 import java.util.concurrent.TimeUnit;
 
-@Title("Авторизация пользователя")
-@Description("В этом сьюите происходит проверка авторизации пользователей")
-@Test
+//@Title("Авторизация пользователя")
+//@Description("В этом сьюите происходит проверка авторизации пользователей")
 public class TestAuthorizationNewSuccess {
     FirefoxDriver wd;
     WriteReadFromFile readData;
