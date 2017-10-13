@@ -41,8 +41,7 @@ public class TestAuthorizationNewSuccess {
         wd.findElement(By.id(elementPassword)).click();
         wd.findElement(By.id(elementPassword)).clear();
         wd.findElement(By.id(elementPassword)).sendKeys(passwordLogin);
-        //*[@id="authorization"]/div/form/button
-        wd.findElement(By.xpath("//div[@class='authorization-page']//button[.='Войти']")).click();
+       // wd.findElement(By.xpath("//div[@class='authorization-page']//button[.='Войти']")).click();
 
         wd.findElement(By.xpath("//*[@id=\"authorization\"]/div/form/button")).click();
         resultOfTest = " "+"\n"+"Test \n passed \n";
