@@ -23,12 +23,14 @@ dependencies{
 
 task testAuth(type: Test){
     useTestNG{
-        suites 'src/test/resources/testng-auth.xml'
+        options.suites("src/test/resources/testng-auth.xml")
+       // suites 'src/test/resources/testng-auth.xml'
     }
 }
 task testAuth2(type: Test){
     useTestNG{
-        suites 'src/test/resources/testng-auth2.xml'
+        options.suites("src/test/resources/testng-auth.xml")
+       // suites 'src/test/resources/testng-auth2.xml'
     }
 }
 testAuth.doFirst {
@@ -38,3 +40,4 @@ testAuth.doFirst {
 testAuth2.doFirst {
     jvmArgs "-javaagent:${configurations.agent.singleFile}"
 }
+

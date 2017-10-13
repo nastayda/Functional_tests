@@ -25,7 +25,7 @@ public class TestAuthorizationNewSuccess {
         System.setProperty("http.proxyPort", "3128");
 
         wd = new FirefoxDriver();
-        wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        wd.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
         //читаем из файла адрес сервера
         readData= new WriteReadFromFile("C:\\test\\notes3.txt");
         wd.get(readData.readFromFile().get(0).substring(1));
