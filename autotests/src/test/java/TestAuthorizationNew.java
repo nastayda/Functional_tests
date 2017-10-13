@@ -62,7 +62,7 @@ public class TestAuthorizationNew {
     }
 
     @Step("Первая проверка равенства элементов")
-    @Title("Вызов метода unSuccessfulTest")
+    @Title("Сравнение логина и пароля с данными из бд")
     @Test
     public void unSuccessfulTest() {
         assertTrue(21 == 2);
