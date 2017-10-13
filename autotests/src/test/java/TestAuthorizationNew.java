@@ -35,9 +35,12 @@ public class TestAuthorizationNew {
 
     @Title("Неуспешная авторизация пользователя")
     @Test
+    @Step("Вызов метода авторизации")
     public void TestAuthorizationNew() {
       login("userName", "password", readData.readFromFile().get(1), readData.readFromFile().get(2));
     }
+
+    @Step("Поиск элементов")
     private void login(String elementUserName, String elementPassword, String nameLogin, String passwordLogin) {
         wd.findElement(By.id(elementUserName)).click();
         wd.findElement(By.id(elementUserName)).clear();

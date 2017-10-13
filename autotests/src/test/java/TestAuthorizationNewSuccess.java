@@ -11,8 +11,6 @@ import ru.yandex.qatools.allure.annotations.Title;
 import java.net.Authenticator;
 import java.util.concurrent.TimeUnit;
 
-//@Title("Авторизация пользователя")
-@Description("В этом сьюите происходит проверка авторизации пользователей")
 public class TestAuthorizationNewSuccess {
     FirefoxDriver wd;
     WriteReadFromFile readData;
@@ -39,9 +37,7 @@ public class TestAuthorizationNewSuccess {
     public void TestAuthorizationNewSuccess() {
       login("userName", "password", "admin", "admin");
     }
-    @Step("Test step")
 
-    @Title("Успешная авторизация пользователя")
     private void login(String elementUserName, String elementPassword, String nameLogin, String passwordLogin) {
         wd.findElement(By.id(elementUserName)).click();
         wd.findElement(By.id(elementUserName)).clear();
@@ -63,7 +59,6 @@ public class TestAuthorizationNewSuccess {
     public void tearDown() {
         wd.quit();
     }
-    @Title("Успешная авторизация пользователя")
     public static boolean isAlertPresent(FirefoxDriver wd) {
         try {
             wd.switchTo().alert();
