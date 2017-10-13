@@ -24,8 +24,8 @@ test.doFirst {
     jvmArgs "-javaagent:${configurations.agent.singleFile}"
 }
 task testAuth(type: Test, description: 'Sample task'){
+    println 'Sample task'
     useTestNG{
-        println 'Sample task'
         suites 'src/test/resources/testng-auth.xml'
         suites 'src/test/resources/testng-auth2.xml'
     }
