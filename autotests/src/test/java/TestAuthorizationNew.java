@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.*;
+import ru.yandex.qatools.allure.annotations.Title;
 
 public class TestAuthorizationNew {
     FirefoxDriver wd;
@@ -28,7 +29,7 @@ public class TestAuthorizationNew {
        // System.out.println(readData.readFromFile().get(0));
        // wd.get("http://vm-107-stu-dev.ursip.ru/auth/");
     }
-    
+    @Title("Неуспешная авторизация")
     @Test
     public void TestAuthorizationNew() {
       login("userName", "password", readData.readFromFile().get(1), readData.readFromFile().get(2));
