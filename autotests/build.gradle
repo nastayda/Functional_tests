@@ -25,6 +25,7 @@ test.doFirst {
 }
 task testAuth(type: Test, description: 'Sample task'){
     useTestNG{
+        println 'Sample task'
         suites 'src/test/resources/testng-auth.xml'
         suites 'src/test/resources/testng-auth2.xml'
     }
@@ -34,3 +35,4 @@ task testAuth2(type: Test){
         suites 'src/test/resources/testng-auth2.xml'
     }
 }
+task
