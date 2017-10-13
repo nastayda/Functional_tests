@@ -60,6 +60,7 @@ public class TestAuthorizationNew {
         wd.findElement(By.xpath("//*[@id=\"authorization\"]/div/div[2]/div[1]/div/div/span[2]/button1")).isEnabled();
            // wd.findElement(By.xpath("//*[@id=\"authorization\"]/div/div[2]/div[1]/div/div/span[2]/button")).click();}
     }
+    
     @Step("Первая проверка равенства элементов")
     @Title("Вызов метода unSuccessfulTest")
     @Test
@@ -67,13 +68,11 @@ public class TestAuthorizationNew {
         assertTrue(21 == 2);
     }
 
-
+    @Title("Вызов метода SuccessfulTest")
     @Step("Вторая проверка равенства элементов")
-    @Title("Вызов метода unSuccessfulTest")
     @Test
     public void successfulTest() {
-        String name ="admin";
-        assertEquals(name,"admin1");
+        assertEquals("admin","admin1");
     }
     @AfterMethod
     public void tearDown() {
