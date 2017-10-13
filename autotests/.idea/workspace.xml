@@ -39,12 +39,12 @@
       <file leaf-file-name="TestAuthorizationNew.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestAuthorizationNew.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="23" column="61" lean-forward="true" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
+            <state relative-caret-position="340">
+              <caret line="35" column="49" lean-forward="true" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2769#2770#0" expanded="true" />
-                <element signature="e#2794#2795#0" expanded="true" />
+                <element signature="e#2836#2837#0" expanded="true" />
+                <element signature="e#2861#2862#0" expanded="true" />
                 <element signature="method#isAlertPresent#0;class#TestAuthorizationNew#0" expanded="false" />
               </folding>
             </state>
@@ -977,8 +977,8 @@
           <caret line="39" column="39" lean-forward="false" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2769#2770#0" expanded="true" />
-            <element signature="e#2794#2795#0" expanded="true" />
+            <element signature="e#2836#2837#0" expanded="true" />
+            <element signature="e#2861#2862#0" expanded="true" />
             <element signature="method#isAlertPresent#0;class#TestAuthorizationNew#0" expanded="false" />
           </folding>
         </state>
@@ -1017,8 +1017,8 @@
           <caret line="28" column="60" lean-forward="false" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2769#2770#0" expanded="true" />
-            <element signature="e#2794#2795#0" expanded="true" />
+            <element signature="e#2836#2837#0" expanded="true" />
+            <element signature="e#2861#2862#0" expanded="true" />
             <element signature="method#isAlertPresent#0;class#TestAuthorizationNew#0" expanded="false" />
           </folding>
         </state>
@@ -1046,8 +1046,8 @@
           <caret line="28" column="60" lean-forward="false" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2769#2770#0" expanded="true" />
-            <element signature="e#2794#2795#0" expanded="true" />
+            <element signature="e#2836#2837#0" expanded="true" />
+            <element signature="e#2861#2862#0" expanded="true" />
             <element signature="method#isAlertPresent#0;class#TestAuthorizationNew#0" expanded="false" />
           </folding>
         </state>
@@ -1075,8 +1075,8 @@
           <caret line="28" column="60" lean-forward="true" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2769#2770#0" expanded="true" />
-            <element signature="e#2794#2795#0" expanded="true" />
+            <element signature="e#2836#2837#0" expanded="true" />
+            <element signature="e#2861#2862#0" expanded="true" />
             <element signature="method#isAlertPresent#0;class#TestAuthorizationNew#0" expanded="false" />
           </folding>
         </state>
@@ -1252,14 +1252,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestAuthorizationNew.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ru.yandex.qatools.allure/allure-java-annotations/1.4.0.RC4/d6b36203868954cb4b699f0037e93ffbdfdf663/allure-java-annotations-1.4.0.RC4-sources.jar!/ru/yandex/qatools/allure/annotations/Title.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="23" column="61" lean-forward="true" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
+          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.11/77da7afb24d57b640d9803593a6222c7de12dd4e/testng-6.11-sources.jar!/org/testng/annotations/BeforeMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ru.yandex.qatools.allure/allure-java-annotations/1.4.0.RC4/d6b36203868954cb4b699f0037e93ffbdfdf663/allure-java-annotations-1.4.0.RC4-sources.jar!/ru/yandex/qatools/allure/annotations/Step.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestAuthorizationNew.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="35" column="49" lean-forward="true" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2769#2770#0" expanded="true" />
-            <element signature="e#2794#2795#0" expanded="true" />
+            <element signature="e#2836#2837#0" expanded="true" />
+            <element signature="e#2861#2862#0" expanded="true" />
             <element signature="method#isAlertPresent#0;class#TestAuthorizationNew#0" expanded="false" />
           </folding>
         </state>

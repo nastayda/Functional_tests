@@ -16,7 +16,7 @@ public class TestAuthorizationNew {
     WriteReadFromFile readData;
     WriteReadFromFile writeData;
     String resultOfTest;
-    @Title("Неуспешная авторизация пользователя")
+
     @Step("Ввод данныч: адрес сервера. Передаем логин и пароль.")
     @BeforeMethod
     public void setUp() throws Exception {
@@ -33,6 +33,8 @@ public class TestAuthorizationNew {
        // wd.get("http://vm-107-stu-dev.ursip.ru/auth/");
     }
 
+    @Title("Неуспешная авторизация пользователя")
+    @Step("Ввод данныч: адрес сервера. Передаем логин и пароль.")
     @Test
     public void TestAuthorizationNew() {
       login("userName", "password", readData.readFromFile().get(1), readData.readFromFile().get(2));
