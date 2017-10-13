@@ -40,6 +40,7 @@ public class TestAuthorizationNew {
 
     @Title("Работа с элементами")
     @Description("Поиск элементов и переход по полям")
+    @Test
     private void login(String elementUserName, String elementPassword, String nameLogin, String passwordLogin) {
         wd.findElement(By.id(elementUserName)).click();
         wd.findElement(By.id(elementUserName)).clear();
