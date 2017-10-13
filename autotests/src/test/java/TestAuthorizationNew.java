@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.*;
+import ru.yandex.qatools.allure.annotations.Description;
 import ru.yandex.qatools.allure.annotations.Title;
 
 public class TestAuthorizationNew {
@@ -15,6 +16,8 @@ public class TestAuthorizationNew {
     WriteReadFromFile writeData;
     String resultOfTest;
 
+    @Title("Ввод данных")
+    @Description("Ввод данныч: адрес сервера. Передаем логин и пароль.")
     @BeforeMethod
     public void setUp() throws Exception {
         Authenticator.setDefault(new ProxyAuthenticator("ADMDI\\manuhin", "123"));
@@ -29,12 +32,14 @@ public class TestAuthorizationNew {
        // System.out.println(readData.readFromFile().get(0));
        // wd.get("http://vm-107-stu-dev.ursip.ru/auth/");
     }
-    @Title("Неуспешная авторизация")
+
     @Test
     public void TestAuthorizationNew() {
       login("userName", "password", readData.readFromFile().get(1), readData.readFromFile().get(2));
     }
 
+    @Title("Работа с элементами")
+    @Description("Поиск элементов и переход по полям")
     private void login(String elementUserName, String elementPassword, String nameLogin, String passwordLogin) {
         wd.findElement(By.id(elementUserName)).click();
         wd.findElement(By.id(elementUserName)).clear();
@@ -53,6 +58,8 @@ public class TestAuthorizationNew {
            // wd.findElement(By.xpath("//*[@id=\"authorization\"]/div/div[2]/div[1]/div/div/span[2]/button")).click();}
     }
 
+    @Title("Выход")
+    @Description("Закрывается окно браузера")
     @AfterMethod
     public void tearDown() {
         wd.quit();
