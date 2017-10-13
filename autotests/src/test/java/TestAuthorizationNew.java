@@ -7,12 +7,10 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.*;
-//import ru.yandex.qatools.allure.annotations.Description;
-//import ru.yandex.qatools.allure.annotations.Step;
-//import ru.yandex.qatools.allure.annotations.Title;
+import ru.yandex.qatools.allure.annotations.Description;
+import ru.yandex.qatools.allure.annotations.Step;
+import ru.yandex.qatools.allure.annotations.Title;
 
-import io.qameta.allure.*;
-import io.qameta.allure.Step;
 
 public class TestAuthorizationNew {
     FirefoxDriver wd;
@@ -35,15 +33,11 @@ public class TestAuthorizationNew {
        // wd.get("http://vm-107-stu-dev.ursip.ru/auth/");
     }
 
-   // @Title("Неуспешная авторизация пользователя")
+    @Title("Неуспешная авторизация пользователя")
     @Test
-    
-    @Step("Вызов метода авторизации")
     public void TestAuthorizationNew() {
       login("userName", "password", readData.readFromFile().get(1), readData.readFromFile().get(2));
     }
-
-    @Step("Авторизация")
     private void login(String elementUserName, String elementPassword, String nameLogin, String passwordLogin) {
         wd.findElement(By.id(elementUserName)).click();
         wd.findElement(By.id(elementUserName)).clear();
@@ -53,7 +47,6 @@ public class TestAuthorizationNew {
         wd.findElement(By.id(elementPassword)).sendKeys(passwordLogin);
         //*[@id="authorization"]/div/form/button
         wd.findElement(By.xpath("//div[@class='authorization-page']//button[.='Войти']")).click();
-
         wd.findElement(By.xpath("//*[@id=\"authorization\"]/div/form/button")).click();
         resultOfTest = " "+"\n"+"Test \n passed \n";
         writeData = new WriteReadFromFile("C:\\test\\notes2.txt", resultOfTest);

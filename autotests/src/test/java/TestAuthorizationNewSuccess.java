@@ -4,9 +4,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-//import ru.yandex.qatools.allure.annotations.Description;
-//import ru.yandex.qatools.allure.annotations.Step;
-//import ru.yandex.qatools.allure.annotations.Title;
+import ru.yandex.qatools.allure.annotations.Description;
+import ru.yandex.qatools.allure.annotations.Step;
+import ru.yandex.qatools.allure.annotations.Title;
 
 import java.net.Authenticator;
 import java.util.concurrent.TimeUnit;
@@ -34,12 +34,12 @@ public class TestAuthorizationNewSuccess {
        // System.out.println(readData.readFromFile().get(0));
        // wd.get("http://vm-107-stu-dev.ursip.ru/auth/");
     }
-  //  @Title("Успешная авторизация пользователя")
+    @Title("Успешная авторизация пользователя")
     @Test
     public void TestAuthorizationNewSuccess() {
       login("userName", "password", "admin", "admin");
     }
-
+    @Step("Test step")
     private void login(String elementUserName, String elementPassword, String nameLogin, String passwordLogin) {
         wd.findElement(By.id(elementUserName)).click();
         wd.findElement(By.id(elementUserName)).clear();
