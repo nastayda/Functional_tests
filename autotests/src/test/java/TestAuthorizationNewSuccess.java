@@ -30,7 +30,7 @@ public class TestAuthorizationNewSuccess {
        // System.out.println(readData.readFromFile().get(0));
        // wd.get("http://vm-107-stu-dev.ursip.ru/auth/");
     }
-    @Title("Авторизация пользователя")
+    @Title("Authorization of user ")
     @Test
     public void TestAuthorizationNewSuccess() {
       login("userName", "password", "admin", "admin");
