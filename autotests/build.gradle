@@ -1,5 +1,10 @@
 apply plugin: 'java'
 apply plugin: 'application'
+compileJava.options.encoding = 'UTF-8'
+
+tasks.withType(Compile) {
+    options.encoding = 'UTF-8'
+}
 
 repositories{
     mavenCentral()

@@ -3,7 +3,7 @@
 <suite name="Suite1" verbose="1" >
     <test name="Auth" >
         <classes>
-            <class name="TestAuthorizationNew" />
+            <class name="TestAuthorizationNewSuccess" />
         </classes>
     </test>
 

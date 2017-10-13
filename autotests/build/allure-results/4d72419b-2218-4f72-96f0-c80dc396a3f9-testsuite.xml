@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1507834779871" stop="1507834791747">
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1507879748752" stop="1507879759646">
     <name>Suite1</name>
     <test-cases>
-        <test-case start="1507834785665" stop="1507834791380" status="broken">
+        <test-case start="1507879753769" stop="1507879759351" status="broken">
             <name>TestAuthorizationNew</name>
             <failure>
                 <message>NoSuchElementException: Unable to locate element: //div[@class='authorization-page']//button[.='Р’РѕР№С‚Рё']
@@ -10,16 +10,16 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
 System info: host: 'DANILKINA-AS', ip: '192.168.4.89', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\danilkinaas\AppData\Local\Temp\rust_mozprofile.u2KEIyTRu8BZ, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0, platformVersion=6.1, moz:processID=12556, browserName=firefox, javascriptEnabled=true, platformName=XP}]
-Session ID: b8af0fc7-fac7-4c54-b4b4-a22b1262bace
+Capabilities [{moz:profile=C:\Users\danilkinaas\AppData\Local\Temp\rust_mozprofile.JdeG3Pgw4MGM, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0, platformVersion=6.1, moz:processID=1512, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: 76496bcb-866b-46a7-9f2a-e929c0be3612
 *** Element info: {Using=xpath, value=//div[@class='authorization-page']//button[.='Р’РѕР№С‚Рё']}</message>
                 <stack-trace>org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class='authorization-page']//button[.='Р’РѕР№С‚Рё']
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
 System info: host: 'DANILKINA-AS', ip: '192.168.4.89', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\danilkinaas\AppData\Local\Temp\rust_mozprofile.u2KEIyTRu8BZ, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0, platformVersion=6.1, moz:processID=12556, browserName=firefox, javascriptEnabled=true, platformName=XP}]
-Session ID: b8af0fc7-fac7-4c54-b4b4-a22b1262bace
+Capabilities [{moz:profile=C:\Users\danilkinaas\AppData\Local\Temp\rust_mozprofile.JdeG3Pgw4MGM, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=true, browserVersion=56.0, platformVersion=6.1, moz:processID=1512, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: 76496bcb-866b-46a7-9f2a-e929c0be3612
 *** Element info: {Using=xpath, value=//div[@class='authorization-page']//button[.='Р’РѕР№С‚Рё']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
