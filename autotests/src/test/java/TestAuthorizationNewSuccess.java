@@ -5,6 +5,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Description;
+import ru.yandex.qatools.allure.annotations.Step;
 import ru.yandex.qatools.allure.annotations.Title;
 
 import java.net.Authenticator;
@@ -17,6 +18,7 @@ public class TestAuthorizationNewSuccess {
     WriteReadFromFile readData;
     WriteReadFromFile writeData;
     String resultOfTest;
+
 
     @BeforeMethod
     public void setUp() throws Exception {
