@@ -4,10 +4,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import ru.yandex.qatools.allure.annotations.Title;
 
 import java.net.Authenticator;
 import java.util.concurrent.TimeUnit;
-
+@Title("Авторизация пользователя")
 public class TestAuthorizationNewSuccess {
     FirefoxDriver wd;
     WriteReadFromFile readData;
