@@ -21,6 +21,7 @@ test.doFirst {
 task testAuth(type: Test){
     useTestNG{
         suites 'src/test/resources/testng-auth.xml'
+        suites 'src/test/resources/testng-auth2.xml'
     }
 }
 task testAuth2(type: Test){
