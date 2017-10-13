@@ -11,6 +11,7 @@ import org.openqa.selenium.*;
 //import ru.yandex.qatools.allure.annotations.Step;
 //import ru.yandex.qatools.allure.annotations.Title;
 
+import io.qameta.allure.*;
 import io.qameta.allure.Step;
 
 public class TestAuthorizationNew {
@@ -39,7 +40,7 @@ public class TestAuthorizationNew {
     public void TestAuthorizationNew() {
       login("userName", "password", readData.readFromFile().get(1), readData.readFromFile().get(2));
     }
-
+    @Description("Класс TestAuthorizationNew")
     @Step("test step")
     private void login(String elementUserName, String elementPassword, String nameLogin, String passwordLogin) {
         wd.findElement(By.id(elementUserName)).click();
