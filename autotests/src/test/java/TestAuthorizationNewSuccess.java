@@ -8,6 +8,7 @@ import ru.yandex.qatools.allure.annotations.Title;
 
 import java.net.Authenticator;
 import java.util.concurrent.TimeUnit;
+
 @Title("Авторизация пользователя")
 public class TestAuthorizationNewSuccess {
     FirefoxDriver wd;
@@ -29,7 +30,7 @@ public class TestAuthorizationNewSuccess {
        // System.out.println(readData.readFromFile().get(0));
        // wd.get("http://vm-107-stu-dev.ursip.ru/auth/");
     }
-    
+    @Title("Авторизация пользователя")
     @Test
     public void TestAuthorizationNewSuccess() {
       login("userName", "password", "admin", "admin");
