@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Неуспешная_авторизация" verbose="1" >
+<suite name="Неуспешная авторизация" verbose="1" >
     <test name="Auth1">
         <classes>
             <class name="TestAuthorizationNew" />

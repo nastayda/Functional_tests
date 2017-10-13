@@ -23,14 +23,14 @@ dependencies{
 
 task testAuth(type: Test){
     useTestNG{
-        options.suites("src/test/resources/testng-auth.xml")
-       // suites 'src/test/resources/testng-auth.xml'
+        suites 'src/test/resources/testng-auth.xml'
+        suites 'src/test/resources/testng-auth2.xml'
+
     }
 }
 task testAuth2(type: Test){
     useTestNG{
-        options.suites("src/test/resources/testng-auth.xml")
-       // suites 'src/test/resources/testng-auth2.xml'
+         suites 'src/test/resources/testng-auth2.xml'
     }
 }
 testAuth.doFirst {
