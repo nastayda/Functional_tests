@@ -66,7 +66,7 @@ public class TestAuthorizationNew {
     }
     @Step("Вторая проверка равенства элементов")
     public void successfulTest() {
-        assertTrue(2 == 2);
+        assertTrue(21 == 2);
     }
     @AfterMethod
     public void tearDown() {
