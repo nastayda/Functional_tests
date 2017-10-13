@@ -11,6 +11,7 @@ import ru.yandex.qatools.allure.annotations.Description;
 import ru.yandex.qatools.allure.annotations.Step;
 import ru.yandex.qatools.allure.annotations.Title;
 
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 
@@ -65,12 +66,14 @@ public class TestAuthorizationNew {
     public void unSuccessfulTest() {
         assertTrue(21 == 2);
     }
-    
-    @Test
+
+
     @Step("Вторая проверка равенства элементов")
     @Title("Вызов метода unSuccessfulTest")
+    @Test
     public void successfulTest() {
-        assertTrue(2 == 2);
+        String name ="admin";
+        assertEquals(name,"admin1");
     }
     @AfterMethod
     public void tearDown() {
