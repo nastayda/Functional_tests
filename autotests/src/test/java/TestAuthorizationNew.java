@@ -59,10 +59,14 @@ public class TestAuthorizationNew {
         wd.findElement(By.xpath("//*[@id=\"authorization\"]/div/div[2]/div[1]/div/div/span[2]/button1")).isEnabled();
            // wd.findElement(By.xpath("//*[@id=\"authorization\"]/div/div[2]/div[1]/div/div/span[2]/button")).click();}
     }
-    @Step("Проверка равенства элементов")
+    @Step("Первая проверка равенства элементов")
     @Test
-    public void successfulTest() {
+    public void unSuccessfulTest() {
         assertTrue(21 == 2);
+    }
+    @Step("Вторая проверка равенства элементов")
+    public void successfulTest() {
+        assertTrue(2 == 2);
     }
     @AfterMethod
     public void tearDown() {
