@@ -12,6 +12,7 @@ import java.util.concurrent.TimeUnit;
 
 @Title("Авторизация пользователя")
 @Description("В этом сьюите происходит проверка авторизации пользователей")
+@Test
 public class TestAuthorizationNewSuccess {
     FirefoxDriver wd;
     WriteReadFromFile readData;
