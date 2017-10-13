@@ -11,6 +11,8 @@ import ru.yandex.qatools.allure.annotations.Title;
 import java.net.Authenticator;
 import java.util.concurrent.TimeUnit;
 
+import static org.testng.Assert.assertTrue;
+
 public class TestAuthorizationNewSuccess {
     FirefoxDriver wd;
     WriteReadFromFile readData;

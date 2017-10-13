@@ -11,6 +11,8 @@ import ru.yandex.qatools.allure.annotations.Description;
 import ru.yandex.qatools.allure.annotations.Step;
 import ru.yandex.qatools.allure.annotations.Title;
 
+import static org.testng.Assert.assertTrue;
+
 
 public class TestAuthorizationNew {
     FirefoxDriver wd;
@@ -57,7 +59,11 @@ public class TestAuthorizationNew {
         wd.findElement(By.xpath("//*[@id=\"authorization\"]/div/div[2]/div[1]/div/div/span[2]/button1")).isEnabled();
            // wd.findElement(By.xpath("//*[@id=\"authorization\"]/div/div[2]/div[1]/div/div/span[2]/button")).click();}
     }
-
+    @Step("Проверка равенства элементов")
+    @Test
+    public void successfulTest() {
+        assertTrue(21 == 2);
+    }
     @AfterMethod
     public void tearDown() {
         wd.quit();
