@@ -17,7 +17,6 @@ public class TestAuthorizationNew {
     WriteReadFromFile writeData;
     String resultOfTest;
 
-    @Step("Ввод данныч: адрес сервера. Передаем логин и пароль.")
     @BeforeMethod
     public void setUp() throws Exception {
         Authenticator.setDefault(new ProxyAuthenticator("ADMDI\\manuhin", "123"));
@@ -34,13 +33,11 @@ public class TestAuthorizationNew {
     }
 
     @Title("Неуспешная авторизация пользователя")
-    @Step("Ввод данныч: адрес сервера. Передаем логин и пароль.")
     @Test
     public void TestAuthorizationNew() {
       login("userName", "password", readData.readFromFile().get(1), readData.readFromFile().get(2));
     }
-
-    @Step("Поиск элементов и переход по полям")
+    @Step("test step")
     private void login(String elementUserName, String elementPassword, String nameLogin, String passwordLogin) {
         wd.findElement(By.id(elementUserName)).click();
         wd.findElement(By.id(elementUserName)).clear();
@@ -59,7 +56,6 @@ public class TestAuthorizationNew {
            // wd.findElement(By.xpath("//*[@id=\"authorization\"]/div/div[2]/div[1]/div/div/span[2]/button")).click();}
     }
 
-    @Step("Закрывается окно браузера")
     @AfterMethod
     public void tearDown() {
         wd.quit();
