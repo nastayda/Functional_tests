@@ -60,12 +60,15 @@ public class TestAuthorizationNew {
            // wd.findElement(By.xpath("//*[@id=\"authorization\"]/div/div[2]/div[1]/div/div/span[2]/button")).click();}
     }
     @Step("Первая проверка равенства элементов")
+    @Title("Вызов метода unSuccessfulTest")
     @Test
     public void unSuccessfulTest() {
         assertTrue(21 == 2);
     }
+    
     @Test
     @Step("Вторая проверка равенства элементов")
+    @Title("Вызов метода unSuccessfulTest")
     public void successfulTest() {
         assertTrue(2 == 2);
     }
