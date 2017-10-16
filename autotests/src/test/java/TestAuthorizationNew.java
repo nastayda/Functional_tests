@@ -40,9 +40,9 @@ public class TestAuthorizationNew {
     @Test
     @Step("Вызов метода авторизации")
     public void TestAuthorizationNew() {
+        unSuccessfulTest(2,21);
+        successfulTest();
       login("userName", "password", readData.readFromFile().get(1), readData.readFromFile().get(2));
-      unSuccessfulTest();
-      successfulTest();
     }
 
     @Step("Поиск элементов {2} и {3}")
@@ -63,10 +63,10 @@ public class TestAuthorizationNew {
            // wd.findElement(By.xpath("//*[@id=\"authorization\"]/div/div[2]/div[1]/div/div/span[2]/button")).click();}
     }
 
-    @Step("Первая проверка равенства элементов")
+    @Step("Первая проверка равенства элементов {0} и {1}")
    // @Title("Сравнение логина и пароля с данными из бд")
-    public void unSuccessfulTest() {
-        assertTrue(21 == 2);
+    public void unSuccessfulTest(int a, int b) {
+        assertTrue(a == b);
     }
    // @Title("Вызов метода SuccessfulTest")
     @Step("Вторая проверка равенства элементов")
