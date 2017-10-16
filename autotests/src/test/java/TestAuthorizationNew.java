@@ -71,7 +71,7 @@ public class TestAuthorizationNew {
    // @Title("Вызов метода SuccessfulTest")
     @Step("Вторая проверка равенства элементов")
     public void successfulTest() {
-        assertEquals("admin","admin1");
+        assertEquals("admin","admin");
     }
 
     @AfterMethod
