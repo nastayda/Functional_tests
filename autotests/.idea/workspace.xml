@@ -26,21 +26,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestAuthorizationNew.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestAuthorizationNew.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestAuthorizationNew.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="701">
-              <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+            <state relative-caret-position="599">
+              <caret line="86" column="28" lean-forward="false" selection-start-line="86" selection-start-column="28" selection-end-line="86" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3196#3197#0" expanded="true" />
                 <element signature="e#3230#3231#0" expanded="true" />
                 <element signature="e#3358#3359#0" expanded="true" />
                 <element signature="e#3403#3404#0" expanded="true" />
-                <element signature="e#3450#3451#0" expanded="true" />
                 <element signature="e#3475#3476#0" expanded="true" />
                 <element signature="method#isAlertPresent#0;class#TestAuthorizationNew#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gradlew" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gradlew">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="511">
+              <caret line="170" column="0" lean-forward="false" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gradle-wrapper.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -65,29 +84,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestAuthorizationNewSuccess.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestAuthorizationNewSuccess.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestAuthorizationNewSuccess.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="548">
-              <caret line="66" column="49" lean-forward="false" selection-start-line="66" selection-start-column="49" selection-end-line="66" selection-end-column="49" />
+            <state relative-caret-position="378">
+              <caret line="32" column="73" lean-forward="true" selection-start-line="32" selection-start-column="73" selection-end-line="32" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1446#1447#0" expanded="true" />
-                <element signature="e#1507#1508#0" expanded="true" />
-                <element signature="e#2665#2666#0" expanded="true" />
-                <element signature="e#2700#2701#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProxyAuthenticator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ProxyAuthenticator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1884#1885#0" expanded="true" />
+                <element signature="e#1945#1946#0" expanded="true" />
+                <element signature="e#3103#3104#0" expanded="true" />
+                <element signature="e#3138#3139#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -136,16 +143,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="allure.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/allure.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="45" lean-forward="false" selection-start-line="0" selection-start-column="45" selection-end-line="0" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -164,6 +161,7 @@
       <find>filePath</find>
       <find>text</find>
       <find>suites 'src/test/resources/testng-auth2.xml'</find>
+      <find>url</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -387,8 +385,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="3015086465980" />
+        <entry key="$PROJECT_DIR$" value="3016059260415" />
         <entry key="$PROJECT_DIR$/build.gradle" value="1301910042" />
+        <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="1061797022" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -516,9 +515,10 @@
         <option value="$PROJECT_DIR$/src/test/java/Step.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testng-auth.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/testng-auth2.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/TestAuthorizationNewSuccess.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/TestAuthorizationNew.java" />
+        <option value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/TestAuthorizationNewSuccess.java" />
       </list>
     </option>
   </component>
@@ -578,11 +578,6 @@
             <path>
               <item name="autotests" type="b2602c69:ProjectViewProjectNode" />
               <item name="autotests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autotests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autotests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -610,13 +605,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autotests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autotests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -629,7 +617,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="SearchEverywhereHistoryKey" value="depende&#9;ACTION&#9;Gradle.AddGradleDslDependencyAction" />
   </component>
@@ -901,12 +889,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestAuthorizationNew - 2017.10.12 at 21h 44m 46s.xml">
-      <configuration name="TestAuthorizationNew" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestAuthorizationNew - 2017.10.12 at 21h 58m 38s.xml">
-      <configuration name="TestAuthorizationNew" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="TestAuthorizationNewSuccess - 2017.10.13 at 09h 26m 50s.xml">
       <configuration name="TestAuthorizationNewSuccess" configurationId="TestNG" />
     </history-entry>
@@ -919,17 +901,23 @@
     <history-entry file="TestAuthorizationNewSuccess - 2017.10.13 at 11h 08m 37s.xml">
       <configuration name="TestAuthorizationNewSuccess" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAuthorizationNew_TestAuthorizationNew - 2017.10.05 at 12h 19m 25s.xml">
-      <configuration name="TestAuthorizationNew.TestAuthorizationNew" configurationId="TestNG" />
+    <history-entry file="TestAuthorizationNewSuccess - 2017.10.16 at 16h 04m 14s.xml">
+      <configuration name="TestAuthorizationNewSuccess" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAuthorizationNew_TestAuthorizationNew - 2017.10.05 at 12h 52m 39s.xml">
-      <configuration name="TestAuthorizationNew.TestAuthorizationNew" configurationId="TestNG" />
+    <history-entry file="TestAuthorizationNewSuccess - 2017.10.16 at 16h 04m 44s.xml">
+      <configuration name="TestAuthorizationNewSuccess" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAuthorizationNew_TestAuthorizationNew - 2017.10.05 at 12h 53m 37s.xml">
-      <configuration name="TestAuthorizationNew.TestAuthorizationNew" configurationId="TestNG" />
+    <history-entry file="TestAuthorizationNewSuccess - 2017.10.16 at 16h 06m 24s.xml">
+      <configuration name="TestAuthorizationNewSuccess" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAuthorizationNew_TestAuthorizationNew - 2017.10.11 at 19h 09m 52s.xml">
-      <configuration name="TestAuthorizationNew.TestAuthorizationNew" configurationId="TestNG" />
+    <history-entry file="TestAuthorizationNewSuccess - 2017.10.16 at 16h 06m 54s.xml">
+      <configuration name="TestAuthorizationNewSuccess" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestAuthorizationNewSuccess - 2017.10.16 at 16h 07m 07s.xml">
+      <configuration name="TestAuthorizationNewSuccess" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestAuthorizationNewSuccess - 2017.10.16 at 16h 07m 44s.xml">
+      <configuration name="TestAuthorizationNewSuccess" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -993,7 +981,6 @@
             <element signature="e#3230#3231#0" expanded="true" />
             <element signature="e#3358#3359#0" expanded="true" />
             <element signature="e#3403#3404#0" expanded="true" />
-            <element signature="e#3450#3451#0" expanded="true" />
             <element signature="e#3475#3476#0" expanded="true" />
             <element signature="method#isAlertPresent#0;class#TestAuthorizationNew#0" expanded="false" />
           </folding>
@@ -1037,7 +1024,6 @@
             <element signature="e#3230#3231#0" expanded="true" />
             <element signature="e#3358#3359#0" expanded="true" />
             <element signature="e#3403#3404#0" expanded="true" />
-            <element signature="e#3450#3451#0" expanded="true" />
             <element signature="e#3475#3476#0" expanded="true" />
             <element signature="method#isAlertPresent#0;class#TestAuthorizationNew#0" expanded="false" />
           </folding>
@@ -1070,7 +1056,6 @@
             <element signature="e#3230#3231#0" expanded="true" />
             <element signature="e#3358#3359#0" expanded="true" />
             <element signature="e#3403#3404#0" expanded="true" />
-            <element signature="e#3450#3451#0" expanded="true" />
             <element signature="e#3475#3476#0" expanded="true" />
             <element signature="method#isAlertPresent#0;class#TestAuthorizationNew#0" expanded="false" />
           </folding>
@@ -1103,7 +1088,6 @@
             <element signature="e#3230#3231#0" expanded="true" />
             <element signature="e#3358#3359#0" expanded="true" />
             <element signature="e#3403#3404#0" expanded="true" />
-            <element signature="e#3450#3451#0" expanded="true" />
             <element signature="e#3475#3476#0" expanded="true" />
             <element signature="method#isAlertPresent#0;class#TestAuthorizationNew#0" expanded="false" />
           </folding>
@@ -1212,7 +1196,7 @@
         <state relative-caret-position="272">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1292,33 +1276,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestAuthorizationNewSuccess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="66" column="49" lean-forward="false" selection-start-line="66" selection-start-column="49" selection-end-line="66" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1446#1447#0" expanded="true" />
-            <element signature="e#1507#1508#0" expanded="true" />
-            <element signature="e#2665#2666#0" expanded="true" />
-            <element signature="e#2700#2701#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestAuthorizationNew.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="701">
-          <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+        <state relative-caret-position="599">
+          <caret line="86" column="28" lean-forward="false" selection-start-line="86" selection-start-column="28" selection-end-line="86" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3196#3197#0" expanded="true" />
             <element signature="e#3230#3231#0" expanded="true" />
             <element signature="e#3358#3359#0" expanded="true" />
             <element signature="e#3403#3404#0" expanded="true" />
-            <element signature="e#3450#3451#0" expanded="true" />
             <element signature="e#3475#3476#0" expanded="true" />
             <element signature="method#isAlertPresent#0;class#TestAuthorizationNew#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="170" column="0" lean-forward="false" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestAuthorizationNewSuccess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="32" column="73" lean-forward="true" selection-start-line="32" selection-start-column="73" selection-end-line="32" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1884#1885#0" expanded="true" />
+            <element signature="e#1945#1946#0" expanded="true" />
+            <element signature="e#3103#3104#0" expanded="true" />
+            <element signature="e#3138#3139#0" expanded="true" />
           </folding>
         </state>
       </provider>

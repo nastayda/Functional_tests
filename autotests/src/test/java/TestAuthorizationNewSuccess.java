@@ -1,6 +1,7 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -9,6 +10,7 @@ import ru.yandex.qatools.allure.annotations.Step;
 import ru.yandex.qatools.allure.annotations.Title;
 
 import java.net.Authenticator;
+import java.nio.file.Paths;
 import java.util.concurrent.TimeUnit;
 
 import static org.testng.Assert.assertTrue;
@@ -25,6 +27,11 @@ public class TestAuthorizationNewSuccess {
         Authenticator.setDefault(new ProxyAuthenticator("ADMDI\\manuhin", "123"));
         System.setProperty("http.proxyHost", "proxy.mdi.ru");
         System.setProperty("http.proxyPort", "3128");
+
+        String pathToGeckoDriver = Paths.get("C:\\Users\\manuhin\\Downloads\\geckodriver-v0.19.0-win64\\geckodriver.exe").toAbsolutePath().toString();
+        System.setProperty("webdriver.gecko.driver", pathToGeckoDriver);
+        DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+        capabilities.setCapability("marionette", true);
 
         wd = new FirefoxDriver();
         wd.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
