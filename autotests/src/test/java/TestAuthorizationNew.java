@@ -43,7 +43,7 @@ public class TestAuthorizationNew {
       login("userName", "password", readData.readFromFile().get(1), readData.readFromFile().get(2));
     }
 
-    @Step("Поиск элементов")
+    @Step("Поиск элементов {2} и {3}")
     private void login(String elementUserName, String elementPassword, String nameLogin, String passwordLogin) {
         wd.findElement(By.id(elementUserName)).click();
         wd.findElement(By.id(elementUserName)).clear();
@@ -62,18 +62,16 @@ public class TestAuthorizationNew {
     }
 
     @Step("Первая проверка равенства элементов")
-    @Title("Сравнение логина и пароля с данными из бд")
-    @Test
+   // @Title("Сравнение логина и пароля с данными из бд")
     public void unSuccessfulTest() {
         assertTrue(21 == 2);
     }
-
-    @Test
-    @Title("Вызов метода SuccessfulTest")
+   // @Title("Вызов метода SuccessfulTest")
     @Step("Вторая проверка равенства элементов")
     public void successfulTest() {
         assertEquals("admin","admin1");
     }
+
     @AfterMethod
     public void tearDown() {
         wd.quit();
