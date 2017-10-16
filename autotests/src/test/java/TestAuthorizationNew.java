@@ -41,6 +41,8 @@ public class TestAuthorizationNew {
     @Step("Вызов метода авторизации")
     public void TestAuthorizationNew() {
       login("userName", "password", readData.readFromFile().get(1), readData.readFromFile().get(2));
+      unSuccessfulTest();
+      successfulTest();
     }
 
     @Step("Поиск элементов {2} и {3}")
