@@ -65,6 +65,13 @@ public class TestAuthorizationNew {
            // wd.findElement(By.xpath("//*[@id=\"authorization\"]/div/div[2]/div[1]/div/div/span[2]/button")).click();}
     }
 
+    @Title("Новый тестовый метод")
+    @Test
+    @Step("Вызов нового тестового метода")
+    public void tesst(){
+        unSuccessfulTest(2,21);
+        successfulTest();
+    }
     @Step("Первая проверка равенства элементов {0} и {1}")
    // @Title("Сравнение логина и пароля с данными из бд")
     public void unSuccessfulTest(int a, int b) {
