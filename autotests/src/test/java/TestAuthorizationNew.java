@@ -14,7 +14,7 @@ import ru.yandex.qatools.allure.annotations.Title;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-
+@Title("Jxtym Неуспешная авторизация пользователя")
 public class TestAuthorizationNew {
     FirefoxDriver wd;
     WriteReadFromFile readData;
@@ -54,11 +54,13 @@ public class TestAuthorizationNew {
         wd.findElement(By.id(elementPassword)).clear();
         wd.findElement(By.id(elementPassword)).sendKeys(passwordLogin);
         //*[@id="authorization"]/div/form/button
-        wd.findElement(By.xpath("//div[@class='authorization-page']//button[.='Войти']")).click();
+      //  wd.findElement(By.xpath("//div[@class='authorization-page']//button[.='Войти']")).click();
         wd.findElement(By.xpath("//*[@id=\"authorization\"]/div/form/button")).click();
+
         resultOfTest = " "+"\n"+"Test \n passed \n";
         writeData = new WriteReadFromFile("C:\\test\\notes2.txt", resultOfTest);
         writeData.writeToFile();
+
         wd.findElement(By.xpath("//*[@id=\"authorization\"]/div/div[2]/div[1]/div/div/span[2]/button1")).isEnabled();
            // wd.findElement(By.xpath("//*[@id=\"authorization\"]/div/div[2]/div[1]/div/div/span[2]/button")).click();}
     }
