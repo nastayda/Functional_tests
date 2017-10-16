@@ -40,7 +40,7 @@ public class TestAuthorizationNew {
     @Test
     @Step("Вызов метода авторизации")
     public void TestAuthorizationNew() {
-        unSuccessfulTest(2,21);
+        unSuccessfulTest(21,21);
         successfulTest();
       login("userName", "password", readData.readFromFile().get(1), readData.readFromFile().get(2));
     }
