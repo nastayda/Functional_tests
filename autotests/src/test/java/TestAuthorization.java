@@ -14,6 +14,7 @@ import java.net.Authenticator;
 import java.nio.file.Paths;
 import java.util.concurrent.TimeUnit;
 
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 public class TestAuthorization {
@@ -25,9 +26,6 @@ public class TestAuthorization {
 
     @BeforeMethod
     public void setUp() throws Exception {
-        //Authenticator.setDefault(new ProxyAuthenticator("ADMDI\\manuhin", "123"));
-        //System.setProperty("http.proxyHost", "proxy.mdi.ru");
-        //System.setProperty("http.proxyPort", "3128");
 
         //Получить реальный путь к geco
         File gecoFile = new File("src/help-files/geckodriver.exe");
@@ -47,8 +45,6 @@ public class TestAuthorization {
         //Читаем из файла адрес сервера
         readData= new WriteReadFromFile(testFile.getAbsolutePath());
         wd.get(readData.readFromFile().get(0).substring(1));
-       // System.out.println(readData.readFromFile().get(0));
-       // wd.get("http://vm-107-stu-dev.ursip.ru/auth/");
     }
     @Title("Успешная авторизация пользователя")
     @Test
@@ -63,11 +59,9 @@ public class TestAuthorization {
         wd.findElement(By.id(elementPassword)).click();
         wd.findElement(By.id(elementPassword)).clear();
         wd.findElement(By.id(elementPassword)).sendKeys(passwordLogin);
-       // wd.findElement(By.xpath("//div[@class='authorization-page']//button[.='Войти']")).click();
-
         wd.findElement(By.xpath("//*[@id=\"authorization\"]/div/form/button")).click();
-        //wd.findElement(By.xpath("//*[@id=\"authorization\"]/div/div[2]/div[1]/div/div/span[2]/button1")).isEnabled();
-           // wd.findElement(By.xpath("//*[@id=\"authorization\"]/div/div[2]/div[1]/div/div/span[2]/button")).click();}
+        boolean flag = wd.findElement(By.xpath("//*[@id=\"authorization\"]/div/div[2]/div[1]/div/div/span[2]/button")).isEnabled();
+        assertEquals(flag, true);
     }
     @Step("Проверка равенства элементов")
     public void successfulTest() {
