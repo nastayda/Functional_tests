@@ -14,9 +14,10 @@ import java.net.Authenticator;
 import java.nio.file.Paths;
 import java.util.concurrent.TimeUnit;
 
+import static com.sun.activation.registries.LogSupport.log;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
-import static org.testng.Reporter.log;
+
 
 public class TestAuthorization {
     FirefoxDriver wd;
