@@ -1,3 +1,5 @@
+package HelpClasses;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -5,13 +7,10 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import ru.yandex.qatools.allure.annotations.Description;
 import ru.yandex.qatools.allure.annotations.Step;
 import ru.yandex.qatools.allure.annotations.Title;
 
 import java.io.File;
-import java.net.Authenticator;
-import java.nio.file.Paths;
 import java.util.concurrent.TimeUnit;
 
 import static com.sun.activation.registries.LogSupport.log;
@@ -47,12 +46,14 @@ public class TestAuthorization {
         readData= new WriteReadFromFile(testFile.getAbsolutePath());
         wd.get(readData.readFromFile().get(0).substring(1));
     }
-    @Title("Успешная авторизация пользователя")
+
+    @Title("Авторизация пользователя")
     @Test
     @Step("Вызов метода авторизации")
     public void TestAuthorizationNewSuccess() {
       login("userName", "password", "admin", "admin");
     }
+
     @Step("Проверка наличия элементов и заполнение полей")
     private void login(String elementUserName, String elementPassword, String nameLogin, String passwordLogin) {
         wd.findElement(By.id(elementUserName)).click();

@@ -1,3 +1,6 @@
+package HelpClasses;
+
+import HelpClasses.WriteReadFromFile;
 import org.testng.annotations.Test;
 
 @Test

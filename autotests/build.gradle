@@ -19,6 +19,7 @@ dependencies{
     compile 'org.seleniumhq.selenium:selenium-java:3.6.0'
     agent "org.aspectj:aspectjweaver:1.8.10"
     compile "ru.yandex.qatools.allure:allure-testng-adaptor:1.4.0.RC4"
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.44'
 }
 
 task testAuth(type: Test){

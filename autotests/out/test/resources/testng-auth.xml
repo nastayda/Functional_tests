@@ -1,15 +1,15 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Успешная авторизация" verbose="1" >
-    <test name="Вызов класса TestAuthorization" >
+    <test name="Вызов класса HelpClasses.TestAuthorization" >
         <classes>
-            <class name="TestAuthorization" />
+            <class name="HelpClasses.TestAuthorization" />
         </classes>
     </test>
 
     <test name="Вызов класса TestAuthorizationNew">
         <classes>
-            <class name="TestAuthorization" />
+            <class name="HelpClasses.TestAuthorization" />
         </classes>
     </test>
 </suite>
