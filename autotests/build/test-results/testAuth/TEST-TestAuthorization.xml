@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestAuthorization" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-10-18T10:22:14" hostname="Danilkina-as" time="8.67">
+  <properties/>
+  <testcase name="TestAuthorizationNewSuccess" classname="TestAuthorization" time="1.153"/>
+  <testcase name="TestAuthorizationNewSuccess" classname="TestAuthorization" time="1.036"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[1508322134651	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1508322134935	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1508322135133	Marionette	DEBUG	Received DOM event "beforeunload" for "http://vm-107-stu-dev.ursip.ru/auth/"
+1508322135327	Marionette	DEBUG	Received DOM event "pagehide" for "http://vm-107-stu-dev.ursip.ru/auth/"
+1508322135328	Marionette	DEBUG	Received DOM event "unload" for "http://vm-107-stu-dev.ursip.ru/auth/"
+1508322135543	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://vm-107-stu-dev.ursip.ru/auth/admin/"
+1508322135548	Marionette	DEBUG	Received DOM event "pageshow" for "http://vm-107-stu-dev.ursip.ru/auth/admin/"
+1508322142272	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1508322142553	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1508322142756	Marionette	DEBUG	Received DOM event "beforeunload" for "http://vm-107-stu-dev.ursip.ru/auth/"
+1508322142828	Marionette	DEBUG	Received DOM event "pagehide" for "http://vm-107-stu-dev.ursip.ru/auth/"
+1508322142828	Marionette	DEBUG	Received DOM event "unload" for "http://vm-107-stu-dev.ursip.ru/auth/"
+1508322143062	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://vm-107-stu-dev.ursip.ru/auth/admin/"
+1508322143063	Marionette	DEBUG	Received DOM event "pageshow" for "http://vm-107-stu-dev.ursip.ru/auth/admin/"
+]]></system-err>
+</testsuite>

@@ -1,9 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Успешная авторизация" verbose="1" >
-    <test name="Auth1">
+<suite name="Неуспешная авторизация" verbose="1" >
+    <test name="Повторный вызов класса TestAuthorizationNew">
         <classes>
-            <class name="TestAuthorizationNew" />
+            <class name="TestAuthorization" />
         </classes>
     </test>
 </suite>

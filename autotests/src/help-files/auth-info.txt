@@ -1,0 +1,3 @@
+﻿http://vm-107-stu-dev.ursip.ru/auth/
+admin
+admin
