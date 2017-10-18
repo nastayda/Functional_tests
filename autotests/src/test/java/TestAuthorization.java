@@ -16,6 +16,7 @@ import java.util.concurrent.TimeUnit;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
+import static org.testng.Reporter.log;
 
 public class TestAuthorization {
     FirefoxDriver wd;
@@ -40,7 +41,7 @@ public class TestAuthorization {
         File testFile = new File("src/help-files/auth-info.txt");
 
         wd = new FirefoxDriver();
-        wd.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+        wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
         //Читаем из файла адрес сервера
         readData= new WriteReadFromFile(testFile.getAbsolutePath());
@@ -48,25 +49,26 @@ public class TestAuthorization {
     }
     @Title("Успешная авторизация пользователя")
     @Test
+    @Step("Вызов метода авторизации")
     public void TestAuthorizationNewSuccess() {
       login("userName", "password", "admin", "admin");
     }
-
+    @Step("Проверка наличия элементов и заполнение полей")
     private void login(String elementUserName, String elementPassword, String nameLogin, String passwordLogin) {
+        log("Ввод логина");
         wd.findElement(By.id(elementUserName)).click();
         wd.findElement(By.id(elementUserName)).clear();
         wd.findElement(By.id(elementUserName)).sendKeys(nameLogin);
+        log("Ввод пароля");
         wd.findElement(By.id(elementPassword)).click();
         wd.findElement(By.id(elementPassword)).clear();
         wd.findElement(By.id(elementPassword)).sendKeys(passwordLogin);
         wd.findElement(By.xpath("//*[@id=\"authorization\"]/div/form/button")).click();
+        log("Проверка на наличие кнопки Выход");
         boolean flag = wd.findElement(By.xpath("//*[@id=\"authorization\"]/div/div[2]/div[1]/div/div/span[2]/button")).isEnabled();
         assertEquals(flag, true);
     }
-    @Step("Проверка равенства элементов")
-    public void successfulTest() {
-        assertTrue(21 == 2);
-    }
+
     @AfterMethod
     public void tearDown() {
         wd.quit();
