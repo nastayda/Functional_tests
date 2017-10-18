@@ -55,17 +55,17 @@ public class TestAuthorization {
     }
     @Step("Проверка наличия элементов и заполнение полей")
     private void login(String elementUserName, String elementPassword, String nameLogin, String passwordLogin) {
-        log("Ввод логина");
+        log("Ввод логина: "+ nameLogin);
         wd.findElement(By.id(elementUserName)).click();
         wd.findElement(By.id(elementUserName)).clear();
         wd.findElement(By.id(elementUserName)).sendKeys(nameLogin);
-        log("Ввод пароля");
+        log("Ввод пароля: "+ passwordLogin);
         wd.findElement(By.id(elementPassword)).click();
         wd.findElement(By.id(elementPassword)).clear();
         wd.findElement(By.id(elementPassword)).sendKeys(passwordLogin);
         wd.findElement(By.xpath("//*[@id=\"authorization\"]/div/form/button")).click();
-        log("Проверка на наличие кнопки Выход");
         boolean flag = wd.findElement(By.xpath("//*[@id=\"authorization\"]/div/div[2]/div[1]/div/div/span[2]/button")).isEnabled();
+        log("Проверка на наличие кнопки Выход: " + flag);
         assertEquals(flag, true);
     }
 
