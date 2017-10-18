@@ -33,7 +33,6 @@ public class TestAuthorization {
         String pathToGeckoDriver = gecoFile.getAbsolutePath();
         System.out.println(pathToGeckoDriver);
         //Подготовка утилиты для работы браузера FF
-        System.setProperty("webdriver.gecko.driver", pathToGeckoDriver);
         DesiredCapabilities capabilities = DesiredCapabilities.firefox();
         capabilities.setCapability("marionette", true);
 
@@ -55,7 +54,7 @@ public class TestAuthorization {
     }
     @Step("Проверка наличия элементов и заполнение полей")
     private void login(String elementUserName, String elementPassword, String nameLogin, String passwordLogin) {
-        log("Ввод логина: "+ nameLogin);
+        log("Ввод логина {0}: "+ nameLogin);
         wd.findElement(By.id(elementUserName)).click();
         wd.findElement(By.id(elementUserName)).clear();
         wd.findElement(By.id(elementUserName)).sendKeys(nameLogin);
