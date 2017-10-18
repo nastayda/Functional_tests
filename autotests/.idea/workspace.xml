@@ -60,15 +60,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EditSomeDocument.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EditSomeDocument.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/EditSomeDocument.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="49" column="39" lean-forward="false" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
+            <state relative-caret-position="484">
+              <caret line="67" column="34" lean-forward="true" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2456#2457#0" expanded="true" />
-                <element signature="e#2481#2482#0" expanded="true" />
+                <element signature="e#2615#2616#0" expanded="true" />
+                <element signature="e#2640#2641#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -107,16 +107,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="auth-info.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/help-files/auth-info.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
@@ -127,14 +117,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConnectionToDB.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ConnectionToDB.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Connection/ConnectionToDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="345">
+              <caret line="33" column="31" lean-forward="true" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeleteDocument.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/DeleteDocument.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -522,9 +522,10 @@
         <option value="$PROJECT_DIR$/src/test/java/HelpClasses/BaseClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/EditDocumetnt.java" />
         <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/EditDocument.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/EditSomeDocument.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/Connection/ConnectionToDB.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/DeleteDocument.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/EditSomeDocument.java" />
       </list>
     </option>
   </component>
@@ -686,7 +687,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ConnectionToDB">
+  <component name="RunManager" selected="TestNG.EditSomeDocument (1)">
     <configuration name="ConnectionToDB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -765,15 +766,20 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="EditSomeDocument.EditeDocument" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    <configuration name="EditSomeDocument.EditDocument" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="RegisterOfServices.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <module name="autotests_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="RegisterOfServices" />
-      <option name="MAIN_CLASS_NAME" value="EditSomeDocument" />
-      <option name="METHOD_NAME" value="EditeDocument" />
+      <option name="MAIN_CLASS_NAME" value="RegisterOfServices.EditSomeDocument" />
+      <option name="METHOD_NAME" value="EditDocument" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -792,17 +798,17 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="TestAuthorization" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="EditSomeDocument.EditeDocument" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="autotests_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="HelpClasses.TestAuthorization" />
-      <option name="METHOD_NAME" />
+      <option name="PACKAGE_NAME" value="RegisterOfServices" />
+      <option name="MAIN_CLASS_NAME" value="EditSomeDocument" />
+      <option name="METHOD_NAME" value="EditeDocument" />
       <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -937,19 +943,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="TestNG.TestAuthorizationNew" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.TestAuthorizationNewSuccess" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.EditSomeDocument" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.EditSomeDocument.EditeDocument" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.EditSomeDocument (1)" />
-      <item index="5" class="java.lang.String" itemvalue="Application.ConnectionToDB" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.EditSomeDocument" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.EditSomeDocument.EditeDocument" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.EditSomeDocument (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Application.ConnectionToDB" />
+      <item index="5" class="java.lang.String" itemvalue="TestNG.EditSomeDocument.EditDocument" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.ConnectionToDB" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.EditSomeDocument (1)" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.EditSomeDocument.EditeDocument" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.EditSomeDocument" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.TestAuthorizationNewSuccess" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.EditSomeDocument (1)" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.EditSomeDocument.EditDocument" />
+        <item index="2" class="java.lang.String" itemvalue="Application.ConnectionToDB" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.EditSomeDocument.EditeDocument" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.EditSomeDocument" />
       </list>
     </recent_temporary>
   </component>
@@ -970,21 +976,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EditSomeDocument - 2017.10.18 at 15h 18m 55s.xml">
-      <configuration name="EditSomeDocument" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="EditSomeDocument - 2017.10.18 at 15h 19m 23s.xml">
-      <configuration name="EditSomeDocument" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="EditSomeDocument - 2017.10.18 at 15h 22m 17s.xml">
-      <configuration name="EditSomeDocument" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="EditSomeDocument - 2017.10.18 at 15h 23m 37s.xml">
-      <configuration name="EditSomeDocument" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="EditSomeDocument - 2017.10.18 at 15h 30m 15s.xml">
-      <configuration name="EditSomeDocument" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="EditSomeDocument - 2017.10.18 at 15h 31m 07s.xml">
       <configuration name="EditSomeDocument" configurationId="TestNG" />
     </history-entry>
@@ -1000,6 +991,21 @@
     <history-entry file="EditSomeDocument - 2017.10.18 at 15h 37m 18s.xml">
       <configuration name="EditSomeDocument" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="EditSomeDocument - 2017.10.18 at 18h 09m 52s.xml">
+      <configuration name="EditSomeDocument" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="EditSomeDocument - 2017.10.18 at 18h 11m 30s.xml">
+      <configuration name="EditSomeDocument" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="EditSomeDocument - 2017.10.18 at 18h 12m 14s.xml">
+      <configuration name="EditSomeDocument" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="EditSomeDocument - 2017.10.18 at 18h 29m 17s.xml">
+      <configuration name="EditSomeDocument" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="EditSomeDocument_EditDocument - 2017.10.18 at 18h 08m 34s.xml">
+      <configuration name="EditSomeDocument.EditDocument" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1013,7 +1019,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25976768" sideWeight="0.50416666" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29461458" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41710666" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1283,14 +1289,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/DeleteDocument.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HelpClasses/test1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1372,18 +1370,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/EditSomeDocument.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="49" column="39" lean-forward="false" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2456#2457#0" expanded="true" />
-            <element signature="e#2481#2482#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1394,10 +1380,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Connection/ConnectionToDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="345">
+          <caret line="33" column="31" lean-forward="true" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/DeleteDocument.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/EditSomeDocument.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="67" column="34" lean-forward="true" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2615#2616#0" expanded="true" />
+            <element signature="e#2640#2641#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -5,6 +5,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import static org.testng.Assert.*;
 
+import java.time.LocalDateTime;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 import java.util.Date;
@@ -44,15 +45,17 @@ public class EditSomeDocument {
         wd.findElement(By.id("object_name")).click();
         wd.findElement(By.id("object_name")).clear();
 
+
         //Генерим случайное название объекта
         Random random = new Random();
         int num = random.nextInt(5);
-        String nameObject = "Test"+num;
+        String nameObject = "Test"+LocalDateTime.now().toString().replace(":",".");
         //Заполняем в форме имя объекта
         wd.findElement(By.id("object_name")).sendKeys(nameObject);
         wd.findElement(By.xpath("//div[@class='ant-modal-footer']//button[.=' Сохранить ']")).click();
         //////////////
-        assertEquals(wd.findElement(By.xpath("//*[@id=\"root\"]/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[16]/td[5]")).getText(),nameObject);
+       // assertEquals(wd.findElement(By.xpath("//*[@id=\"root\"]/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[16]/td[5]")).getText(),nameObject);
+        assertEquals(wd.findElement(By.name(nameObject)).getText(),nameObject);
     }
 
     @AfterMethod
