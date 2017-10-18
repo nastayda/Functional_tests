@@ -54,7 +54,7 @@ public class TestAuthorization {
     }
     @Step("Проверка наличия элементов и заполнение полей")
     private void login(String elementUserName, String elementPassword, String nameLogin, String passwordLogin) {
-        log("Ввод логина {0}: "+ nameLogin);
+        log("Ввод логина: "+ nameLogin);
         wd.findElement(By.id(elementUserName)).click();
         wd.findElement(By.id(elementUserName)).clear();
         wd.findElement(By.id(elementUserName)).sendKeys(nameLogin);
