@@ -12,10 +12,11 @@ public class TestAuthorization extends BaseClass {
 
     @Title("Авторизация пользователя")
     @Test
-   // @Step("Вызов метода авторизации")
+    @Step("Вызов метода авторизации")
     public void TestAuthorization() {
-      login("userName", "password", "admin", "admin");
-        boolean flag = wd.findElement(By.xpath("//*[@id=\"authorization\"]/div/div[2]/div[1]/div/div/span[2]/button")).isEnabled();
+        login("userName", "password", "admin", "admin");
+      //Завязываемся на отображение таблицы
+        boolean flag = wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table")).isEnabled();
         assertEquals(flag, true);
     }
 

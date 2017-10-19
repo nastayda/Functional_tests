@@ -25,14 +25,10 @@ public class EditSomeDocument extends BaseClass {
         //Переход на страницу с делами
         wd.navigate().to("http://vm-107-stu-dev.ursip.ru/");
         wd.findElement(By.cssSelector("div.departments-tree")).click();
-        /////*[@id="root"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[16]/td[4]
         wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[16]")).click();
-        //wd.findElement(By.xpath("//tbody[@class='ant-table-tbody']//td[.='Test11']")).click();
         wd.findElement(By.id("change")).click();
         wd.findElement(By.id("object_name")).click();
         wd.findElement(By.id("object_name")).clear();
-
-
         //Генерим случайное название объекта "Test"+дата
         String nameObject = "Test"+LocalDateTime.now().toString().replace(":","_");
         //Заполняем в форме имя объекта
@@ -40,6 +36,5 @@ public class EditSomeDocument extends BaseClass {
         wd.findElement(By.xpath("//html/body/div[2]/div/div[2]/div/div[1]/div[3]/div/div/div[2]/button[2]")).click();
         //Сравним измененный текст объекта с тем что есть в таблице
         assertEquals(wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[16]/td[5]")).getText(),nameObject);
-        //assertEquals(wd.findElement(By.name(nameObject)).getText(),nameObject);
     }
 }

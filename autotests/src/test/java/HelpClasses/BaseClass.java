@@ -44,7 +44,7 @@ public class BaseClass {
         File testFile = new File("src/help-files/auth-info.txt");
 
         wd = new FirefoxDriver();
-        wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         //Читаем из файла адрес сервера
         readData= new WriteReadFromFile(testFile.getAbsolutePath());
@@ -62,6 +62,7 @@ public class BaseClass {
         wd.findElement(By.xpath("//*[@id=\"authorization\"]/div/form/button")).click();
         //Переход на страницу с делами
         wd.navigate().to("http://vm-107-stu-dev.ursip.ru/");
+        //Клик по левому меню "Обращения"
         wd.findElement(By.cssSelector("div.departments-tree")).click();
     }
 
