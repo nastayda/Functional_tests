@@ -30,8 +30,11 @@ public class CreateDocument extends BaseClass {
         WebDriverWait wait = new WebDriverWait(wd, 10);
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='root']/div/div/div[1]/div/div/div/div[2]/div[2]/div[1]/button")));
         wd.findElement(By.cssSelector("button.ant-btn.ant-btn-lg")).click();
-        wd.findElement(By.xpath("//div[@class='ant-modal-footer']//button[.='Создать']")).click();
-       // wd.findElement(By.xpath("//*[@id='root']/div[2]/div/div[2]/div/div[1]/div[3]/button[2]")).click();
+        //поменять имя кнопки
+        ///html/body/div[2]/div/div[2]/div/div[1]/div[3]/button[2]
+       // wd.findElement(By.xpath("//div[@class='ant-modal-footer']//button[.='Создать']")).click();
+        wd.findElement(By.xpath("//div[@class='ant-modal-footer']//button[2]")).click();
+        //wd.findElement(By.xpath("//*[@id='root']/div[2]/div/div[2]/div/div[1]/div[3]/button[2]")).click();
         wd.findElement(By.id("object_name")).click();
         wd.findElement(By.id("object_name")).clear();
         wd.findElement(By.id("object_name")).sendKeys(nameObject);
