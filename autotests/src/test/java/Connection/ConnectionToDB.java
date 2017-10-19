@@ -19,7 +19,7 @@ public class ConnectionToDB {
     private static ResultSet rs;
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
-
+        String query = "SELECT count(*) FROM stu.business b";
         Connection connection = null;
         try {
             // opening database connection to MySQL server
@@ -29,7 +29,7 @@ public class ConnectionToDB {
             stmt = con.createStatement();
 
             // executing SELECT query
-
+            rs = stmt.executeQuery(query);
 
             while (rs.next()) {
                 int count = rs.getInt(1);
@@ -51,8 +51,8 @@ public class ConnectionToDB {
             } catch (SQLException se) { /*can't do anything */ }
         }
     }
-    public static void execQuery(String query) throws SQLException {
-        rs = stmt.executeQuery(query);
+    public static void execQuery(String query){
+
     }
 }
 

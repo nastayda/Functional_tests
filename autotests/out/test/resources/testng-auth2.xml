@@ -3,7 +3,7 @@
 <suite name="Неуспешная авторизация" verbose="1" >
     <test name="Повторный вызов класса TestAuthorizationNew">
         <classes>
-            <class name="HelpClasses.TestAuthorization" />
+            <class name="RegisterOfServices.TestAuthorization" />
         </classes>
     </test>
 </suite>
