@@ -23,7 +23,7 @@ public class CreateDocument extends BaseClass {
         createDocument(nameObject);
         assertEquals(wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[last()]/td[5]")).getText(),nameObject );
         //Удаление созданного документа документа
-        deleteDocument(nameObject);
+        //deleteDocument(nameObject);
     }
 
     public void createDocument(String nameObject) {
@@ -42,9 +42,9 @@ public class CreateDocument extends BaseClass {
 
     public void deleteDocument(String nameObject) throws Exception {
         DeleteDocument delDoc = new DeleteDocument();
-        delDoc.setUp();
+      //  delDoc.setUp();
        // delDoc.getRows();
-        delDoc.deleteRow(nameObject);
+       // delDoc.deleteRow(nameObject);
        // delDoc.getRows();
     }
 }
