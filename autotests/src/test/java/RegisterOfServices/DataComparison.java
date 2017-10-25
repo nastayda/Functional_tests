@@ -13,7 +13,7 @@ import static org.testng.Assert.assertEquals;
 
 public class DataComparison extends BaseClass {
     @Test
-    public void test(){
+    public void DataComparison(){
         login("userName", "password", "admin", "admin");
         //Переход на страницу с делами
         wd.navigate().to("http://vm-107-stu-dev.ursip.ru/");
