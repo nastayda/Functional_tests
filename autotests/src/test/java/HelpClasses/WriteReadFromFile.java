@@ -16,7 +16,7 @@ public class WriteReadFromFile {
        // readFromFile1("C:\\test\\notes3.txt");
 
     }
-    WriteReadFromFile(String pT){
+    public WriteReadFromFile(String pT){
         pathToFile=pT;
     }
     WriteReadFromFile(String pT, String sD){

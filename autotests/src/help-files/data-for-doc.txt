@@ -1,0 +1,16 @@
+Customer1
+Testov1
+Testov2
+8 (888) 888-88-88
+8 (000) 000-00-00
+Testov3
+test1@t.t
+test2@t.t
+testAddress
+9 999 999
+99 999 999
+1
+\\9
+22 222 222
+2
+OtherIfo
