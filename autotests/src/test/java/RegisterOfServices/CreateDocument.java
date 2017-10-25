@@ -3,30 +3,25 @@ package RegisterOfServices;
 import HelpClasses.BaseClass;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import org.openqa.selenium.*;
-
+import ru.yandex.qatools.allure.annotations.Title;
 import java.time.LocalDateTime;
-
 import static org.testng.Assert.assertEquals;
 
 public class CreateDocument extends BaseClass {
 
     @Test
+    @Title("Создание дела")
     public void CreateDocument() throws Exception {
         login("userName", "password", "admin", "admin");
-        //Переход на страницу с делами
-        wd.navigate().to("http://vm-107-stu-dev.ursip.ru/");
+        //Тестовое имя объекта
         String nameObject = "Test"+LocalDateTime.now().toString().replace(":","_");
-        createDocument(nameObject);
+        createNewDocument(nameObject);
+        //Сравниваем имя созданного дела и того которое добавилось
         assertEquals(wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[last()]/td[5]")).getText(),nameObject );
-        //Удаление созданного документа документа
-        //deleteDocument(nameObject);
     }
-
-    public void createDocument(String nameObject) {
+    public void createNewDocument(String nameObject) {
         //Переход на страницу с делами - иногда не работает
         wd.navigate().to("http://vm-107-stu-dev.ursip.ru/");
         //Ждем пока загрузится кнопка Добавить
@@ -38,13 +33,5 @@ public class CreateDocument extends BaseClass {
         wd.findElement(By.id("object_name")).clear();
         wd.findElement(By.id("object_name")).sendKeys(nameObject);
         wd.findElement(By.xpath("//div[3]/div/div[2]/div/div[1]/div[3]/div/div/div[2]/button[2]")).click();
-    }
-
-    public void deleteDocument(String nameObject) throws Exception {
-        DeleteDocument delDoc = new DeleteDocument();
-      //  delDoc.setUp();
-       // delDoc.getRows();
-       // delDoc.deleteRow(nameObject);
-       // delDoc.getRows();
     }
 }
