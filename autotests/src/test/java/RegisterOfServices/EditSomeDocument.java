@@ -32,6 +32,8 @@ public class EditSomeDocument extends BaseClass {
             dataFromFile[i]=readDataForCompare.readFromFile().get(i);
         }
         pasteData(nameObject, dataFromFile);
+        //Переход на страницу с делами
+        wd.navigate().to("http://vm-107-stu-dev.ursip.ru/");
         //Сравним измененный текст объекта с тем что есть в таблице
         assertEquals(wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[last()]/td[5]")).getText(),nameObject);
     }
