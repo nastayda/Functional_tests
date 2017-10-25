@@ -16,7 +16,7 @@ import java.util.List;
 
 public class ConnectionHB {
 
-    private SessionFactory sessionFactory;
+    protected SessionFactory sessionFactory;
 
     @BeforeClass
     protected void setUp() throws Exception {
@@ -33,32 +33,5 @@ public class ConnectionHB {
             // so destroy it manually.
             StandardServiceRegistryBuilder.destroy( registry );
         }
-    }
-
-    @Test
-    public void testHbConnection(){
-        Session session = sessionFactory.openSession();
-        session.beginTransaction();
-        List result = session.createQuery("from BusinessTable").list();
-        for ( BusinessTable document : (List<BusinessTable>) result ) {
-            //System.out.println( "Event (" + document.getDate() + ") : " + event.getTitle() );
-            System.out.println(document);
-        }
-        session.getTransaction().commit();
-        session.close();
-    }
-
-    @Test
-    public void updateData(){
-      //  Session session = HibernateUtil.getSessionFactory().getCurrentSession();
-        Session session = sessionFactory.openSession();
-        session.beginTransaction();
-
-       // String hqlUpdate = "update BusinessTable set objectName = :newName where objectName ='Test2017-10-19T12:24:20.112'";
-        //session.createQuery(hqlUpdate).setString("newName", "Test".concat((LocalDateTime.now()).toString())).executeUpdate();
-        String hql = "delete from BusinessTable where objectName = :name";
-        session.createQuery(hql).setString("name", "Test2017-10-19T12:24:20.112").executeUpdate();
-        session.getTransaction().commit();
-        session.close();
     }
 }

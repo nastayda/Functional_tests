@@ -25,7 +25,8 @@ public class EditSomeDocument extends BaseClass {
         //Переход на страницу с делами
         wd.navigate().to("http://vm-107-stu-dev.ursip.ru/");
         wd.findElement(By.cssSelector("div.departments-tree")).click();
-        wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[16]")).click();
+        //озьмем последнюю строку в таблице для редактирования
+        wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[last()]")).click();
         wd.findElement(By.id("change")).click();
         wd.findElement(By.id("object_name")).click();
         wd.findElement(By.id("object_name")).clear();
@@ -35,6 +36,6 @@ public class EditSomeDocument extends BaseClass {
         wd.findElement(By.id("object_name")).sendKeys(nameObject);
         wd.findElement(By.xpath("//html/body/div[2]/div/div[2]/div/div[1]/div[3]/div/div/div[2]/button[2]")).click();
         //Сравним измененный текст объекта с тем что есть в таблице
-        assertEquals(wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[16]/td[5]")).getText(),nameObject);
+        assertEquals(wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[last()]/td[5]")).getText(),nameObject);
     }
 }
