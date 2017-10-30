@@ -12,54 +12,83 @@ public class BusinessTable {
     @Id
     @Column(name = "id")
     int id;
+    public int getId() {
+        return id;
+    }
 
     //Объект
     @Column(name = "object_name")
-    String objectName;
+    private String objectName;
+    public String getObjectName() {
+        return objectName;
+    }
 
     //Заказчик
     @Column(name = "client_name")
-    String client_name;
+    private String clientName;
+    public String getClientName() {
+        return clientName;
+    }
 
-    //ФИО отвественного responsible_name
+    //ФИО отвественного responsibleName
     @Column(name = "responsible_name")
-    String responsible_name;
+    private String responsibleName;
+    public String getResponsibleName() {
+        return responsibleName;
+    }
 
-    //Подрядчик contractor_name
+    //Подрядчик contractorName
     @Column(name = "contractor_name")
-    String contractor_name;
+    private String contractorName;
+    public String getContractorName() {
+        return contractorName;
+    }
 
-    //Вид работ work_type
+    //Вид работ workType
     @Column(name = "work_type")
-    String work_type;
+    private String workType;
+    public String getWorkType() {
+        return workType;
+    }
 
-    //Адрес object_adress
+    //Адрес objectAdress
     @Column(name = "object_adress")
-    String object_adress;
-
-    //Договор № client_contract_number
+    private String objectAdress;
+    public String getObjectAdress() {
+        return objectAdress;
+    }
+    //Договор № clientContractNumber
     @Column(name = "client_contract_number")
-    String client_contract_number;
+    private String clientContractNumber;
+    public String getClientContractNumber() {
+        return clientContractNumber;
+    }
 
-    //Дата договора client_contract_date
+    //Дата договора clientContractDate
     @Column(name = "client_contract_date", columnDefinition = "DATE")
-    LocalDate client_contract_date;
+    private LocalDate clientContractDate;
+    public LocalDate getClientContractDate() {
+        return clientContractDate;
+    }
 
-    //Цена договора client_contract_price
+    //Цена договора clientContractPrice
     @Column(name = "client_contract_price", columnDefinition = "BIGINT")
-    Long client_contract_price;
+    private Long clientContractPrice;
+    public Long getClientContractPrice() {
+        return clientContractPrice;
+    }
 
     @Override
     public String toString() {
         return  id +" "+
                 objectName +" "+
-                client_name +" "+
-                responsible_name +" "+
-                contractor_name +" "+
-                work_type +" "+
-                object_adress+" "+
-                client_contract_number +" "+
-                client_contract_date +" "+
-                client_contract_price;
+                clientName +" "+
+                responsibleName +" "+
+                contractorName +" "+
+                workType +" "+
+                objectAdress +" "+
+                clientContractNumber +" "+
+                clientContractDate +" "+
+                clientContractPrice;
     }
 }

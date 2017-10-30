@@ -19,22 +19,18 @@ public class Search extends BaseClass {
     public void Search() throws Exception {
        login("userName", "password", "admin", "admin");
        //Positive test
-       //assertEquals(searchWithFilter(getSearchCondition(4), "//div[2]/div/div/div/ul/li[1]",true),
-       //             searchWithFilter(getSearchCondition(4), "//div[2]/div/div/div/ul/li[1]", false));
-       //getNumbersFromTable();
-       //getRowsFromDB();
-       getSearchCondition(0);
-    }
+       assertEquals( searchWithFilter( getSearchConditionCount("clientName")[0], "//div[2]/div/div/div/ul/li[1]"),
+                     Integer.parseInt( getSearchConditionCount("clientName")[1])
+                   );
 
-    public int searchWithFilter(String searchCondition, String filterXpath, boolean searchUseFilter) {
+    }
+    //Число элементво после  применения фильтра
+    public int searchWithFilter(String searchCondition, String filterXpath) {
         wd.findElement(By.cssSelector("div.ant-select-selection__rendered")).click();
         wd.findElement(By.xpath(filterXpath)).click();
-
-        if (searchUseFilter){
         wd.findElement(By.cssSelector("input.ant-input")).click();
         wd.findElement(By.cssSelector("input.ant-input")).clear();
         wd.findElement(By.cssSelector("input.ant-input")).sendKeys(searchCondition);
-        }
         int k=0;
        // System.out.println(wd.findElements(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr")).size());
         if (wd.findElements(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr")).size()>0) {
@@ -76,7 +72,7 @@ public class Search extends BaseClass {
     }
 
     //Получить все строки с № дел браузера из БД
-    public List getRowsFromDB() throws Exception {
+    public List<BusinessTable> getRowsFromDB() throws Exception {
         ConnectionHB conDB = new ConnectionHB();
         SessionFactory sessionFactory = conDB.setUp();
 
@@ -84,20 +80,129 @@ public class Search extends BaseClass {
         session.beginTransaction();
 
         List<Integer> idList = getNumbersFromTable();
+
         String hql = "from BusinessTable where id IN :id";
         List result = session.createQuery(hql).setParameter("id", idList).list();
-       /* for ( BusinessTable document : (List<BusinessTable>) result ) {
-            System.out.println(document);
-        }*/
+        for ( BusinessTable document : (List<BusinessTable>) result ) {
+           // System.out.println(document.getId());
+        }
         session.getTransaction().commit();
         session.close();
         return result;
     }
 
-    //Получить первое ненулевое условие поиска
-    public String getSearchCondition(int j) throws Exception {
+    //Получить первое ненулевое условие поиска из БД searchResult[0] + число повторений этого условия в БД searchResult[1]
+    public String[] getSearchConditionCount(String condition) throws Exception {
         List result = getRowsFromDB();
-        System.out.println(result.get(j));
-        return "";
+        int k=0;
+        String [] resultSearch=new String[]{"",""};
+        //В зависимости от того какое условие задано
+        switch (condition) {
+            case "id":
+                for (BusinessTable item : (List<BusinessTable>) result) {
+                    if (item.getId() != -10) {
+                        System.out.println(item.getId());
+                        return new String[]{Integer.toString(item.getId()), "1"};
+                    }
+                }
+            case "objectName":
+                for (BusinessTable item : (List<BusinessTable>) result) {
+                    if (item.getObjectName() != "" & resultSearch[0] == "") {
+                        resultSearch[0] = item.getObjectName();
+                        k++;
+                    }
+                    if (resultSearch[0].equals(item.getObjectName())) {
+                        resultSearch[1] = Integer.toString(k++);
+                    }
+                }
+                break;
+            case "clientName":
+                for (BusinessTable item : (List<BusinessTable>) result) {
+                    if (item.getClientName() != "" & resultSearch[0] == "") {
+                        resultSearch[0] = item.getClientName();
+                        k++;
+                    }
+                    if (resultSearch[0].equals(item.getClientName())) {
+                        resultSearch[1] = Integer.toString(k++);
+                    }
+                }
+                break;
+            case "responsibleName":
+                for (BusinessTable item : (List<BusinessTable>) result) {
+                    if (item.getResponsibleName() != ""& resultSearch[0] == "") {
+                        resultSearch[0] = item.getResponsibleName();
+                        k++;
+                    }
+                     if (resultSearch[0].equals(item.getResponsibleName())) {
+                        resultSearch[1] = Integer.toString(k++);
+                    }
+                }
+                break;
+            case "contractorName":
+                for (BusinessTable item : (List<BusinessTable>) result) {
+                    if (item.getContractorName() != ""& resultSearch[0] == "") {
+                        resultSearch[0] = item.getContractorName();
+                        k++;
+                    }
+                    if (resultSearch[0].equals(item.getContractorName())) {
+                        resultSearch[1] = Integer.toString(k++);
+                    }
+                }
+                break;
+            case "workType":
+                for (BusinessTable item : (List<BusinessTable>) result) {
+                    if (item.getWorkType() != ""& resultSearch[0] == "") {
+                        resultSearch[0] = item.getWorkType();
+                        k++;
+                    }
+                    if (resultSearch[0].equals(item.getWorkType())) {
+                        resultSearch[1] = Integer.toString(k++);
+                    }
+                }
+                break;
+            case "objectAdress":
+                for (BusinessTable item : (List<BusinessTable>) result) {
+                    if (item.getObjectAdress() != ""& resultSearch[0] == "") {
+                        resultSearch[0]  = item.getObjectAdress();
+                        k++;
+                    }
+                    if (resultSearch[0].equals(item.getObjectAdress())) {
+                        resultSearch[1] = Integer.toString(k++);
+                    }
+                }
+                break;
+            case "clientContractNumber":
+                for (BusinessTable item : (List<BusinessTable>) result) {
+                    if (item.getClientContractNumber() != "" & resultSearch[0] == "") {
+                        resultSearch[0] = item.getClientContractNumber();
+                        k++;
+                    }
+                    if (resultSearch[0].equals(item.getClientContractNumber())) {
+                        resultSearch[1] = Integer.toString(k++);
+                    }
+                }
+                break;
+            case "clientContractDate":
+                for (BusinessTable item : (List<BusinessTable>) result) {
+                    if (item.getClientContractDate() != null & resultSearch[0] == "") {
+                        resultSearch[0] = item.getClientContractDate().toString();
+                    }
+                    if (resultSearch[0].equals(item.getClientContractDate().toString())) {
+                        resultSearch[1] = Integer.toString(k++);
+                    }
+                }
+                break;
+            case "clientContractPrice":
+                for (BusinessTable item : (List<BusinessTable>) result) {
+                    if (item.getClientContractPrice() != null & resultSearch[0] == "") {
+                        resultSearch[0] = item.getClientContractPrice().toString();
+                    }
+                    if (resultSearch[0].equals(item.getClientContractPrice().toString())) {
+                        resultSearch[1] = Integer.toString(k++);
+                    }
+                }
+                break;
+        }
+            return resultSearch;
     }
 }
