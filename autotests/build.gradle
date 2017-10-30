@@ -31,8 +31,17 @@ task testAuth(type: Test){
     }
 }
 
+task testRegisterOfServices(type: Test){
+    useTestNG{
+        suites 'src/test/resources/testng-formation-register-services.xml'
+    }
+}
+
 testAuth.doFirst {
     jvmArgs "-javaagent:${configurations.agent.singleFile}"
 }
 
+testRegisterOfServices.doFirst {
+    jvmArgs "-javaagent:${configurations.agent.singleFile}"
+}
 
