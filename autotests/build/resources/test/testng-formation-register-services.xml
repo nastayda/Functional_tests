@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Создание документа" verbose="1" >
+    <test name="Вызов класса RegisterOfServices.TestAuthorization" >
+        <classes>
+            <class name="RegisterOfServices.TestAuthorization" />
+        </classes>
+    </test>
+
+    <test name="Вызов класса RegisterOfServices.CreateDocument" >
+        <classes>
+            <class name="RegisterOfServices.CreateDocument" />
+        </classes>
+    </test>
+
+    <test name="Вызов класса RegisterOfServices.DataComparison">
+        <classes>
+            <class name="RegisterOfServices.DataComparison" />
+        </classes>
+    </test>
+
+    <test name="Вызов класса RegisterOfServices.EditSomeDocument">
+        <classes>
+            <class name="RegisterOfServices.EditSomeDocument" />
+        </classes>
+    </test>
+
+    <test name="Вызов класса RegisterOfServices.Search">
+        <classes>
+            <class name="RegisterOfServices.Search" />
+        </classes>
+    </test>
+</suite>

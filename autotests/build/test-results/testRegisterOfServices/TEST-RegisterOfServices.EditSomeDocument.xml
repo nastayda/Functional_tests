@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RegisterOfServices.EditSomeDocument" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-10-30T15:45:27" hostname="Danilkina-as" time="22.952">
+  <properties/>
+  <testcase name="EditDocument" classname="RegisterOfServices.EditSomeDocument" time="22.952"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[1509378328109	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378328430	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378328634	Marionette	DEBUG	Received DOM event "beforeunload" for "http://vm-107-stu-dev.ursip.ru/auth/"
+1509378328702	Marionette	DEBUG	Received DOM event "pagehide" for "http://vm-107-stu-dev.ursip.ru/auth/"
+1509378328702	Marionette	DEBUG	Received DOM event "unload" for "http://vm-107-stu-dev.ursip.ru/auth/"
+1509378328924	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://vm-107-stu-dev.ursip.ru/auth/admin/"
+1509378328925	Marionette	DEBUG	Received DOM event "pageshow" for "http://vm-107-stu-dev.ursip.ru/auth/admin/"
+1509378328933	Marionette	DEBUG	Received DOM event "beforeunload" for "http://vm-107-stu-dev.ursip.ru/auth/admin/"
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1509378328944	Marionette	DEBUG	Received DOM event "pagehide" for "http://vm-107-stu-dev.ursip.ru/auth/admin/"
+1509378328945	Marionette	DEBUG	Received DOM event "unload" for "http://vm-107-stu-dev.ursip.ru/auth/admin/"
+1509378329513	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://vm-107-stu-dev.ursip.ru/"
+1509378329519	Marionette	DEBUG	Received DOM event "pageshow" for "http://vm-107-stu-dev.ursip.ru/"
+1509378330003	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378330018	Marionette	DEBUG	Received DOM event "beforeunload" for "http://vm-107-stu-dev.ursip.ru/"
+1509378330031	Marionette	DEBUG	Received DOM event "pagehide" for "http://vm-107-stu-dev.ursip.ru/"
+1509378330031	Marionette	DEBUG	Received DOM event "unload" for "http://vm-107-stu-dev.ursip.ru/"
+1509378330266	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://vm-107-stu-dev.ursip.ru/"
+1509378330268	Marionette	DEBUG	Received DOM event "pageshow" for "http://vm-107-stu-dev.ursip.ru/"
+1509378330935	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378331197	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378331709	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378332132	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378335416	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378336017	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378336417	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378336850	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378337438	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378337970	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378338327	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378338725	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378339153	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378339418	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378339651	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378340287	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378340752	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378341021	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378341319	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378341585	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378342312	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378342619	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378342920	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378343202	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378343987	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378344211	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378344537	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378344786	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378345396	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378345727	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378345979	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378346273	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378346504	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378346822	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378347090	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378347346	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378347587	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378347837	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378348087	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378348352	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378348621	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378348903	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378349155	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378349940	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378350010	Marionette	DEBUG	Received DOM event "beforeunload" for "http://vm-107-stu-dev.ursip.ru/"
+1509378350038	Marionette	DEBUG	Received DOM event "pagehide" for "http://vm-107-stu-dev.ursip.ru/"
+1509378350038	Marionette	DEBUG	Received DOM event "unload" for "http://vm-107-stu-dev.ursip.ru/"
+1509378350340	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://vm-107-stu-dev.ursip.ru/"
+1509378350343	Marionette	DEBUG	Received DOM event "pageshow" for "http://vm-107-stu-dev.ursip.ru/"
+]]></system-err>
+</testsuite>

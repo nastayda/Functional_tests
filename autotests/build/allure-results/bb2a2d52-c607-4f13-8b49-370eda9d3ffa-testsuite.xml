@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1509378322496" stop="1509378351152">
+    <name>Создание документа</name>
+    <test-cases>
+        <test-case start="1509378327862" stop="1509378350814" status="passed">
+            <name>EditDocument</name>
+            <steps>
+                <step start="1509378327862" stop="1509378330004" status="passed">
+                    <name>login</name>
+                    <title>Проверка наличия элементов и заполнение полей</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels/>
+        </test-case>
+    </test-cases>
+    <labels/>
+</ns2:test-suite>

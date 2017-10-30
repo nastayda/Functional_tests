@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RegisterOfServices.Search" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-10-30T15:45:56" hostname="Danilkina-as" time="8.796">
+  <properties/>
+  <testcase name="Search" classname="RegisterOfServices.Search" time="8.796"/>
+  <system-out><![CDATA[Hibernate: select businessta0_.id as id1_0_, businessta0_.client_contract_date as client_c2_0_, businessta0_.client_contract_number as client_c3_0_, businessta0_.client_contract_price as client_c4_0_, businessta0_.client_name as client_n5_0_, businessta0_.contractor_name as contract6_0_, businessta0_.object_adress as object_a7_0_, businessta0_.object_name as object_n8_0_, businessta0_.responsible_name as responsi9_0_, businessta0_.work_type as work_ty10_0_ from business businessta0_ where businessta0_.id in (? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ?)
+Hibernate: select businessta0_.id as id1_0_, businessta0_.client_contract_date as client_c2_0_, businessta0_.client_contract_number as client_c3_0_, businessta0_.client_contract_price as client_c4_0_, businessta0_.client_name as client_n5_0_, businessta0_.contractor_name as contract6_0_, businessta0_.object_adress as object_a7_0_, businessta0_.object_name as object_n8_0_, businessta0_.responsible_name as responsi9_0_, businessta0_.work_type as work_ty10_0_ from business businessta0_ where businessta0_.id in (? , ? , ? , ? , ? , ? , ?)
+]]></system-out>
+  <system-err><![CDATA[1509378356794	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378357103	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378357346	Marionette	DEBUG	Received DOM event "beforeunload" for "http://vm-107-stu-dev.ursip.ru/auth/"
+1509378357389	Marionette	DEBUG	Received DOM event "pagehide" for "http://vm-107-stu-dev.ursip.ru/auth/"
+1509378357390	Marionette	DEBUG	Received DOM event "unload" for "http://vm-107-stu-dev.ursip.ru/auth/"
+1509378357632	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://vm-107-stu-dev.ursip.ru/auth/admin/"
+1509378357635	Marionette	DEBUG	Received DOM event "pageshow" for "http://vm-107-stu-dev.ursip.ru/auth/admin/"
+1509378357643	Marionette	DEBUG	Received DOM event "beforeunload" for "http://vm-107-stu-dev.ursip.ru/auth/admin/"
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1509378357654	Marionette	DEBUG	Received DOM event "pagehide" for "http://vm-107-stu-dev.ursip.ru/auth/admin/"
+1509378357654	Marionette	DEBUG	Received DOM event "unload" for "http://vm-107-stu-dev.ursip.ru/auth/admin/"
+1509378358019	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://vm-107-stu-dev.ursip.ru/"
+1509378358027	Marionette	DEBUG	Received DOM event "pageshow" for "http://vm-107-stu-dev.ursip.ru/"
+1509378358519	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378360626	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378360844	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378361157	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378362206	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378362475	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378362777	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378364633	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378364851	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378365139	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+]]></system-err>
+</testsuite>

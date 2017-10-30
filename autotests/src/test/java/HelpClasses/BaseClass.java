@@ -11,9 +11,6 @@ import ru.yandex.qatools.allure.annotations.Step;
 import java.io.File;
 import java.util.concurrent.TimeUnit;
 
-import static com.sun.activation.registries.LogSupport.log;
-import static org.testng.Assert.assertEquals;
-
 public class BaseClass {
     String resultOfTest;
     public FirefoxDriver wd;
