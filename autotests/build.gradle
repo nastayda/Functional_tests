@@ -23,13 +23,13 @@ dependencies{
     compile 'org.hibernate:hibernate-core:5.2.11.Final'
 }
 
-task testAuth(type: Test){
+/*task testAuth(type: Test){
     useTestNG{
         suites 'src/test/resources/testng-auth.xml'
        // suites 'src/test/resources/testng-auth2.xml'
 
     }
-}
+}*/
 
 task testRegisterOfServices(type: Test){
     useTestNG{
