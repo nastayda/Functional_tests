@@ -37,10 +37,10 @@ task testRegisterOfServices(type: Test){
     }
 }
 
-testAuth.doFirst {
+/*testAuth.doFirst {
     jvmArgs "-javaagent:${configurations.agent.singleFile}"
 }
-
+*/
 testRegisterOfServices.doFirst {
     jvmArgs "-javaagent:${configurations.agent.singleFile}"
 }
