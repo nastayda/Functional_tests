@@ -6,19 +6,20 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Step;
+import ru.yandex.qatools.allure.annotations.Title;
 
 import java.io.File;
 
 import static org.testng.Assert.assertEquals;
 
+@Title("Сравнение отображаемых данных и введенных")
 public class DataComparison extends BaseClass {
     @Test
     public void DataComparison(){
         login("userName", "password", "admin", "admin");
-        //Переход на страницу с делами
-        wd.navigate().to("http://vm-107-stu-dev.ursip.ru/");
         assertEquals(getDataFromFile(),getDataFromPage());
     }
+    @Step("Получить данные со страницы")
     public String[] getDataFromPage() {
         String[] dataFromPage = new String[16];
         //Возьмем последнюю строку в таблице для редактирования
@@ -45,6 +46,8 @@ public class DataComparison extends BaseClass {
          }
         return dataFromPage;
     }
+
+    @Step("Получить данные из файла")
     public String[] getDataFromFile() {
         //Получить путь к тестовым файлам
         File testFile = new File("src/help-files/data-for-doc.txt");
@@ -55,6 +58,7 @@ public class DataComparison extends BaseClass {
         for (int i=0; i<readDataForCompare.readFromFile().size();i++){
             dataFromFile[i]=readDataForCompare.readFromFile().get(i);
         }
+        System.out.println(dataFromFile[1]);
         return dataFromFile;
     }
 

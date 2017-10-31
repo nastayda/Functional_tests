@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RegisterOfServices.DataComparison" tests="1" skipped="0" failures="1" errors="0" timestamp="2017-10-30T15:45:18" hostname="Danilkina-as" time="3.266">
+<testsuite name="RegisterOfServices.DataComparison" tests="1" skipped="0" failures="1" errors="0" timestamp="2017-10-30T15:50:40" hostname="Danilkina-as" time="2.968">
   <properties/>
-  <testcase name="DataComparison" classname="RegisterOfServices.DataComparison" time="3.266">
+  <testcase name="DataComparison" classname="RegisterOfServices.DataComparison" time="2.968">
     <failure message="java.lang.StringIndexOutOfBoundsException: String index out of range: -2" type="java.lang.StringIndexOutOfBoundsException">java.lang.StringIndexOutOfBoundsException: String index out of range: -2
 	at java.lang.String.substring(String.java:1931)
 	at RegisterOfServices.DataComparison.getDataFromPage(DataComparison.java:32)
@@ -58,25 +58,25 @@
 </failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[1509378319130	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
-1509378319439	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
-1509378319729	Marionette	DEBUG	Received DOM event "beforeunload" for "http://vm-107-stu-dev.ursip.ru/auth/"
-1509378319776	Marionette	DEBUG	Received DOM event "pagehide" for "http://vm-107-stu-dev.ursip.ru/auth/"
-1509378319776	Marionette	DEBUG	Received DOM event "unload" for "http://vm-107-stu-dev.ursip.ru/auth/"
-1509378319993	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://vm-107-stu-dev.ursip.ru/auth/admin/"
-1509378319996	Marionette	DEBUG	Received DOM event "pageshow" for "http://vm-107-stu-dev.ursip.ru/auth/admin/"
+  <system-err><![CDATA[1509378640375	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378640663	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378640877	Marionette	DEBUG	Received DOM event "beforeunload" for "http://vm-107-stu-dev.ursip.ru/auth/"
+1509378640908	Marionette	DEBUG	Received DOM event "pagehide" for "http://vm-107-stu-dev.ursip.ru/auth/"
+1509378640909	Marionette	DEBUG	Received DOM event "unload" for "http://vm-107-stu-dev.ursip.ru/auth/"
+1509378641127	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://vm-107-stu-dev.ursip.ru/auth/admin/"
+1509378641134	Marionette	DEBUG	Received DOM event "pageshow" for "http://vm-107-stu-dev.ursip.ru/auth/admin/"
+1509378641145	Marionette	DEBUG	Received DOM event "beforeunload" for "http://vm-107-stu-dev.ursip.ru/auth/admin/"
 JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
-1509378320002	Marionette	DEBUG	Received DOM event "beforeunload" for "http://vm-107-stu-dev.ursip.ru/auth/admin/"
-1509378320015	Marionette	DEBUG	Received DOM event "pagehide" for "http://vm-107-stu-dev.ursip.ru/auth/admin/"
-1509378320016	Marionette	DEBUG	Received DOM event "unload" for "http://vm-107-stu-dev.ursip.ru/auth/admin/"
-1509378320385	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://vm-107-stu-dev.ursip.ru/"
-1509378320416	Marionette	DEBUG	Received DOM event "pageshow" for "http://vm-107-stu-dev.ursip.ru/"
-1509378320986	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
-1509378320997	Marionette	DEBUG	Received DOM event "beforeunload" for "http://vm-107-stu-dev.ursip.ru/"
-1509378321044	Marionette	DEBUG	Received DOM event "pagehide" for "http://vm-107-stu-dev.ursip.ru/"
-1509378321044	Marionette	DEBUG	Received DOM event "unload" for "http://vm-107-stu-dev.ursip.ru/"
-1509378321268	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://vm-107-stu-dev.ursip.ru/"
-1509378321272	Marionette	DEBUG	Received DOM event "pageshow" for "http://vm-107-stu-dev.ursip.ru/"
-1509378322035	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378641156	Marionette	DEBUG	Received DOM event "pagehide" for "http://vm-107-stu-dev.ursip.ru/auth/admin/"
+1509378641156	Marionette	DEBUG	Received DOM event "unload" for "http://vm-107-stu-dev.ursip.ru/auth/admin/"
+1509378641532	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://vm-107-stu-dev.ursip.ru/"
+1509378641539	Marionette	DEBUG	Received DOM event "pageshow" for "http://vm-107-stu-dev.ursip.ru/"
+1509378642015	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509378642028	Marionette	DEBUG	Received DOM event "beforeunload" for "http://vm-107-stu-dev.ursip.ru/"
+1509378642042	Marionette	DEBUG	Received DOM event "pagehide" for "http://vm-107-stu-dev.ursip.ru/"
+1509378642042	Marionette	DEBUG	Received DOM event "unload" for "http://vm-107-stu-dev.ursip.ru/"
+1509378642276	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://vm-107-stu-dev.ursip.ru/"
+1509378642280	Marionette	DEBUG	Received DOM event "pageshow" for "http://vm-107-stu-dev.ursip.ru/"
+1509378643003	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
 ]]></system-err>
 </testsuite>

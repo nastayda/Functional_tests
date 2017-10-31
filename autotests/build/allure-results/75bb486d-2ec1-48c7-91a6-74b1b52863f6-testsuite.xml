@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1509378351166" stop="1509378365658">
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1509378669734" stop="1509378683912">
     <name>Создание документа</name>
     <test-cases>
-        <test-case start="1509378356548" stop="1509378365344" status="passed">
+        <test-case start="1509378674605" stop="1509378683514" status="passed">
             <name>Search</name>
             <steps>
-                <step start="1509378356548" stop="1509378358522" status="passed">
+                <step start="1509378674605" stop="1509378676790" status="passed">
                     <name>login</name>
                     <title>Проверка наличия элементов и заполнение полей</title>
                     <attachments/>
