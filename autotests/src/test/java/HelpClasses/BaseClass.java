@@ -48,7 +48,7 @@ public class BaseClass {
         wd.get(readData.readFromFile().get(0).substring(1));
     }
 
-    @Step("Проверка наличия элементов и заполнение полей")
+    @Step("Ввод логина и пароля")
     protected void login(String elementUserName, String elementPassword, String nameLogin, String passwordLogin) {
         enterLogin(elementUserName, nameLogin);
         enterPassword(elementPassword, passwordLogin);

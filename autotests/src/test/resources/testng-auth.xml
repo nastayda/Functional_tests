@@ -7,9 +7,9 @@
         </classes>
     </test>
 
-    <test name="Вызов класса TestAuthorizationNew">
+    <test name="Вызов класса CreateDocument">
         <classes>
-            <class name="RegisterOfServices.TestAuthorization" />
+            <class name="RegisterOfServices.CreateDocument" />
         </classes>
     </test>
 </suite>
