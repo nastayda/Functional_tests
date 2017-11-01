@@ -1,5 +1,7 @@
 package HelpClasses;
 
+import ru.yandex.qatools.allure.annotations.Step;
+
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -16,6 +18,7 @@ public class WriteReadFromFile {
        // readFromFile1("C:\\test\\notes3.txt");
 
     }
+
     public WriteReadFromFile(String pT){
         pathToFile=pT;
     }
@@ -23,7 +26,7 @@ public class WriteReadFromFile {
       pathToFile=pT;
       stringData=sD;
     }
-
+    @Step("Чтение из файла")
     public ArrayList<String> readFromFile() {
         ArrayList<String> elementsOfFile = new ArrayList<String>();
         try {// читаем построчно
@@ -49,6 +52,7 @@ public class WriteReadFromFile {
         //  elementsOfFile.forEach(value -> System.out.println(value));
         System.out.println(elementsOfFile.get(1));
     }*/
+    @Step("Запись в файл")
     public void writeToFile() {
        try(FileWriter writer = new FileWriter(pathToFile, false))
         {

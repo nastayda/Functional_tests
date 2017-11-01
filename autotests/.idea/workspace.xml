@@ -26,55 +26,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="StatusComparison.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/StatusComparison.java">
+      <file leaf-file-name="EditSomeDocument.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/EditSomeDocument.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+            <state relative-caret-position="313">
+              <caret line="115" column="13" lean-forward="false" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
               <folding>
-                <element signature="method#StatusComparison#0;class#StatusComparison#0" expanded="false" />
-                <element signature="method#getNumbersFromTable#0;class#StatusComparison#0" expanded="false" />
-                <element signature="method#getCountStatus#0;class#StatusComparison#0" expanded="false" />
+                <element signature="method#fillClientContractorNumber#0;class#EditSomeDocument#0" expanded="false" />
+                <element signature="method#fillClientContractorPrice#0;class#EditSomeDocument#0" expanded="false" />
+                <element signature="method#checkSomeBox#0;class#EditSomeDocument#0" expanded="false" />
+                <element signature="method#fillDate#0;class#EditSomeDocument#0" expanded="false" />
+                <element signature="method#fillOfferPrice#0;class#EditSomeDocument#0" expanded="false" />
+                <element signature="method#fillObjectAddress#0;class#EditSomeDocument#0" expanded="false" />
+                <element signature="method#choseWorkType#0;class#EditSomeDocument#0" expanded="false" />
+                <element signature="method#fillRespEmail#0;class#EditSomeDocument#0" expanded="false" />
+                <element signature="method#fillClientEmail#0;class#EditSomeDocument#0" expanded="false" />
+                <element signature="method#fillRespName#0;class#EditSomeDocument#0" expanded="false" />
+                <element signature="method#fillClientPhone2#0;class#EditSomeDocument#0" expanded="false" />
+                <element signature="method#fillClientPhone#0;class#EditSomeDocument#0" expanded="false" />
+                <element signature="method#fillClientContractor2#0;class#EditSomeDocument#0" expanded="false" />
+                <element signature="method#fillClientContractor#0;class#EditSomeDocument#0" expanded="false" />
+                <element signature="method#fillClientName#0;class#EditSomeDocument#0" expanded="false" />
+                <element signature="method#fillObjectName#0;class#EditSomeDocument#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestAuthorization.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/TestAuthorization.java">
+      <file leaf-file-name="data-for-doc.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/help-files/data-for-doc.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="85">
+              <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseClass.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/HelpClasses/BaseClass.java">
+      <file leaf-file-name="WriteReadFromFile.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/HelpClasses/WriteReadFromFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding>
-                <element signature="method#isAlertPresent#0;class#BaseClass#0" expanded="false" />
-                <element signature="method#setUp#0;class#BaseClass#0" expanded="false" />
-                <element signature="method#login#0;class#BaseClass#0" expanded="false" />
-                <element signature="method#enterPassword#0;class#BaseClass#0" expanded="false" />
-                <element signature="method#enterLogin#0;class#BaseClass#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreateDocument.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/CreateDocument.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="27" />
-              <folding>
-                <element signature="e#502#507#0" expanded="false" />
-                <element signature="e#1937#1938#0" expanded="true" />
-                <element signature="e#2032#2033#0" expanded="true" />
+                <element signature="method#main#0;class#WriteReadFromFile#0" expanded="false" />
+                <element signature="method#readFromFile#0;class#WriteReadFromFile#0" expanded="false" />
+                <element signature="method#writeToFile#0;class#WriteReadFromFile#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -90,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testng-auth.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="testng-auth.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/testng-auth.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="58" lean-forward="false" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+            <state relative-caret-position="255">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -479,7 +476,6 @@
         <option value="$PROJECT_DIR$/src/test/resources/testng-auth2.xml" />
         <option value="$PROJECT_DIR$/src/test/java/TestAuthorization.java" />
         <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices.java" />
-        <option value="$PROJECT_DIR$/src/test/java/HelpClasses/WriteReadFromFile.java" />
         <option value="$PROJECT_DIR$/src/test/java/HelpClasses/test1.java" />
         <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/EditDocumetnt.java" />
         <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/EditDocument.java" />
@@ -489,7 +485,6 @@
         <option value="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/TestAuthorization.java" />
         <option value="$PROJECT_DIR$/src/help-files/data-for-doc.txt" />
-        <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/EditSomeDocument.java" />
         <option value="$PROJECT_DIR$/src/test/java/Connection/ConnectionHB.java" />
         <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/DeleteDocument.java" />
         <option value="$PROJECT_DIR$/src/test/java/HelpClasses/BusinessTable.java" />
@@ -504,13 +499,15 @@
         <option value="$PROJECT_DIR$/src/test/java/HelpClasses/BaseClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/CreateDocument.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testng-auth.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/HelpClasses/WriteReadFromFile.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/EditSomeDocument.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="194" />
-    <option name="y" value="4" />
-    <option name="width" value="1496" />
+    <option name="x" value="52" />
+    <option name="y" value="5" />
+    <option name="width" value="1727" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -996,7 +993,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="194" y="4" width="1496" height="1040" extended-state="0" />
+    <frame x="52" y="5" width="1727" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1012,7 +1009,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34527028" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2238457" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1038,7 +1035,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="47" />
+      <option name="time" value="49" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1138,24 +1135,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/HelpClasses/WriteReadFromFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.11/77da7afb24d57b640d9803593a6222c7de12dd4e/testng-6.11-sources.jar!/org/testng/SuiteRunnerWorker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/EditSomeDocument.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="60" lean-forward="false" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -1173,13 +1156,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/DeleteDocument.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="61" column="24" lean-forward="true" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/help-files/notes2.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1192,13 +1168,6 @@
         <state relative-caret-position="289">
           <caret line="17" column="80" lean-forward="false" selection-start-line="17" selection-start-column="80" selection-end-line="17" selection-end-column="80" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/help-files/data-for-doc.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1228,17 +1197,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/DataComparison.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="method#getDataFromPage#0;class#DataComparison#0" expanded="false" />
-            <element signature="method#getDataFromFile#0;class#DataComparison#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1311,6 +1269,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-auth.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/CreateDocument.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="17" column="50" lean-forward="false" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+          <folding>
+            <element signature="e#502#507#0" expanded="false" />
+            <element signature="method#CreateDocument#0;class#CreateDocument#0" expanded="false" />
+            <element signature="method#createNewDocument#0;class#CreateDocument#0" expanded="false" />
+            <element signature="method#okButtonClick#0;class#CreateDocument#0" expanded="false" />
+            <element signature="method#fillObjectName#0;class#CreateDocument#0" expanded="false" />
+            <element signature="method#addButtonClick#0;class#CreateDocument#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HelpClasses/BaseClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1325,23 +1306,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/CreateDocument.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/DataComparison.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="27" />
+        <state relative-caret-position="21">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding>
-            <element signature="e#502#507#0" expanded="false" />
-            <element signature="e#1937#1938#0" expanded="true" />
-            <element signature="e#2032#2033#0" expanded="true" />
+            <element signature="method#getDataFromFile#0;class#DataComparison#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-auth.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/DeleteDocument.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="58" lean-forward="false" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+        <state relative-caret-position="375">
+          <caret line="61" column="24" lean-forward="true" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/HelpClasses/WriteReadFromFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="method#main#0;class#WriteReadFromFile#0" expanded="false" />
+            <element signature="method#readFromFile#0;class#WriteReadFromFile#0" expanded="false" />
+            <element signature="method#writeToFile#0;class#WriteReadFromFile#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/help-files/data-for-doc.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/EditSomeDocument.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="115" column="13" lean-forward="false" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
+          <folding>
+            <element signature="method#fillClientContractorNumber#0;class#EditSomeDocument#0" expanded="false" />
+            <element signature="method#fillClientContractorPrice#0;class#EditSomeDocument#0" expanded="false" />
+            <element signature="method#checkSomeBox#0;class#EditSomeDocument#0" expanded="false" />
+            <element signature="method#fillDate#0;class#EditSomeDocument#0" expanded="false" />
+            <element signature="method#fillOfferPrice#0;class#EditSomeDocument#0" expanded="false" />
+            <element signature="method#fillObjectAddress#0;class#EditSomeDocument#0" expanded="false" />
+            <element signature="method#choseWorkType#0;class#EditSomeDocument#0" expanded="false" />
+            <element signature="method#fillRespEmail#0;class#EditSomeDocument#0" expanded="false" />
+            <element signature="method#fillClientEmail#0;class#EditSomeDocument#0" expanded="false" />
+            <element signature="method#fillRespName#0;class#EditSomeDocument#0" expanded="false" />
+            <element signature="method#fillClientPhone2#0;class#EditSomeDocument#0" expanded="false" />
+            <element signature="method#fillClientPhone#0;class#EditSomeDocument#0" expanded="false" />
+            <element signature="method#fillClientContractor2#0;class#EditSomeDocument#0" expanded="false" />
+            <element signature="method#fillClientContractor#0;class#EditSomeDocument#0" expanded="false" />
+            <element signature="method#fillClientName#0;class#EditSomeDocument#0" expanded="false" />
+            <element signature="method#fillObjectName#0;class#EditSomeDocument#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
