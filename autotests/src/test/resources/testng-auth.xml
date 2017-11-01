@@ -12,4 +12,9 @@
             <class name="RegisterOfServices.CreateDocument" />
         </classes>
     </test>
+    <test name="Вызов класса EditSomeDocument">
+        <classes>
+            <class name="RegisterOfServices.EditSomeDocument" />
+        </classes>
+    </test>
 </suite>
