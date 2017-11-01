@@ -16,7 +16,8 @@ class test {
     }*/
 
     try {
-      Process p=Runtime.getRuntime().exec("runas /user:Administrator cmd.exe /c start");
+      //C:\Users\danilkinaas\Desktop\offInternet.bat
+      Process p=Runtime.getRuntime().exec("cmd.exe /c start /k C:\\Users\\danilkinaas\\Desktop\\offInternet.bat");
 
       BufferedReader BR=new BufferedReader(new InputStreamReader(p.getInputStream()));
       String l;

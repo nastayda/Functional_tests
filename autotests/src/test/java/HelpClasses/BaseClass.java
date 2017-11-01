@@ -50,17 +50,27 @@ public class BaseClass {
 
     @Step("Проверка наличия элементов и заполнение полей")
     protected void login(String elementUserName, String elementPassword, String nameLogin, String passwordLogin) {
-        wd.findElement(By.id(elementUserName)).click();
-        wd.findElement(By.id(elementUserName)).clear();
-        wd.findElement(By.id(elementUserName)).sendKeys(nameLogin);
-        wd.findElement(By.id(elementPassword)).click();
-        wd.findElement(By.id(elementPassword)).clear();
-        wd.findElement(By.id(elementPassword)).sendKeys(passwordLogin);
+        enterLogin(elementUserName, nameLogin);
+        enterPassword(elementPassword, passwordLogin);
         wd.findElement(By.xpath("//*[@id=\"authorization\"]/div/form/button")).click();
         //Переход на страницу с делами
         wd.navigate().to("http://vm-107-stu-dev.ursip.ru/");
         //Клик по левому меню "Обращения"
         wd.findElement(By.cssSelector("div.departments-tree")).click();
+    }
+
+    @Step("Ввод пароля")
+    private void enterPassword(String elementPassword, String passwordLogin) {
+        wd.findElement(By.id(elementPassword)).click();
+        wd.findElement(By.id(elementPassword)).clear();
+        wd.findElement(By.id(elementPassword)).sendKeys(passwordLogin);
+    }
+
+    @Step("Ввод логина")
+    private void enterLogin(String elementUserName, String nameLogin) {
+        wd.findElement(By.id(elementUserName)).click();
+        wd.findElement(By.id(elementUserName)).clear();
+        wd.findElement(By.id(elementUserName)).sendKeys(nameLogin);
     }
 
     @AfterMethod
