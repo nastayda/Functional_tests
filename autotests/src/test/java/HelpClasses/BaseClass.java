@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import ru.yandex.qatools.allure.annotations.Step;
@@ -52,14 +54,29 @@ public class BaseClass {
     protected void login(String elementUserName, String elementPassword, String nameLogin, String passwordLogin) {
         enterLogin(elementUserName, nameLogin);
         enterPassword(elementPassword, passwordLogin);
+
+
+        //wd.findElement(By.cssSelector("button.ant-btn.ant-btn-lg")).click();
         //*[@id="authorization"]/div/form/button/span
         signInClick();
+        waitTableAndGoToPage();
+
+    }
+
+    @Step("Ждем пока появится таблица и переходм на основную станицу")
+    private void waitTableAndGoToPage() {
+        WebDriverWait wait = new WebDriverWait(wd, 5);
+        //*[@id="authorization"]/div/div[2]/div[2]/div/div/div/div/div/div/div[1]/table
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"authorization\"]/div/div[2]/div[2]/div/div/div/div/div/div/div[1]/table")));
+        //wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table")));
+
         //Переход на страницу с делами
         wd.navigate().to("http://vm-107-stu-dev.ursip.ru/");
         //Клик по левому меню "Обращения"
         wd.findElement(By.cssSelector("div.departments-tree")).click();
     }
 
+    @Step("Нажать на Войти")
     private void signInClick() {
         wd.findElement(By.xpath("//*[@id=\"authorization\"]/div/form/button/span")).click();
     }

@@ -50,13 +50,12 @@
       <file leaf-file-name="CreateDocument.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/CreateDocument.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+            <state relative-caret-position="561">
+              <caret line="57" column="76" lean-forward="true" selection-start-line="55" selection-start-column="8" selection-end-line="57" selection-end-column="76" />
               <folding>
                 <element signature="method#createNewDocument#0;class#CreateDocument#0" expanded="false" />
                 <element signature="method#okButtonClick#0;class#CreateDocument#0" expanded="false" />
                 <element signature="method#fillObjectName#0;class#CreateDocument#0" expanded="false" />
-                <element signature="method#addButtonClick#0;class#CreateDocument#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -111,13 +110,13 @@
       <file leaf-file-name="BaseClass.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/HelpClasses/BaseClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="55" column="8" lean-forward="false" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
+            <state relative-caret-position="306">
+              <caret line="70" column="10" lean-forward="false" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="10" />
               <folding>
                 <element signature="method#isAlertPresent#0;class#BaseClass#0" expanded="false" />
                 <element signature="method#setUp#0;class#BaseClass#0" expanded="false" />
-                <element signature="e#2237#2238#0" expanded="true" />
-                <element signature="e#2336#2337#0" expanded="true" />
+                <element signature="e#3075#3076#0" expanded="true" />
+                <element signature="e#3174#3175#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -126,8 +125,8 @@
       <file leaf-file-name="TestAuthorization.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/TestAuthorization.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="187">
+              <caret line="18" column="43" lean-forward="false" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -529,7 +528,6 @@
         <option value="$PROJECT_DIR$/src/test/java/Connection/ConnectionDB.java" />
         <option value="$PROJECT_DIR$/src/test/java/Connection/ConnectionToDB.java" />
         <option value="$PROJECT_DIR$/src/test/resources/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/TestAuthorization.java" />
         <option value="$PROJECT_DIR$/src/help-files/data-for-doc.txt" />
         <option value="$PROJECT_DIR$/src/test/java/Connection/ConnectionHB.java" />
         <option value="$PROJECT_DIR$/src/test/java/HelpClasses/BusinessTable.java" />
@@ -546,6 +544,7 @@
         <option value="$PROJECT_DIR$/src/test/resources/testng-auth.xml" />
         <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/CreateDocument.java" />
         <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/EditSomeDocument.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/TestAuthorization.java" />
         <option value="$PROJECT_DIR$/src/test/java/HelpClasses/BaseClass.java" />
       </list>
     </option>
@@ -1024,17 +1023,8 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EditSomeDocument_EditDocument - 2017.11.02 at 10h 45m 27s.xml">
-      <configuration name="EditSomeDocument.EditDocument" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="EditSomeDocument_EditDocument - 2017.11.02 at 10h 47m 29s.xml">
       <configuration name="EditSomeDocument.EditDocument" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="StatusComparison_StatusComparison - 2017.11.02 at 10h 20m 37s.xml">
-      <configuration name="StatusComparison.StatusComparison" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestAuthorization_TestAuthorization - 2017.11.02 at 10h 44m 56s.xml">
-      <configuration name="TestAuthorization.TestAuthorization" configurationId="TestNG" />
     </history-entry>
     <history-entry file="TestAuthorization_TestAuthorization - 2017.11.02 at 10h 46m 25s.xml">
       <configuration name="TestAuthorization.TestAuthorization" configurationId="TestNG" />
@@ -1052,6 +1042,15 @@
       <configuration name="TestAuthorization.TestAuthorization" configurationId="TestNG" />
     </history-entry>
     <history-entry file="TestAuthorization_TestAuthorization - 2017.11.02 at 10h 52m 43s.xml">
+      <configuration name="TestAuthorization.TestAuthorization" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestAuthorization_TestAuthorization - 2017.11.02 at 11h 00m 01s.xml">
+      <configuration name="TestAuthorization.TestAuthorization" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestAuthorization_TestAuthorization - 2017.11.02 at 11h 00m 46s.xml">
+      <configuration name="TestAuthorization.TestAuthorization" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestAuthorization_TestAuthorization - 2017.11.02 at 11h 06m 10s.xml">
       <configuration name="TestAuthorization.TestAuthorization" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -1098,7 +1097,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="50" />
+      <option name="time" value="52" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1365,19 +1364,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/CreateDocument.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding>
-            <element signature="method#createNewDocument#0;class#CreateDocument#0" expanded="false" />
-            <element signature="method#okButtonClick#0;class#CreateDocument#0" expanded="false" />
-            <element signature="method#fillObjectName#0;class#CreateDocument#0" expanded="false" />
-            <element signature="method#addButtonClick#0;class#CreateDocument#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/testng-auth.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1428,23 +1414,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/CreateDocument.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="57" column="76" lean-forward="true" selection-start-line="55" selection-start-column="8" selection-end-line="57" selection-end-column="76" />
+          <folding>
+            <element signature="method#createNewDocument#0;class#CreateDocument#0" expanded="false" />
+            <element signature="method#okButtonClick#0;class#CreateDocument#0" expanded="false" />
+            <element signature="method#fillObjectName#0;class#CreateDocument#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HelpClasses/BaseClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="55" column="8" lean-forward="false" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
+        <state relative-caret-position="306">
+          <caret line="70" column="10" lean-forward="false" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="10" />
           <folding>
             <element signature="method#isAlertPresent#0;class#BaseClass#0" expanded="false" />
             <element signature="method#setUp#0;class#BaseClass#0" expanded="false" />
-            <element signature="e#2237#2238#0" expanded="true" />
-            <element signature="e#2336#2337#0" expanded="true" />
+            <element signature="e#3075#3076#0" expanded="true" />
+            <element signature="e#3174#3175#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/TestAuthorization.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="187">
+          <caret line="18" column="43" lean-forward="false" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
           <folding />
         </state>
       </provider>
