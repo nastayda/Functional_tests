@@ -61,16 +61,18 @@ public class BaseClass {
 
     @Step("Ввод пароля")
     private void enterPassword(String elementPassword, String passwordLogin) {
-        wd.findElement(By.id(elementPassword)).click();
-        wd.findElement(By.id(elementPassword)).clear();
-        wd.findElement(By.id(elementPassword)).sendKeys(passwordLogin);
+        //*[@id="password"]
+        wd.findElement(By.xpath("//*[@id=\"password\"]")).click();
+        wd.findElement(By.xpath("//*[@id=\"password\"]")).clear();
+        wd.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys(passwordLogin);
     }
 
     @Step("Ввод логина")
     private void enterLogin(String elementUserName, String nameLogin) {
-        wd.findElement(By.id(elementUserName)).click();
-        wd.findElement(By.id(elementUserName)).clear();
-        wd.findElement(By.id(elementUserName)).sendKeys(nameLogin);
+        ////*[@id="userName"]
+        wd.findElement(By.xpath("//*[@id=\"userName\"]")).click();
+        wd.findElement(By.xpath("//*[@id=\"userName\"]")).clear();
+        wd.findElement(By.xpath("//*[@id=\"userName\"]")).sendKeys(nameLogin);
     }
 
     @AfterMethod
