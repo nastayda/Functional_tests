@@ -74,18 +74,17 @@
       <file leaf-file-name="Search.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/Search.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+            <state relative-caret-position="153">
+              <caret line="23" column="37" lean-forward="false" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
               <folding>
                 <element signature="method#searchFromEverywhere#0;class#Search#0" expanded="false" />
                 <element signature="method#searchFromNumberDocument#0;class#Search#0" expanded="false" />
                 <element signature="method#searchFromClientName#0;class#Search#0" expanded="false" />
                 <element signature="method#searchFromrResponsibleName#0;class#Search#0" expanded="false" />
-                <element signature="method#searchFromObjectName#0;class#Search#0" expanded="false" />
                 <element signature="method#searchWithFilter#0;class#Search#0" expanded="false" />
                 <element signature="method#getSearchConditionOldVersion#0;class#Search#0" expanded="false" />
                 <element signature="method#getNumbersFromTable#0;class#Search#0" expanded="false" />
-                <element signature="e#5875#5884#0" expanded="true" />
+                <element signature="e#5767#5776#0" expanded="true" />
                 <element signature="method#getRowsFromDB#0;class#Search#0" expanded="false" />
                 <element signature="method#getSearchConditionCountOld#0;class#Search#0" expanded="false" />
               </folding>
@@ -93,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data-for-doc.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/help-files/data-for-doc.txt">
+      <file leaf-file-name="testng-auth.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/testng-auth.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="10" />
+            <state relative-caret-position="459">
+              <caret line="27" column="66" lean-forward="true" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -988,15 +987,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Search_Search - 2017.11.02 at 13h 34m 57s.xml">
-      <configuration name="Search.Search" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Search_Search - 2017.11.02 at 13h 35m 55s.xml">
-      <configuration name="Search.Search" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Search_Search - 2017.11.02 at 13h 38m 38s.xml">
-      <configuration name="Search.Search" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="Search_Search - 2017.11.02 at 13h 39m 33s.xml">
       <configuration name="Search.Search" configurationId="TestNG" />
     </history-entry>
@@ -1016,6 +1006,15 @@
       <configuration name="Search.Search" configurationId="TestNG" />
     </history-entry>
     <history-entry file="Search_Search - 2017.11.02 at 13h 47m 35s.xml">
+      <configuration name="Search.Search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Search_Search - 2017.11.02 at 13h 54m 56s.xml">
+      <configuration name="Search.Search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Search_Search - 2017.11.02 at 13h 55m 57s.xml">
+      <configuration name="Search.Search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Search_Search - 2017.11.02 at 13h 56m 20s.xml">
       <configuration name="Search.Search" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -1284,14 +1283,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-auth.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/CreateDocument.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -1430,20 +1421,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-auth.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="66" lean-forward="true" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/Search.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+        <state relative-caret-position="153">
+          <caret line="23" column="37" lean-forward="false" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
           <folding>
             <element signature="method#searchFromEverywhere#0;class#Search#0" expanded="false" />
             <element signature="method#searchFromNumberDocument#0;class#Search#0" expanded="false" />
             <element signature="method#searchFromClientName#0;class#Search#0" expanded="false" />
             <element signature="method#searchFromrResponsibleName#0;class#Search#0" expanded="false" />
-            <element signature="method#searchFromObjectName#0;class#Search#0" expanded="false" />
             <element signature="method#searchWithFilter#0;class#Search#0" expanded="false" />
             <element signature="method#getSearchConditionOldVersion#0;class#Search#0" expanded="false" />
             <element signature="method#getNumbersFromTable#0;class#Search#0" expanded="false" />
-            <element signature="e#5875#5884#0" expanded="true" />
+            <element signature="e#5767#5776#0" expanded="true" />
             <element signature="method#getRowsFromDB#0;class#Search#0" expanded="false" />
             <element signature="method#getSearchConditionCountOld#0;class#Search#0" expanded="false" />
           </folding>

@@ -21,11 +21,9 @@ public class Search extends BaseClass {
     @Test
     public void Search() throws Exception {
         login("userName", "password", "admin", "admin");
-       // searchFromEverywhere(); т.к. id может встречаться много где
         searchFromrResponsibleName();
-        searchFromClientName();
         searchFromObjectName();
-       // searchFromNumberDocument();
+        searchFromClientName();
     }
 
     @Step("Поиск везде")
