@@ -17,7 +17,6 @@ public class BaseClass {
     String resultOfTest;
     public FirefoxDriver wd;
     WriteReadFromFile readData;
-    WriteReadFromFile writeData;
 
     public static boolean isAlertPresent(FirefoxDriver wd) {
         try {
@@ -54,10 +53,6 @@ public class BaseClass {
     protected void login(String elementUserName, String elementPassword, String nameLogin, String passwordLogin) {
         enterLogin(elementUserName, nameLogin);
         enterPassword(elementPassword, passwordLogin);
-
-
-        //wd.findElement(By.cssSelector("button.ant-btn.ant-btn-lg")).click();
-        //*[@id="authorization"]/div/form/button/span
         signInClick();
         waitTableAndGoToPage();
 
@@ -68,8 +63,6 @@ public class BaseClass {
         WebDriverWait wait = new WebDriverWait(wd, 5);
         //*[@id="authorization"]/div/div[2]/div[2]/div/div/div/div/div/div/div[1]/table
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"authorization\"]/div/div[2]/div[2]/div/div/div/div/div/div/div[1]/table")));
-        //wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table")));
-
         //Переход на страницу с делами
         wd.navigate().to("http://vm-107-stu-dev.ursip.ru/");
         //Клик по левому меню "Обращения"

@@ -21,8 +21,27 @@ public class Search extends BaseClass {
     @Test
     public void Search() throws Exception {
         login("userName", "password", "admin", "admin");
+       // searchFromEverywhere(); т.к. id может встречаться много где
+        searchFromrResponsibleName();
         searchFromClientName();
         searchFromObjectName();
+       // searchFromNumberDocument();
+    }
+
+    @Step("Поиск везде")
+    public void searchFromEverywhere() throws Exception {
+        //Positive test
+        assertEquals( searchWithFilter( getSearchConditionCount("id")[0], "//div[2]/div/div/div/ul/li[1]"),
+                Integer.parseInt( getSearchConditionCount("id")[1])
+        );
+    }
+
+    @Step("Поиск по номеру дела")
+    public void searchFromNumberDocument() throws Exception {
+        //Positive test
+        assertEquals( searchWithFilter( getSearchConditionCount("clientContractNumber")[0], "//div[2]/div/div/div/ul/li[2]"),
+                Integer.parseInt( getSearchConditionCount("clientContractNumber")[1])
+        );
     }
 
     @Step("Поиск по имени заказчика")
@@ -33,13 +52,23 @@ public class Search extends BaseClass {
                     );
     }
 
+    @Step("Поиск по ФИО ответсвенного")
+    public void searchFromrResponsibleName() throws Exception {
+        //Positive test
+        assertEquals( searchWithFilter( getSearchConditionCount("responsibleName")[0], "//div[2]/div/div/div/ul/li[4]"),
+                Integer.parseInt( getSearchConditionCount("responsibleName")[1])
+        );
+    }
+
     @Step("Поиск по имени объекта")
     public void searchFromObjectName() throws Exception {
         //Positive test
-        assertEquals( searchWithFilter( getSearchConditionCount("objectName")[0], "//div[2]/div/div/div/ul/li[6]"),
-                Integer.parseInt( getSearchConditionCount("objectName")[1])
+        //System.out.println("getSearchConditionCount "+Integer.parseInt( getSearchConditionCount("objectName")[1]));
+        //System.out.println("searchWithFilter "+searchWithFilter( getSearchConditionCount("objectName")[0], "//div[2]/div/div/div/ul/li[6]"));
+       String[] resultSearch = getSearchConditionCount("objectName");
+        assertEquals( searchWithFilter( resultSearch[0], "//div[2]/div/div/div/ul/li[6]"),
+                Integer.parseInt( resultSearch[1])
         );
-
     }
 
     //@Step("4. Число элементво после  применения фильтра")
@@ -49,10 +78,9 @@ public class Search extends BaseClass {
         wd.findElement(By.cssSelector("input.ant-input")).click();
         wd.findElement(By.cssSelector("input.ant-input")).clear();
         wd.findElement(By.cssSelector("input.ant-input")).sendKeys(searchCondition);
-        int k=0;
-       // System.out.println(wd.findElements(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr")).size());
-        if (wd.findElements(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr")).size()>0) {
-           // wd.findElement(By.xpath("//tbody[@class='ant-table-tbody']//td[.='1']")).click();
+        int k=wd.findElements(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr")).size();
+        //System.out.println(k);
+        /*if (wd.findElements(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr")).size()>0) {
             for (int i = 1; i <= wd.findElements(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr")).size(); i++) {
                 for (int j = 1; j <= wd.findElements(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[1]/td")).size(); j++) {
                     //System.out.println(wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr/td[" + i + "]")).getText());
@@ -61,11 +89,11 @@ public class Search extends BaseClass {
                     }
                 }
             }
-        }
+        }*/
         return k;
     }
 
-    //@Step("Получить первое ненулевое условие поиска oldversion")
+    //@Step("Получить первое ненулевое условие поиска oldVersion")
     public String getSearchConditionOldVersion(int j){
         for (int i = 1; i <= wd.findElements(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr")).size(); i++) {
                String searchCondition = wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[" + i + "]/td[" + j + "]")).getText();
@@ -78,6 +106,8 @@ public class Search extends BaseClass {
 
     //@Step("3. Получить все номера дел из браузера")
     public ArrayList<Integer> getNumbersFromTable(){
+        //Клик по левому меню "Обращения"
+        wd.findElement(By.cssSelector("div.departments-tree")).click();
         wd.findElement(By.cssSelector("div.ant-select-selection__rendered")).click();
         wd.findElement(By.xpath("//div[2]/div/div/div/ul/li[1]")).click();
         wd.findElement(By.cssSelector("input.ant-input")).click();
@@ -109,8 +139,8 @@ public class Search extends BaseClass {
         return result;
     }
 
-    //@Step("1. Получить первое ненулевое условие поиска из БД searchResult[0] + число повторений этого условия в БД searchResult[1]")
-    public String[] getSearchConditionCount(String condition) throws Exception {
+    //@Step("1. Получить первое ненулевое условие поиска из БД searchResult[0] + число повторений этого условия в наборе данных из бд searchResult[1]")
+    public String[] getSearchConditionCountOld(String condition) throws Exception {
         List result = getRowsFromDB();
         int k=0;
         String [] resultSearch=new String[]{"",""};
@@ -126,12 +156,14 @@ public class Search extends BaseClass {
                 break;
             case "objectName":
                 for (BusinessTable item : (List<BusinessTable>) result) {
-                    if (item.getObjectName() != "" & resultSearch[0] == "") {
-                        resultSearch[0] = item.getObjectName();
-                        k++;
-                    }
-                    if (resultSearch[0].equals(item.getObjectName())) {
-                        resultSearch[1] = Integer.toString(k++);
+                    if (item.getObjectName()!= null) {
+                        if (!item.getObjectName().equals("") & resultSearch[0] == "") {
+                            resultSearch[0] = item.getObjectName();
+                            k++;
+                        }
+                        if (resultSearch[0].contains(item.getObjectName())) {
+                            resultSearch[1] = Integer.toString(k++);
+                        }
                     }
                 }
                 break;
@@ -141,7 +173,7 @@ public class Search extends BaseClass {
                         resultSearch[0] = item.getClientName();
                         k++;
                     }
-                    if (resultSearch[0].equals(item.getClientName())) {
+                    if (resultSearch[0].contains(item.getClientName())) {
                         resultSearch[1] = Integer.toString(k++);
                     }
                 }
@@ -152,10 +184,12 @@ public class Search extends BaseClass {
                         resultSearch[0] = item.getResponsibleName();
                         k++;
                     }
-                     if (resultSearch[0].equals(item.getResponsibleName())) {
+                     if (resultSearch[0].contains(item.getResponsibleName())) {
                         resultSearch[1] = Integer.toString(k++);
+                        // System.out.println(item.getResponsibleName());
                     }
                 }
+
                 break;
             case "contractorName":
                 for (BusinessTable item : (List<BusinessTable>) result) {
@@ -163,7 +197,7 @@ public class Search extends BaseClass {
                         resultSearch[0] = item.getContractorName();
                         k++;
                     }
-                    if (resultSearch[0].equals(item.getContractorName())) {
+                    if (resultSearch[0].contains(item.getContractorName())) {
                         resultSearch[1] = Integer.toString(k++);
                     }
                 }
@@ -174,7 +208,7 @@ public class Search extends BaseClass {
                         resultSearch[0] = item.getWorkType();
                         k++;
                     }
-                    if (resultSearch[0].equals(item.getWorkType())) {
+                    if (resultSearch[0].contains(item.getWorkType())) {
                         resultSearch[1] = Integer.toString(k++);
                     }
                 }
@@ -185,7 +219,7 @@ public class Search extends BaseClass {
                         resultSearch[0]  = item.getObjectAdress();
                         k++;
                     }
-                    if (resultSearch[0].equals(item.getObjectAdress())) {
+                    if (resultSearch[0].contains(item.getObjectAdress())) {
                         resultSearch[1] = Integer.toString(k++);
                     }
                 }
@@ -196,7 +230,7 @@ public class Search extends BaseClass {
                         resultSearch[0] = item.getClientContractNumber();
                         k++;
                     }
-                    if (resultSearch[0].equals(item.getClientContractNumber())) {
+                    if (resultSearch[0].contains(item.getClientContractNumber())) {
                         resultSearch[1] = Integer.toString(k++);
                     }
                 }
@@ -206,7 +240,7 @@ public class Search extends BaseClass {
                     if (item.getClientContractDate() != null & resultSearch[0] == "") {
                         resultSearch[0] = item.getClientContractDate().toString();
                     }
-                    if (resultSearch[0].equals(item.getClientContractDate().toString())) {
+                    if (resultSearch[0].contains(item.getClientContractDate().toString())) {
                         resultSearch[1] = Integer.toString(k++);
                     }
                 }
@@ -216,12 +250,129 @@ public class Search extends BaseClass {
                     if (item.getClientContractPrice() != null & resultSearch[0] == "") {
                         resultSearch[0] = item.getClientContractPrice().toString();
                     }
-                    if (resultSearch[0].equals(item.getClientContractPrice().toString())) {
+                    if (resultSearch[0].contains(item.getClientContractPrice().toString())) {
                         resultSearch[1] = Integer.toString(k++);
                     }
                 }
                 break;
         }
-            return resultSearch;
+        //System.out.println(resultSearch[1]);
+        return resultSearch;
+    }
+
+    public String[] getSearchConditionCount(String condition) throws Exception {
+        List result = getRowsFromDB();
+        int k=1;
+        String [] resultSearch=new String[]{"",""};
+        EditSomeDocument getDataFromFileObject = new EditSomeDocument();
+        String [] dataFromFileMass = getDataFromFileObject.getDataFromFile();
+        //System.out.println(dataFromFileMass[0]);
+        //В зависимости от того какое условие задано
+        switch (condition) {
+            case "id":
+                for (BusinessTable item : (List<BusinessTable>) result) {
+                    if (item.getId() != -10) {
+                        //System.out.println(item.getId());
+                        return new String[]{Integer.toString(item.getId()), "1"};
+                    }
+                }
+                break;
+            case "objectName":
+                for (BusinessTable item : (List<BusinessTable>) result) {
+                    if (item.getObjectName()!= null) {
+                            resultSearch[0] = "Test";
+                        if (item.getObjectName().contains(resultSearch[0])) {
+                            resultSearch[1] = Integer.toString(k++);
+                        }
+                    }
+                }
+                break;
+            case "clientName":
+                for (BusinessTable item : (List<BusinessTable>) result) {
+                    if (item.getClientName() != null) {
+                        resultSearch[0] = dataFromFileMass[0];
+                        if (resultSearch[0].contains(item.getClientName())) {
+                            resultSearch[1] = Integer.toString(k++);
+                        }
+                    }
+                }
+                break;
+            case "responsibleName":
+                for (BusinessTable item : (List<BusinessTable>) result) {
+                    if (item.getResponsibleName() != null) {
+                        resultSearch[0] = dataFromFileMass[5];
+                        if (resultSearch[0].contains(item.getResponsibleName())) {
+                            resultSearch[1] = Integer.toString(k++);
+                        }
+                    }
+                }
+                break;
+            case "contractorName":
+                for (BusinessTable item : (List<BusinessTable>) result) {
+                    if (item.getContractorName() != ""& resultSearch[0] == "") {
+                        resultSearch[0] = item.getContractorName();
+                        k++;
+                    }
+                    if (resultSearch[0].contains(item.getContractorName())) {
+                        resultSearch[1] = Integer.toString(k++);
+                    }
+                }
+                break;
+            case "workType":
+                for (BusinessTable item : (List<BusinessTable>) result) {
+                    if (item.getWorkType() != ""& resultSearch[0] == "") {
+                        resultSearch[0] = item.getWorkType();
+                        k++;
+                    }
+                    if (resultSearch[0].contains(item.getWorkType())) {
+                        resultSearch[1] = Integer.toString(k++);
+                    }
+                }
+                break;
+            case "objectAdress":
+                for (BusinessTable item : (List<BusinessTable>) result) {
+                    if (item.getObjectAdress() != ""& resultSearch[0] == "") {
+                        resultSearch[0]  = item.getObjectAdress();
+                        k++;
+                    }
+                    if (resultSearch[0].contains(item.getObjectAdress())) {
+                        resultSearch[1] = Integer.toString(k++);
+                    }
+                }
+                break;
+            case "clientContractNumber":
+                for (BusinessTable item : (List<BusinessTable>) result) {
+                    if (item.getClientContractNumber() != "" & resultSearch[0] == "") {
+                        resultSearch[0] = item.getClientContractNumber();
+                        k++;
+                    }
+                    if (resultSearch[0].contains(item.getClientContractNumber())) {
+                        resultSearch[1] = Integer.toString(k++);
+                    }
+                }
+                break;
+            case "clientContractDate":
+                for (BusinessTable item : (List<BusinessTable>) result) {
+                    if (item.getClientContractDate() != null & resultSearch[0] == "") {
+                        resultSearch[0] = item.getClientContractDate().toString();
+                    }
+                    if (resultSearch[0].contains(item.getClientContractDate().toString())) {
+                        resultSearch[1] = Integer.toString(k++);
+                    }
+                }
+                break;
+            case "clientContractPrice":
+                for (BusinessTable item : (List<BusinessTable>) result) {
+                    if (item.getClientContractPrice() != null & resultSearch[0] == "") {
+                        resultSearch[0] = item.getClientContractPrice().toString();
+                    }
+                    if (resultSearch[0].contains(item.getClientContractPrice().toString())) {
+                        resultSearch[1] = Integer.toString(k++);
+                    }
+                }
+                break;
+        }
+       // System.out.println(resultSearch[1]);
+        return resultSearch;
     }
 }

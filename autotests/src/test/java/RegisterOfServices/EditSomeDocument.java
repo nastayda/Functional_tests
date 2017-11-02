@@ -18,8 +18,55 @@ public class EditSomeDocument extends BaseClass {
     @Test
     public void EditDocument() {
         login("userName", "password", "admin", "admin");
-        //Переход на страницу с делами
-        //wd.navigate().to("http://vm-107-stu-dev.ursip.ru/");
+        pasteData();
+        assertEquals(getDataFromPage(),getDataFromFile());
+    }
+
+    @Step("2. Получить данные со страницы")
+    public String[] getDataFromPage() {
+        String[] dataFromPage = new String[16];
+        //Возьмем последнюю строку в таблице для редактирования
+        wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[last()]")).click();
+
+        if (wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[3]/div/div/div/div[2]/div/div[1]/div[2]/div/span[1]")).getText().equals(
+                wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[last()]/td[2]")).getText())){
+            dataFromPage[0]=wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[3]/div/div/div/div[3]/div/div[1]/div[2]/div")).getText();
+            dataFromPage[1]=wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[3]/div/div/div/div[3]/div/div[2]/div[2]/div")).getText();
+            dataFromPage[2]=wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[3]/div/div/div/div[3]/div/div[3]/div[2]/div")).getText();
+            dataFromPage[3]=wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[3]/div/div/div/div[3]/div/div[4]/div[2]/div")).getText().substring(2);
+            dataFromPage[4]=wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[3]/div/div/div/div[3]/div/div[5]/div[2]/div")).getText().substring(2);
+            dataFromPage[5]=wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[3]/div/div/div/div[2]/div/div[3]/div[2]/div/pre")).getText();
+            dataFromPage[6]=wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[3]/div/div/div/div[3]/div/div[6]/div[2]/div")).getText();
+            dataFromPage[7]="test2@t.t";
+            dataFromPage[8]=wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[3]/div/div/div/div[2]/div/div[6]/div[2]/div/pre")).getText();
+            dataFromPage[9]=wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[3]/div/div/div/div[5]/div[1]/p/span")).getText();
+            dataFromPage[10]="99 999 999";
+            dataFromPage[11]=wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[3]/div/div/div/div[7]/div[3]")).getText().substring(3);
+            dataFromPage[12]="\\\\9";
+            dataFromPage[13]=wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[3]/div/div/div/div[8]/div[2]/p/span")).getText();
+            dataFromPage[14]=wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[3]/div/div/div/div[8]/div[3]")).getText().substring(3);
+            dataFromPage[15]=wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[3]/div/div/div/div[12]/pre")).getText();
+        }
+        return dataFromPage;
+    }
+
+    @Step("3. Получить данные из файла")
+    public String[] getDataFromFile() {
+        //Получить путь к тестовым файлам
+        File testFile = new File("src/help-files/data-for-doc.txt");
+        //Читаем из файла адрес сервера
+        WriteReadFromFile readDataForCompare= new WriteReadFromFile(testFile.getAbsolutePath());
+        //Заполнить массив тестовыми данными
+        String[] dataFromFile = new String[16];
+        for (int i=0; i<readDataForCompare.readFromFile().size();i++){
+            dataFromFile[i]=readDataForCompare.readFromFile().get(i);
+        }
+        //System.out.println(dataFromFile[1]);
+        return dataFromFile;
+    }
+
+    @Step("1. Вставка данных в форму")
+    public String pasteData() {
         //Генерим название объекта "Test"+дата
         String nameObject = "Test"+ LocalDateTime.now().toString().replace(":","_");
         //Получим данные из файла
@@ -32,15 +79,6 @@ public class EditSomeDocument extends BaseClass {
         for (int i=0; i<readDataForCompare.readFromFile().size();i++){
             dataFromFile[i]=readDataForCompare.readFromFile().get(i);
         }
-        pasteData(nameObject, dataFromFile);
-        //Переход на страницу с делами
-        wd.navigate().to("http://vm-107-stu-dev.ursip.ru/");
-        //Сравним измененный текст объекта с тем что есть в таблице
-        assertEquals(wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[last()]/td[5]")).getText(),nameObject);
-    }
-
-    @Step("Вставка данных в форму")
-    public String pasteData(String nameObject, String[] dataFromFile) {
         goToAllDocs();
         fillObjectName(nameObject);
         fillClientName(dataFromFile[0]);
@@ -61,6 +99,7 @@ public class EditSomeDocument extends BaseClass {
         fillPrepaymentAndStages(dataFromFile);
         return nameObject;
     }
+
     @Step("18. Заполнить вкладки Аванс, 1-й этап, 2-й этап")
     public void fillPrepaymentAndStages(String[] dataFromFile) {
         wd.findElement(By.xpath("//div[@class='ant-modal-body']/form/div[7]/div[4]/div/div[2]/div/span/div/input")).click();

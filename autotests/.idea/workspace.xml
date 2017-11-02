@@ -26,27 +26,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="StatusComparison.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/StatusComparison.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="29" />
-              <folding>
-                <element signature="method#checkStatus81#0;class#StatusComparison#0" expanded="false" />
-                <element signature="method#checkStatus122#0;class#StatusComparison#0" expanded="false" />
-                <element signature="method#checkStatus121#0;class#StatusComparison#0" expanded="false" />
-                <element signature="method#checkStatus82#0;class#StatusComparison#0" expanded="false" />
-                <element signature="method#checkStatus80#0;class#StatusComparison#0" expanded="false" />
-                <element signature="method#checkStatus79#0;class#StatusComparison#0" expanded="false" />
-                <element signature="method#checkStatus78#0;class#StatusComparison#0" expanded="false" />
-                <element signature="method#chekStatus77#0;class#StatusComparison#0" expanded="false" />
-                <element signature="method#getNumbersFromTable#0;class#StatusComparison#0" expanded="false" />
-                <element signature="method#getCountStatus#0;class#StatusComparison#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CreateDocument.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/CreateDocument.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -64,9 +43,12 @@
       <file leaf-file-name="EditSomeDocument.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/EditSomeDocument.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="23" column="84" lean-forward="true" selection-start-line="23" selection-start-column="84" selection-end-line="23" selection-end-column="84" />
+            <state relative-caret-position="473">
+              <caret line="84" column="42" lean-forward="true" selection-start-line="84" selection-start-column="42" selection-end-line="84" selection-end-column="43" />
               <folding>
+                <element signature="method#EditDocument#0;class#EditSomeDocument#0" expanded="false" />
+                <element signature="method#getDataFromPage#0;class#EditSomeDocument#0" expanded="false" />
+                <element signature="method#getDataFromFile#0;class#EditSomeDocument#0" expanded="false" />
                 <element signature="method#fillPrepaymentAndStages#0;class#EditSomeDocument#0" expanded="false" />
                 <element signature="method#fillClientContractorNumber#0;class#EditSomeDocument#0" expanded="false" />
                 <element signature="method#fillClientContractorPrice#0;class#EditSomeDocument#0" expanded="false" />
@@ -89,54 +71,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Search.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Search.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/Search.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state relative-caret-position="170">
+              <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
               <folding>
+                <element signature="method#searchFromEverywhere#0;class#Search#0" expanded="false" />
+                <element signature="method#searchFromNumberDocument#0;class#Search#0" expanded="false" />
                 <element signature="method#searchFromClientName#0;class#Search#0" expanded="false" />
+                <element signature="method#searchFromrResponsibleName#0;class#Search#0" expanded="false" />
                 <element signature="method#searchFromObjectName#0;class#Search#0" expanded="false" />
                 <element signature="method#searchWithFilter#0;class#Search#0" expanded="false" />
                 <element signature="method#getSearchConditionOldVersion#0;class#Search#0" expanded="false" />
                 <element signature="method#getNumbersFromTable#0;class#Search#0" expanded="false" />
+                <element signature="e#5875#5884#0" expanded="true" />
                 <element signature="method#getRowsFromDB#0;class#Search#0" expanded="false" />
-                <element signature="method#getSearchConditionCount#0;class#Search#0" expanded="false" />
+                <element signature="method#getSearchConditionCountOld#0;class#Search#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseClass.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/HelpClasses/BaseClass.java">
+      <file leaf-file-name="data-for-doc.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/help-files/data-for-doc.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="70" column="10" lean-forward="false" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="10" />
-              <folding>
-                <element signature="method#isAlertPresent#0;class#BaseClass#0" expanded="false" />
-                <element signature="method#setUp#0;class#BaseClass#0" expanded="false" />
-                <element signature="e#3075#3076#0" expanded="true" />
-                <element signature="e#3174#3175#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestAuthorization.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/TestAuthorization.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="18" column="43" lean-forward="false" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testng-auth.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/testng-auth.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+            <state relative-caret-position="170">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -165,6 +126,9 @@
       <find>div.departments-tree</find>
       <find>pri</find>
       <find>objec</find>
+      <find>getNumbersFromTable</find>
+      <find>getRowsFromDB()</find>
+      <find>System</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -539,19 +503,20 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/HelpClasses/WriteReadFromFile.java" />
         <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/DeleteDocument.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/Search.java" />
         <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/StatusComparison.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testng-auth.xml" />
         <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/CreateDocument.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/EditSomeDocument.java" />
         <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/TestAuthorization.java" />
         <option value="$PROJECT_DIR$/src/test/java/HelpClasses/BaseClass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/EditSomeDocument.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/Search.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="960" />
-    <option name="width" value="960" />
+    <option name="x" value="52" />
+    <option name="y" value="5" />
+    <option name="width" value="1727" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -719,7 +684,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TestAuthorization.TestAuthorization">
+  <component name="RunManager" selected="TestNG.Search.Search">
     <configuration name="DeleteDocument.DeleteDocument" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -998,10 +963,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.TestAuthorization.TestAuthorization" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.Search.Search" />
         <item index="1" class="java.lang.String" itemvalue="TestNG.EditSomeDocument.EditDocument" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.StatusComparison.StatusComparison" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.Search.Search" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.TestAuthorization.TestAuthorization" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.StatusComparison.StatusComparison" />
         <item index="4" class="java.lang.String" itemvalue="TestNG.DeleteDocument.DeleteDocument" />
       </list>
     </recent_temporary>
@@ -1023,35 +988,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EditSomeDocument_EditDocument - 2017.11.02 at 10h 47m 29s.xml">
-      <configuration name="EditSomeDocument.EditDocument" configurationId="TestNG" />
+    <history-entry file="Search_Search - 2017.11.02 at 13h 34m 57s.xml">
+      <configuration name="Search.Search" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAuthorization_TestAuthorization - 2017.11.02 at 10h 46m 25s.xml">
-      <configuration name="TestAuthorization.TestAuthorization" configurationId="TestNG" />
+    <history-entry file="Search_Search - 2017.11.02 at 13h 35m 55s.xml">
+      <configuration name="Search.Search" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAuthorization_TestAuthorization - 2017.11.02 at 10h 46m 37s.xml">
-      <configuration name="TestAuthorization.TestAuthorization" configurationId="TestNG" />
+    <history-entry file="Search_Search - 2017.11.02 at 13h 38m 38s.xml">
+      <configuration name="Search.Search" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAuthorization_TestAuthorization - 2017.11.02 at 10h 51m 07s.xml">
-      <configuration name="TestAuthorization.TestAuthorization" configurationId="TestNG" />
+    <history-entry file="Search_Search - 2017.11.02 at 13h 39m 33s.xml">
+      <configuration name="Search.Search" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAuthorization_TestAuthorization - 2017.11.02 at 10h 51m 38s.xml">
-      <configuration name="TestAuthorization.TestAuthorization" configurationId="TestNG" />
+    <history-entry file="Search_Search - 2017.11.02 at 13h 41m 11s.xml">
+      <configuration name="Search.Search" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAuthorization_TestAuthorization - 2017.11.02 at 10h 51m 48s.xml">
-      <configuration name="TestAuthorization.TestAuthorization" configurationId="TestNG" />
+    <history-entry file="Search_Search - 2017.11.02 at 13h 42m 14s.xml">
+      <configuration name="Search.Search" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAuthorization_TestAuthorization - 2017.11.02 at 10h 52m 43s.xml">
-      <configuration name="TestAuthorization.TestAuthorization" configurationId="TestNG" />
+    <history-entry file="Search_Search - 2017.11.02 at 13h 42m 44s.xml">
+      <configuration name="Search.Search" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAuthorization_TestAuthorization - 2017.11.02 at 11h 00m 01s.xml">
-      <configuration name="TestAuthorization.TestAuthorization" configurationId="TestNG" />
+    <history-entry file="Search_Search - 2017.11.02 at 13h 43m 04s.xml">
+      <configuration name="Search.Search" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAuthorization_TestAuthorization - 2017.11.02 at 11h 00m 46s.xml">
-      <configuration name="TestAuthorization.TestAuthorization" configurationId="TestNG" />
+    <history-entry file="Search_Search - 2017.11.02 at 13h 45m 37s.xml">
+      <configuration name="Search.Search" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestAuthorization_TestAuthorization - 2017.11.02 at 11h 06m 10s.xml">
-      <configuration name="TestAuthorization.TestAuthorization" configurationId="TestNG" />
+    <history-entry file="Search_Search - 2017.11.02 at 13h 47m 35s.xml">
+      <configuration name="Search.Search" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -1067,7 +1032,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25976768" sideWeight="0.50416666" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23376623" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20454545" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1078,7 +1043,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2998944" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16017316" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1097,29 +1062,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="52" />
+      <option name="time" value="87" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="57" lean-forward="false" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/TestAuthorization.java" />
-    <entry file="file://$PROJECT_DIR$/autotests (2).cs" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestClassAuth.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/TestAuthorization.java" />
     <entry file="jar://C:/Java/jdk1.8.0_144/src.zip!/java/util/function/Consumer.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1201,13 +1148,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.11/77da7afb24d57b640d9803593a6222c7de12dd4e/testng-6.11-sources.jar!/org/testng/internal/Invoker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="670" column="0" lean-forward="false" selection-start-line="670" selection-start-column="0" selection-end-line="670" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1303,31 +1243,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/help-files/data-for-doc.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HelpClasses/BusinessTable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="884">
           <caret line="74" column="37" lean-forward="false" selection-start-line="74" selection-start-column="37" selection-end-line="74" selection-end-column="37" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/DataComparison.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="51" />
-          <folding>
-            <element signature="method#DataComparison#0;class#DataComparison#0" expanded="false" />
-            <element signature="method#getDataFromPage#0;class#DataComparison#0" expanded="false" />
-            <element signature="method#getDataFromFile#0;class#DataComparison#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1372,27 +1292,123 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/Search.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/CreateDocument.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="561">
+          <caret line="57" column="76" lean-forward="true" selection-start-line="55" selection-start-column="8" selection-end-line="57" selection-end-column="76" />
           <folding>
-            <element signature="method#searchFromClientName#0;class#Search#0" expanded="false" />
-            <element signature="method#searchFromObjectName#0;class#Search#0" expanded="false" />
-            <element signature="method#searchWithFilter#0;class#Search#0" expanded="false" />
-            <element signature="method#getSearchConditionOldVersion#0;class#Search#0" expanded="false" />
-            <element signature="method#getNumbersFromTable#0;class#Search#0" expanded="false" />
-            <element signature="method#getRowsFromDB#0;class#Search#0" expanded="false" />
-            <element signature="method#getSearchConditionCount#0;class#Search#0" expanded="false" />
+            <element signature="method#createNewDocument#0;class#CreateDocument#0" expanded="false" />
+            <element signature="method#okButtonClick#0;class#CreateDocument#0" expanded="false" />
+            <element signature="method#fillObjectName#0;class#CreateDocument#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/TestAuthorization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/DataComparison.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="606">
+          <caret line="62" column="5" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="62" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-remote-driver/3.6.0/1707eb20e0231f0197e8583ab3b48bfa24d7bd51/selenium-remote-driver-3.6.0-sources.jar!/org/openqa/selenium/remote/RemoteWebDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="343" column="0" lean-forward="false" selection-start-line="343" selection-start-column="0" selection-end-line="343" selection-end-column="0" />
+          <folding>
+            <element signature="e#12535#12536#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/HelpClasses/BaseClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="67" column="8" lean-forward="true" selection-start-line="67" selection-start-column="8" selection-end-line="68" selection-end-column="71" />
+          <folding>
+            <element signature="method#isAlertPresent#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setUp#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#login#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#enterPassword#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#enterLogin#0;class#BaseClass#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.11/77da7afb24d57b640d9803593a6222c7de12dd4e/testng-6.11-sources.jar!/org/testng/internal/Invoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="669" column="0" lean-forward="false" selection-start-line="669" selection-start-column="0" selection-end-line="669" selection-end-column="0" />
+          <folding>
+            <element signature="e#27713#27726#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_144/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_144/src.zip!/java/lang/AbstractStringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding>
+            <element signature="e#1327#1328#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Java/jdk1.8.0_144/src.zip!/java/lang/StringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding>
+            <element signature="e#2871#2872#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-api/3.6.0/8608ba88b271f3e63ce73613bd4d2cba7c4e8783/selenium-api-3.6.0-sources.jar!/org/openqa/selenium/By.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+          <folding>
+            <element signature="e#10664#10665#0" expanded="false" />
+            <element signature="e#10716#10717#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/help-files/data-for-doc.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/EditSomeDocument.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="23" column="84" lean-forward="true" selection-start-line="23" selection-start-column="84" selection-end-line="23" selection-end-column="84" />
+        <state relative-caret-position="473">
+          <caret line="84" column="42" lean-forward="true" selection-start-line="84" selection-start-column="42" selection-end-line="84" selection-end-column="43" />
           <folding>
+            <element signature="method#EditDocument#0;class#EditSomeDocument#0" expanded="false" />
+            <element signature="method#getDataFromPage#0;class#EditSomeDocument#0" expanded="false" />
+            <element signature="method#getDataFromFile#0;class#EditSomeDocument#0" expanded="false" />
             <element signature="method#fillPrepaymentAndStages#0;class#EditSomeDocument#0" expanded="false" />
             <element signature="method#fillClientContractorNumber#0;class#EditSomeDocument#0" expanded="false" />
             <element signature="method#fillClientContractorPrice#0;class#EditSomeDocument#0" expanded="false" />
@@ -1414,36 +1430,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/CreateDocument.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/Search.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="57" column="76" lean-forward="true" selection-start-line="55" selection-start-column="8" selection-end-line="57" selection-end-column="76" />
+        <state relative-caret-position="170">
+          <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
           <folding>
-            <element signature="method#createNewDocument#0;class#CreateDocument#0" expanded="false" />
-            <element signature="method#okButtonClick#0;class#CreateDocument#0" expanded="false" />
-            <element signature="method#fillObjectName#0;class#CreateDocument#0" expanded="false" />
+            <element signature="method#searchFromEverywhere#0;class#Search#0" expanded="false" />
+            <element signature="method#searchFromNumberDocument#0;class#Search#0" expanded="false" />
+            <element signature="method#searchFromClientName#0;class#Search#0" expanded="false" />
+            <element signature="method#searchFromrResponsibleName#0;class#Search#0" expanded="false" />
+            <element signature="method#searchFromObjectName#0;class#Search#0" expanded="false" />
+            <element signature="method#searchWithFilter#0;class#Search#0" expanded="false" />
+            <element signature="method#getSearchConditionOldVersion#0;class#Search#0" expanded="false" />
+            <element signature="method#getNumbersFromTable#0;class#Search#0" expanded="false" />
+            <element signature="e#5875#5884#0" expanded="true" />
+            <element signature="method#getRowsFromDB#0;class#Search#0" expanded="false" />
+            <element signature="method#getSearchConditionCountOld#0;class#Search#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/HelpClasses/BaseClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="70" column="10" lean-forward="false" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="10" />
-          <folding>
-            <element signature="method#isAlertPresent#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#setUp#0;class#BaseClass#0" expanded="false" />
-            <element signature="e#3075#3076#0" expanded="true" />
-            <element signature="e#3174#3175#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/TestAuthorization.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="18" column="43" lean-forward="false" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
