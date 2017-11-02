@@ -18,7 +18,7 @@ public class CreateDocument extends BaseClass {
     public void CreateDocument() throws Exception {
         login("userName", "password", "admin", "admin");
         //Переход на страницу с делами - иногда не работает
-        // wd.navigate().to("http://vm-107-stu-dev.ursip.ru/");
+        wd.navigate().to("http://vm-107-stu-dev.ursip.ru/");
         //Тестовое имя объекта
         String nameObject = "Test"+LocalDateTime.now().toString().replace(":","_");
         createNewDocument(nameObject);
