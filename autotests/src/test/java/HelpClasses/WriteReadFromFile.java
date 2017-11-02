@@ -26,7 +26,7 @@ public class WriteReadFromFile {
       pathToFile=pT;
       stringData=sD;
     }
-    @Step("Чтение из файла")
+    //@Step("Чтение из файла")
     public ArrayList<String> readFromFile() {
         ArrayList<String> elementsOfFile = new ArrayList<String>();
         try {// читаем построчно
@@ -52,7 +52,7 @@ public class WriteReadFromFile {
         //  elementsOfFile.forEach(value -> System.out.println(value));
         System.out.println(elementsOfFile.get(1));
     }*/
-    @Step("Запись в файл")
+    //@Step("Запись в файл")
     public void writeToFile() {
        try(FileWriter writer = new FileWriter(pathToFile, false))
         {

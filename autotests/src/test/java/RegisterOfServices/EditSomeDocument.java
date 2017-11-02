@@ -57,7 +57,11 @@ public class EditSomeDocument extends BaseClass {
         checkSomeBox();
         fillClientContractorPrice(dataFromFile[10]);
         fillClientContractorNumber(dataFromFile[11]);
-
+        fillPrepaymentAndStages(dataFromFile);
+        return nameObject;
+    }
+    @Step("18. Заполнить вкладки Аванс, 1-й этап, 2-й этап")
+    public void fillPrepaymentAndStages(String[] dataFromFile) {
         wd.findElement(By.xpath("//div[@class='ant-modal-body']/form/div[7]/div[4]/div/div[2]/div/span/div/input")).click();
         wd.findElement(By.xpath("//div[@class='ant-modal-body']/form/div[7]/div[4]/div/div[2]/div/span/div/input")).sendKeys(dataFromFile[12]);
         wd.findElement(By.xpath("//div[@class='ant-modal-body']/form/div[7]/div[4]/div/div[2]/div/span/div/span")).click();
@@ -110,17 +114,16 @@ public class EditSomeDocument extends BaseClass {
         wd.findElement(By.id("note")).sendKeys(dataFromFile[15]);
         //Сохранить
         wd.findElement(By.xpath("//html/body/div[2]/div/div[2]/div/div[1]/div[3]/div/div/div[2]/button[2]")).click();
-        return nameObject;
     }
 
-    @Step("17. ")
+    @Step("17. Заполнить номер основного договора")
     public void fillClientContractorNumber(String s) {
         wd.findElement(By.id("client_contract_number")).click();
         wd.findElement(By.id("client_contract_number")).clear();
         wd.findElement(By.id("client_contract_number")).sendKeys(s);
     }
 
-    @Step("16. ")
+    @Step("16. Заполнить коммерческое предложение на сумму ")
     public void fillClientContractorPrice(String s) {
         wd.findElement(By.id("client_contract_price")).click();
         wd.findElement(By.id("client_contract_price")).clear();
@@ -188,7 +191,7 @@ public class EditSomeDocument extends BaseClass {
         wd.findElement(By.id("client_phone_2")).sendKeys(s);
     }
 
-    @Step("6. Заполнить телефон заказчика")
+    @Step("6. Заполнить телефон заказчика {0}")
     public void fillClientPhone(String s) {
         wd.findElement(By.id("client_phone")).click();
         wd.findElement(By.id("client_phone")).clear();
