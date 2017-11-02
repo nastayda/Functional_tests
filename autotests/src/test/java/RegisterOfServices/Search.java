@@ -22,8 +22,8 @@ public class Search extends BaseClass {
     public void Search() throws Exception {
         login("userName", "password", "admin", "admin");
         searchFromrResponsibleName();
-        searchFromObjectName();
         searchFromClientName();
+        searchFromObjectName();
     }
 
     @Step("Поиск везде")
@@ -280,7 +280,8 @@ public class Search extends BaseClass {
                     if (item.getObjectName()!= null) {
                             resultSearch[0] = "Test2017";
                         if (item.getObjectName().contains(resultSearch[0])) {
-                            resultSearch[1] = Integer.toString(k++);
+                            k++;
+                            resultSearch[1] = Integer.toString(k);
                         }
                     }
                 }
