@@ -20,7 +20,7 @@ public class Search extends BaseClass {
     @Title("Поиск по различным критериям")
     @Test
     public void Search() throws Exception {
-       login("userName", "password", "admin", "admin");
+        login("userName", "password", "admin", "admin");
         searchFromClientName();
         searchFromObjectName();
     }
@@ -28,16 +28,15 @@ public class Search extends BaseClass {
     @Step("Поиск по имени заказчика")
     public void searchFromClientName() throws Exception {
         //Positive test
-        assertEquals( searchWithFilter( getSearchConditionCount("clientName")[0], "//div[2]/div/div/div/ul/li[1]"),
+        assertEquals( searchWithFilter( getSearchConditionCount("clientName")[0], "//div[2]/div/div/div/ul/li[3]"),
                       Integer.parseInt( getSearchConditionCount("clientName")[1])
                     );
     }
 
     @Step("Поиск по имени объекта")
     public void searchFromObjectName() throws Exception {
-        login("userName", "password", "admin", "admin");
         //Positive test
-        assertEquals( searchWithFilter( getSearchConditionCount("objectName")[0], "//div[2]/div/div/div/ul/li[1]"),
+        assertEquals( searchWithFilter( getSearchConditionCount("objectName")[0], "//div[2]/div/div/div/ul/li[6]"),
                 Integer.parseInt( getSearchConditionCount("objectName")[1])
         );
 
