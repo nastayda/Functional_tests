@@ -7,12 +7,12 @@
         </classes>
     </test>
 
-    <test name="Вызов класса CreateDocument">
+    <test name="Вызов класса RegisterOfServices.CreateDocument">
         <classes>
             <class name="RegisterOfServices.CreateDocument" />
         </classes>
     </test>
-    <test name="Вызов класса EditSomeDocument">
+    <test name="Вызов класса RegisterOfServices.EditSomeDocument">
         <classes>
             <class name="RegisterOfServices.EditSomeDocument" />
         </classes>
@@ -20,6 +20,11 @@
     <test name="Вызов класса Search">
         <classes>
             <class name="RegisterOfServices.Search" />
+        </classes>
+    </test>
+    <test name="Вызов класса RegisterOfServices.DeleteDocument">
+        <classes>
+            <class name="RegisterOfServices.DeleteDocument" />
         </classes>
     </test>
 </suite>

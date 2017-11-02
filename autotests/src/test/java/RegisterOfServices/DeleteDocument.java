@@ -10,29 +10,39 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.openqa.selenium.*;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import ru.yandex.qatools.allure.annotations.Step;
+import ru.yandex.qatools.allure.annotations.Title;
+
 import java.util.List;
 
 import static org.testng.Assert.assertEquals;
 
 public class DeleteDocument extends BaseClass {
     @Test
+    @Title("Удалить строку")
     public void DeleteDocument() throws Exception {
         login("userName", "password", "admin", "admin");
         //Переход на страницу с делами
         wd.navigate().to("http://vm-107-stu-dev.ursip.ru/");
-        //Посчитать число строк в таблице до удаления
-        int countBefore = wd.findElements(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr")).size();
+        System.out.println("id=" +wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[last()]/td[2]")).getText());
+        int countBefore = getCountBefore();
         //Установить соединение к БД и удалить последний элемент в таблице
         setUpConnection();
-        deleteRow(wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[last()]/td[5]")).getText());
+        deleteRow(wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[last()]/td[2]")).getText());
         //Обновить страницу. Посчитать число строк в таблице после удаления
         wd.navigate().to("http://vm-107-stu-dev.ursip.ru/");
-        int countAfter = wd.findElements(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr")).size();
-       // assertEquals(countBefore-1, countAfter);
+        int countAfter = getCountBefore();
+        assertEquals(countBefore-1, countAfter);
+    }
+
+    @Step("Получить число элементов со страницы")
+    public int getCountBefore() {
+        //Посчитать число строк в таблице до удаления
+        return wd.findElements(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr")).size();
     }
 
     SessionFactory sessionFactory;
-    //@BeforeClass
+    @Step("Установить соединение с БД")
     public void setUpConnection() throws Exception {
         // A SessionFactory is set up once for an application!
         final StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
@@ -48,6 +58,7 @@ public class DeleteDocument extends BaseClass {
             StandardServiceRegistryBuilder.destroy( registry );
         }
     }
+
     //Вывод всей информации из таблицы
     public void getRows(){
         Session session = sessionFactory.openSession();
@@ -61,11 +72,12 @@ public class DeleteDocument extends BaseClass {
         session.getTransaction().commit();
         session.close();
     }
-    //Удаление созданной строки
+
+    @Step("Удаление созданной строки")
     public void deleteRow(String nameObject){
         Session session = sessionFactory.openSession();
         session.beginTransaction();
-        String hql = "delete from BusinessTable where objectName = :name";
+        String hql = "delete from BusinessTable where id = :name";
         session.createQuery(hql).setString("name", nameObject).executeUpdate();
         session.getTransaction().commit();
         session.close();
