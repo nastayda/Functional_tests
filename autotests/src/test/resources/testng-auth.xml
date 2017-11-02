@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Успешная авторизация" verbose="1" >
+<suite name="Тестовый сьют" verbose="1" >
     <test name="Вызов класса RegisterOfServices.TestAuthorization" >
         <classes>
             <class name="RegisterOfServices.TestAuthorization" />
@@ -15,6 +15,11 @@
     <test name="Вызов класса EditSomeDocument">
         <classes>
             <class name="RegisterOfServices.EditSomeDocument" />
+        </classes>
+    </test>
+    <test name="Вызов класса Search">
+        <classes>
+            <class name="RegisterOfServices.Search" />
         </classes>
     </test>
 </suite>

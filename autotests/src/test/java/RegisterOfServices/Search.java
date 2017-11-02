@@ -7,6 +7,8 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.openqa.selenium.*;
 import org.testng.annotations.Test;
+import ru.yandex.qatools.allure.annotations.Step;
+import ru.yandex.qatools.allure.annotations.Title;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +17,8 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 public class Search extends BaseClass {
-   @Test
+    @Title("Поиск по различным критериям")
+    @Test
     public void Search() throws Exception {
        login("userName", "password", "admin", "admin");
        //Positive test
@@ -24,7 +27,7 @@ public class Search extends BaseClass {
                    );
 
     }
-    //Число элементво после  применения фильтра
+    @Step("4. Число элементво после  применения фильтра")
     public int searchWithFilter(String searchCondition, String filterXpath) {
         wd.findElement(By.cssSelector("div.ant-select-selection__rendered")).click();
         wd.findElement(By.xpath(filterXpath)).click();
@@ -47,7 +50,7 @@ public class Search extends BaseClass {
         return k;
     }
 
-    //Получить первое ненулевое условие поиска
+    @Step("Получить первое ненулевое условие поиска oldversion")
     public String getSearchConditionOldVersion(int j){
         for (int i = 1; i <= wd.findElements(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr")).size(); i++) {
                String searchCondition = wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[" + i + "]/td[" + j + "]")).getText();
@@ -58,7 +61,7 @@ public class Search extends BaseClass {
         return "";
     }
 
-    //Получить все номера дел из браузера
+    @Step("3. Получить все номера дел из браузера")
     public ArrayList<Integer> getNumbersFromTable(){
         wd.findElement(By.cssSelector("div.ant-select-selection__rendered")).click();
         wd.findElement(By.xpath("//div[2]/div/div/div/ul/li[1]")).click();
@@ -71,7 +74,7 @@ public class Search extends BaseClass {
         return ids;
     }
 
-    //Получить все строки с № дел браузера из БД
+    @Step("2. Получить все строки с № дел браузера из БД")
     public List<BusinessTable> getRowsFromDB() throws Exception {
         ConnectionHB conDB = new ConnectionHB();
         SessionFactory sessionFactory = conDB.setUp();
@@ -91,7 +94,7 @@ public class Search extends BaseClass {
         return result;
     }
 
-    //Получить первое ненулевое условие поиска из БД searchResult[0] + число повторений этого условия в БД searchResult[1]
+    @Step("1. Получить первое ненулевое условие поиска из БД searchResult[0] + число повторений этого условия в БД searchResult[1]")
     public String[] getSearchConditionCount(String condition) throws Exception {
         List result = getRowsFromDB();
         int k=0;

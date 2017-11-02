@@ -14,7 +14,7 @@ import static org.testng.Assert.assertEquals;
 public class CreateDocument extends BaseClass {
 
     @Test
-    @Title("Создание дела")
+    @Title("Проверка создание дела")
     public void CreateDocument() throws Exception {
         login("userName", "password", "admin", "admin");
         //Переход на страницу с делами - иногда не работает

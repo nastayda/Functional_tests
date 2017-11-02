@@ -14,6 +14,7 @@ import ru.yandex.qatools.allure.annotations.Title;
 @Title("Редактирование данных и сравнение с отображаемыми данными")
 public class EditSomeDocument extends BaseClass {
 
+    @Title("Редактирование данных и сравнение с отображаемыми данными")
     @Test
     public void EditDocument() {
         login("userName", "password", "admin", "admin");
@@ -116,14 +117,14 @@ public class EditSomeDocument extends BaseClass {
         wd.findElement(By.xpath("//html/body/div[2]/div/div[2]/div/div[1]/div[3]/div/div/div[2]/button[2]")).click();
     }
 
-    @Step("17. Заполнить номер основного договора")
+    @Step("17. Заполнить номер основного договора {0}")
     public void fillClientContractorNumber(String s) {
         wd.findElement(By.id("client_contract_number")).click();
         wd.findElement(By.id("client_contract_number")).clear();
         wd.findElement(By.id("client_contract_number")).sendKeys(s);
     }
 
-    @Step("16. Заполнить коммерческое предложение на сумму ")
+    @Step("16. Заполнить коммерческое предложение на сумму {0}")
     public void fillClientContractorPrice(String s) {
         wd.findElement(By.id("client_contract_price")).click();
         wd.findElement(By.id("client_contract_price")).clear();
@@ -143,14 +144,14 @@ public class EditSomeDocument extends BaseClass {
         wd.findElement(By.xpath("//tbody[@class='ant-calendar-tbody']/tr[5]/td[3]/div")).click();
     }
 
-    @Step("13. Заполниь коммерческое предложение")
+    @Step("13. Заполниь коммерческое предложение {0}")
     public void fillOfferPrice(String s) {
         wd.findElement(By.id("offer_price")).click();
         wd.findElement(By.id("offer_price")).clear();
         wd.findElement(By.id("offer_price")).sendKeys(s);
     }
 
-    @Step("12. Заполнить адрес")
+    @Step("12. Заполнить адрес {0}")
     public void fillObjectAddress(String s) {
         wd.findElement(By.id("object_adress")).click();
         wd.findElement(By.id("object_adress")).clear();
@@ -163,14 +164,14 @@ public class EditSomeDocument extends BaseClass {
         wd.findElement(By.cssSelector("li.ant-select-dropdown-menu-item-active.ant-select-dropdown-menu-item")).click();
     }
 
-    @Step("10. Заполнить мейл ответсвенного")
+    @Step("10. Заполнить мейл ответсвенного {0}")
     public void fillRespEmail(String s) {
         wd.findElement(By.id("responsible_email")).click();
         wd.findElement(By.id("responsible_email")).clear();
         wd.findElement(By.id("responsible_email")).sendKeys(s);
     }
 
-    @Step("9. Заполнить мейл заказчика")
+    @Step("9. Заполнить мейл заказчика {0}")
     public void fillClientEmail(String s) {
         wd.findElement(By.id("client_email")).click();
         wd.findElement(By.id("client_email")).clear();
@@ -184,7 +185,7 @@ public class EditSomeDocument extends BaseClass {
         wd.findElement(By.id("responsible_name")).sendKeys(s);
     }
 
-    @Step("7. Заполнить телефон заказчика2")
+    @Step("7. Заполнить телефон заказчика2 {0}")
     public void fillClientPhone2(String s) {
         wd.findElement(By.id("client_phone_2")).click();
         wd.findElement(By.id("client_phone_2")).clear();
@@ -198,28 +199,28 @@ public class EditSomeDocument extends BaseClass {
         wd.findElement(By.id("client_phone")).sendKeys(s);
     }
 
-    @Step("5. Заполнить имя контакта2")
+    @Step("5. Заполнить имя контакта2 {0}")
     public void fillClientContractor2(String s) {
         wd.findElement(By.id("client_contact_2")).click();
         wd.findElement(By.id("client_contact_2")).clear();
         wd.findElement(By.id("client_contact_2")).sendKeys(s);
     }
 
-    @Step("4. Заполнить имя контакта")
+    @Step("4. Заполнить имя контакта {0}")
     public void fillClientContractor(String s) {
         wd.findElement(By.id("client_contact")).click();
         wd.findElement(By.id("client_contact")).clear();
         wd.findElement(By.id("client_contact")).sendKeys(s);
     }
 
-    @Step("3. Заполнить имя заказчика")
+    @Step("3. Заполнить имя заказчика {0}")
     public void fillClientName(String s) {
         wd.findElement(By.id("client_name")).click();
         wd.findElement(By.id("client_name")).clear();
         wd.findElement(By.id("client_name")).sendKeys(s);
     }
 
-    @Step("2. Заполнить имя объекта")
+    @Step("2. Заполнить имя объекта {0}")
     public void fillObjectName(String nameObject) {
         //Возьмем последнюю строку в таблице для редактирования
         wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[last()]")).click();
