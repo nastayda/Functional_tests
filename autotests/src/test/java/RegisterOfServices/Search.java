@@ -41,6 +41,7 @@ public class Search extends BaseClass {
         );
 
     }
+
     //@Step("4. Число элементво после  применения фильтра")
     public int searchWithFilter(String searchCondition, String filterXpath) {
         wd.findElement(By.cssSelector("div.ant-select-selection__rendered")).click();

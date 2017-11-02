@@ -17,34 +17,75 @@ import static org.testng.AssertJUnit.assertEquals;
 @Title("Проверка по статусам")
 public class StatusComparison extends BaseClass {
     @Test
+    @Title("Проверка по статусам")
     public void StatusComparison() throws Exception {
         login("userName", "password", "admin", "admin");
         //getNumbersFromTable("//div[@class='departments-tree']/div/ul/li[1]/div/div[2]");
         //Проверка документов со статусом 77 Обращение,78 Коммерческое предложение, 79 Проект договора,
         // 80 Заключение договора и аванс, 81 Отказ, 82 1-й этап работ, 121 2-й этап работ, 122 Архив завершённых дел
-        assertEquals(getNumbersFromTable("//div[@class='departments-tree']/div/ul/li[1]/div/div[2]").size(),
-                     getCountStatus(77)
+        chekStatus77();
+        checkStatus78();
+        checkStatus79();
+        checkStatus80();
+        checkStatus82();
+        checkStatus121();
+        checkStatus122();
+        checkStatus81();
+    }
+
+    @Step("7. Проверить статус Отказ")
+    public void checkStatus81() throws Exception {
+        assertEquals(getNumbersFromTable("//div[@class='departments-tree']/div/ul/li[8]/div/div[2]").size(),
+                getCountStatus(81)
         );
-        assertEquals(getNumbersFromTable("//div[@class='departments-tree']/div/ul/li[2]/div/div[2]").size(),
-                getCountStatus(78)
-        );
-        assertEquals(getNumbersFromTable("//div[@class='departments-tree']/div/ul/li[3]/div/div[2]").size(),
-                    getCountStatus(79)
-        );
-         assertEquals(getNumbersFromTable("//div[@class='departments-tree']/div/ul/li[4]/div/div[2]").size(),
-                    getCountStatus(80)
-         );
-         assertEquals(getNumbersFromTable("//div[@class='departments-tree']/div/ul/li[5]/div/div[2]").size(),
-                getCountStatus(82)
-        );
-        assertEquals(getNumbersFromTable("//div[@class='departments-tree']/div/ul/li[6]/div/div[2]").size(),
-                getCountStatus(121)
-        );
+    }
+
+    @Step("7. Проверить статус Архив завершённых дел")
+    public void checkStatus122() throws Exception {
         assertEquals(getNumbersFromTable("//div[@class='departments-tree']/div/ul/li[7]/div/div[2]").size(),
                 getCountStatus(122)
         );
-        assertEquals(getNumbersFromTable("//div[@class='departments-tree']/div/ul/li[8]/div/div[2]").size(),
-                getCountStatus(81)
+    }
+
+    @Step("6. Проверить статус 2-й этап работ")
+    public void checkStatus121() throws Exception {
+        assertEquals(getNumbersFromTable("//div[@class='departments-tree']/div/ul/li[6]/div/div[2]").size(),
+                getCountStatus(121)
+        );
+    }
+
+    @Step("5. Проверить статус 1-й этап работ")
+    public void checkStatus82() throws Exception {
+        assertEquals(getNumbersFromTable("//div[@class='departments-tree']/div/ul/li[5]/div/div[2]").size(),
+                getCountStatus(82)
+        );
+    }
+
+    @Step("4. Проверить статус Заключение договора и аванс")
+    public void checkStatus80() throws Exception {
+        assertEquals(getNumbersFromTable("//div[@class='departments-tree']/div/ul/li[4]/div/div[2]").size(),
+                    getCountStatus(80)
+         );
+    }
+
+    @Step("3. Проверить статус Проект договора")
+    public void checkStatus79() throws Exception {
+        assertEquals(getNumbersFromTable("//div[@class='departments-tree']/div/ul/li[3]/div/div[2]").size(),
+                    getCountStatus(79)
+        );
+    }
+
+    @Step("2. Проверить статус Коммерческое предложение")
+    public void checkStatus78() throws Exception {
+        assertEquals(getNumbersFromTable("//div[@class='departments-tree']/div/ul/li[2]/div/div[2]").size(),
+                getCountStatus(78)
+        );
+    }
+
+    @Step("1. Проверить статус Обращение")
+    public void chekStatus77() throws Exception {
+        assertEquals(getNumbersFromTable("//div[@class='departments-tree']/div/ul/li[1]/div/div[2]").size(),
+                     getCountStatus(77)
         );
     }
 
