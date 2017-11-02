@@ -52,11 +52,16 @@ public class BaseClass {
     protected void login(String elementUserName, String elementPassword, String nameLogin, String passwordLogin) {
         enterLogin(elementUserName, nameLogin);
         enterPassword(elementPassword, passwordLogin);
-        wd.findElement(By.xpath("//*[@id=\"authorization\"]/div/form/button")).click();
+        //*[@id="authorization"]/div/form/button/span
+        signInClick();
         //Переход на страницу с делами
         wd.navigate().to("http://vm-107-stu-dev.ursip.ru/");
         //Клик по левому меню "Обращения"
         wd.findElement(By.cssSelector("div.departments-tree")).click();
+    }
+
+    private void signInClick() {
+        wd.findElement(By.xpath("//*[@id=\"authorization\"]/div/form/button/span")).click();
     }
 
     @Step("Ввод пароля")
