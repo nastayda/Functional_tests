@@ -30,7 +30,7 @@
             <class name="RegisterOfServices.StatusComparison" />
         </classes>
     </test>
-    
+
     <test name="Вызов класса RegisterOfServices.DeleteDocument">
         <classes>
             <class name="RegisterOfServices.DeleteDocument" />

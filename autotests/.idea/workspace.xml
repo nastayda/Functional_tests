@@ -29,10 +29,9 @@
       <file leaf-file-name="StatusComparison.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/StatusComparison.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="84">
               <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="29" />
               <folding>
-                <element signature="method#StatusComparison#0;class#StatusComparison#0" expanded="false" />
                 <element signature="method#checkStatus81#0;class#StatusComparison#0" expanded="false" />
                 <element signature="method#checkStatus122#0;class#StatusComparison#0" expanded="false" />
                 <element signature="method#checkStatus121#0;class#StatusComparison#0" expanded="false" />
@@ -48,49 +47,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeleteDocument.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/DeleteDocument.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-              <folding>
-                <element signature="method#DeleteDocument#0;class#DeleteDocument#0" expanded="false" />
-                <element signature="method#getCountBefore#0;class#DeleteDocument#0" expanded="false" />
-                <element signature="method#setUpConnection#0;class#DeleteDocument#0" expanded="false" />
-                <element signature="method#getRows#0;class#DeleteDocument#0" expanded="false" />
-                <element signature="method#deleteRow#0;class#DeleteDocument#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data-for-doc.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/help-files/data-for-doc.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testng-auth.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/testng-auth.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CreateDocument.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/CreateDocument.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+            <state relative-caret-position="204">
+              <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
               <folding>
-                <element signature="method#CreateDocument#0;class#CreateDocument#0" expanded="false" />
                 <element signature="method#createNewDocument#0;class#CreateDocument#0" expanded="false" />
                 <element signature="method#okButtonClick#0;class#CreateDocument#0" expanded="false" />
                 <element signature="method#fillObjectName#0;class#CreateDocument#0" expanded="false" />
@@ -100,7 +62,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Search.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EditSomeDocument.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/EditSomeDocument.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+              <folding>
+                <element signature="method#fillPrepaymentAndStages#0;class#EditSomeDocument#0" expanded="false" />
+                <element signature="method#fillClientContractorNumber#0;class#EditSomeDocument#0" expanded="false" />
+                <element signature="method#fillClientContractorPrice#0;class#EditSomeDocument#0" expanded="false" />
+                <element signature="method#checkSomeBox#0;class#EditSomeDocument#0" expanded="false" />
+                <element signature="method#fillDate#0;class#EditSomeDocument#0" expanded="false" />
+                <element signature="method#fillOfferPrice#0;class#EditSomeDocument#0" expanded="false" />
+                <element signature="method#fillObjectAddress#0;class#EditSomeDocument#0" expanded="false" />
+                <element signature="method#choseWorkType#0;class#EditSomeDocument#0" expanded="false" />
+                <element signature="method#fillRespEmail#0;class#EditSomeDocument#0" expanded="false" />
+                <element signature="method#fillClientEmail#0;class#EditSomeDocument#0" expanded="false" />
+                <element signature="method#fillRespName#0;class#EditSomeDocument#0" expanded="false" />
+                <element signature="method#fillClientPhone2#0;class#EditSomeDocument#0" expanded="false" />
+                <element signature="method#fillClientPhone#0;class#EditSomeDocument#0" expanded="false" />
+                <element signature="method#fillClientContractor2#0;class#EditSomeDocument#0" expanded="false" />
+                <element signature="method#fillClientContractor#0;class#EditSomeDocument#0" expanded="false" />
+                <element signature="method#fillClientName#0;class#EditSomeDocument#0" expanded="false" />
+                <element signature="method#fillObjectName#0;class#EditSomeDocument#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Search.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/Search.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -115,6 +105,16 @@
                 <element signature="method#getRowsFromDB#0;class#Search#0" expanded="false" />
                 <element signature="method#getSearchConditionCount#0;class#Search#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testng-auth.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/testng-auth.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="11" lean-forward="true" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -517,12 +517,12 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/HelpClasses/BaseClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/HelpClasses/WriteReadFromFile.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/CreateDocument.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/EditSomeDocument.java" />
         <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/DeleteDocument.java" />
         <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/Search.java" />
         <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/StatusComparison.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testng-auth.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/CreateDocument.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/EditSomeDocument.java" />
       </list>
     </option>
   </component>
@@ -1330,37 +1330,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/CreateDocument.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding>
-            <element signature="method#CreateDocument#0;class#CreateDocument#0" expanded="false" />
-            <element signature="method#createNewDocument#0;class#CreateDocument#0" expanded="false" />
-            <element signature="method#okButtonClick#0;class#CreateDocument#0" expanded="false" />
-            <element signature="method#fillObjectName#0;class#CreateDocument#0" expanded="false" />
-            <element signature="method#addButtonClick#0;class#CreateDocument#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/Search.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="44" column="3" lean-forward="false" selection-start-line="44" selection-start-column="3" selection-end-line="44" selection-end-column="3" />
-          <folding>
-            <element signature="method#Search#0;class#Search#0" expanded="false" />
-            <element signature="method#searchFromClientName#0;class#Search#0" expanded="false" />
-            <element signature="method#searchFromObjectName#0;class#Search#0" expanded="false" />
-            <element signature="method#searchWithFilter#0;class#Search#0" expanded="false" />
-            <element signature="method#getSearchConditionOldVersion#0;class#Search#0" expanded="false" />
-            <element signature="method#getNumbersFromTable#0;class#Search#0" expanded="false" />
-            <element signature="method#getRowsFromDB#0;class#Search#0" expanded="false" />
-            <element signature="method#getSearchConditionCount#0;class#Search#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/DeleteDocument.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1375,10 +1344,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/StatusComparison.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <element signature="method#checkStatus81#0;class#StatusComparison#0" expanded="false" />
+            <element signature="method#checkStatus122#0;class#StatusComparison#0" expanded="false" />
+            <element signature="method#checkStatus121#0;class#StatusComparison#0" expanded="false" />
+            <element signature="method#checkStatus82#0;class#StatusComparison#0" expanded="false" />
+            <element signature="method#checkStatus80#0;class#StatusComparison#0" expanded="false" />
+            <element signature="method#checkStatus79#0;class#StatusComparison#0" expanded="false" />
+            <element signature="method#checkStatus78#0;class#StatusComparison#0" expanded="false" />
+            <element signature="method#chekStatus77#0;class#StatusComparison#0" expanded="false" />
+            <element signature="method#getNumbersFromTable#0;class#StatusComparison#0" expanded="false" />
+            <element signature="method#getCountStatus#0;class#StatusComparison#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/CreateDocument.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+          <folding>
+            <element signature="method#createNewDocument#0;class#CreateDocument#0" expanded="false" />
+            <element signature="method#okButtonClick#0;class#CreateDocument#0" expanded="false" />
+            <element signature="method#fillObjectName#0;class#CreateDocument#0" expanded="false" />
+            <element signature="method#addButtonClick#0;class#CreateDocument#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-auth.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="11" lean-forward="true" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/EditSomeDocument.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="16" column="71" lean-forward="false" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
+        <state relative-caret-position="204">
+          <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
           <folding>
             <element signature="method#fillPrepaymentAndStages#0;class#EditSomeDocument#0" expanded="false" />
             <element signature="method#fillClientContractorNumber#0;class#EditSomeDocument#0" expanded="false" />
@@ -1401,31 +1410,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/StatusComparison.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/Search.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="29" />
+        <state relative-caret-position="255">
+          <caret line="44" column="3" lean-forward="false" selection-start-line="44" selection-start-column="3" selection-end-line="44" selection-end-column="3" />
           <folding>
-            <element signature="method#StatusComparison#0;class#StatusComparison#0" expanded="false" />
-            <element signature="method#checkStatus81#0;class#StatusComparison#0" expanded="false" />
-            <element signature="method#checkStatus122#0;class#StatusComparison#0" expanded="false" />
-            <element signature="method#checkStatus121#0;class#StatusComparison#0" expanded="false" />
-            <element signature="method#checkStatus82#0;class#StatusComparison#0" expanded="false" />
-            <element signature="method#checkStatus80#0;class#StatusComparison#0" expanded="false" />
-            <element signature="method#checkStatus79#0;class#StatusComparison#0" expanded="false" />
-            <element signature="method#checkStatus78#0;class#StatusComparison#0" expanded="false" />
-            <element signature="method#chekStatus77#0;class#StatusComparison#0" expanded="false" />
-            <element signature="method#getNumbersFromTable#0;class#StatusComparison#0" expanded="false" />
-            <element signature="method#getCountStatus#0;class#StatusComparison#0" expanded="false" />
+            <element signature="method#Search#0;class#Search#0" expanded="false" />
+            <element signature="method#searchFromClientName#0;class#Search#0" expanded="false" />
+            <element signature="method#searchFromObjectName#0;class#Search#0" expanded="false" />
+            <element signature="method#searchWithFilter#0;class#Search#0" expanded="false" />
+            <element signature="method#getSearchConditionOldVersion#0;class#Search#0" expanded="false" />
+            <element signature="method#getNumbersFromTable#0;class#Search#0" expanded="false" />
+            <element signature="method#getRowsFromDB#0;class#Search#0" expanded="false" />
+            <element signature="method#getSearchConditionCount#0;class#Search#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-auth.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>

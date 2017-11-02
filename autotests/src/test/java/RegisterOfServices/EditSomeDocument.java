@@ -19,7 +19,7 @@ public class EditSomeDocument extends BaseClass {
     public void EditDocument() {
         login("userName", "password", "admin", "admin");
         //Переход на страницу с делами
-        wd.navigate().to("http://vm-107-stu-dev.ursip.ru/");
+        //wd.navigate().to("http://vm-107-stu-dev.ursip.ru/");
         //Генерим название объекта "Test"+дата
         String nameObject = "Test"+ LocalDateTime.now().toString().replace(":","_");
         //Получим данные из файла
