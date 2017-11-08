@@ -94,4 +94,18 @@ public class BaseClass {
     public void tearDown() {
         wd.quit();
     }
+
+    public String[] getDataFromFile( ) {
+        //Получить путь к тестовым файлам
+        File testFile = new File( "src/help-files/data-for-doc.txt" );
+        //Читаем из файла по абсолютному пути
+        WriteReadFromFile readDataForCompare = new WriteReadFromFile( testFile.getAbsolutePath( ) );
+        //Заполнить массив тестовыми данными
+        String[] dataFromFile = new String[ readDataForCompare.readFromFile( ).size( ) ];
+        for (int i = 0; i < readDataForCompare.readFromFile( ).size( ); i++) {
+            dataFromFile[ i ] = readDataForCompare.readFromFile( ).get( i );
+        }
+        //System.out.println(dataFromFile[1]);
+        return dataFromFile;
+    }
 }
