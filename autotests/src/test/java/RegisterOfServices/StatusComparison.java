@@ -33,7 +33,7 @@ public class StatusComparison extends BaseClass {
         checkStatus81();
     }
 
-    @Step("7. Проверить статус Отказ")
+    @Step("8. Проверить статус Отказ")
     public void checkStatus81() throws Exception {
         assertEquals(getNumbersFromTable("//div[@class='departments-tree']/div/ul/li[8]/div/div[2]").size(),
                 getCountStatus(81)

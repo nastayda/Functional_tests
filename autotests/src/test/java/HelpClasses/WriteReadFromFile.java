@@ -13,10 +13,6 @@ public class WriteReadFromFile {
 
     String pathToFile, stringData;
     public static void main(String[] args) {
-
-      // writeToFile("C:\\test\\notes3.txt", "Мама мыла раму, раму мыла мама");
-       // readFromFile1("C:\\test\\notes3.txt");
-
     }
 
     public WriteReadFromFile(String pT){
@@ -36,22 +32,7 @@ public class WriteReadFromFile {
             e.printStackTrace();
         }
         return elementsOfFile;
-        //  elementsOfFile.forEach(value -> System.out.println(value));
-         // System.out.println(elementsOfFile.get(1));
     }
-
-  /*  public static void readFromFile1(String pathToFile) {
-        ArrayList<String> elementsOfFile = new ArrayList<String>();
-        try {// читаем построчно
-            Files.lines(Paths.get(pathToFile), StandardCharsets.UTF_8).forEach(value -> elementsOfFile.add(value));
-        }
-        catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        //  elementsOfFile.forEach(value -> System.out.println(value));
-        System.out.println(elementsOfFile.get(1));
-    }*/
     //@Step("Запись в файл")
     public void writeToFile() {
        try(FileWriter writer = new FileWriter(pathToFile, false))

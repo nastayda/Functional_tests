@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 import ru.yandex.qatools.allure.annotations.Step;
 import ru.yandex.qatools.allure.annotations.Title;
 
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,9 +22,10 @@ public class Search extends BaseClass {
     @Test
     public void Search() throws Exception {
         login("userName", "password", "admin", "admin");
-        searchFromrResponsibleName();
-        searchFromClientName();
-        searchFromObjectName();
+        //searchFromrResponsibleName();
+        //searchFromClientName();
+        //searchFromObjectName();
+        getMethod("ObjectName");
     }
 
     @Step("Поиск везде")
@@ -266,7 +268,7 @@ public class Search extends BaseClass {
         String [] dataFromFileMass = getDataFromFileObject.getDataFromFile();
         //System.out.println(dataFromFileMass[0]);
         //В зависимости от того какое условие задано
-        switch (condition) {
+       /* switch (condition) {
             case "id":
                 for (BusinessTable item : (List<BusinessTable>) result) {
                     if (item.getId() != -10) {
@@ -370,8 +372,34 @@ public class Search extends BaseClass {
                     }
                 }
                 break;
+        }*/
+
+        return resultSearch;
+    }
+
+    public String[] getMethod(String myCondition) throws Exception {
+        //Получить все элементы из бд
+        List result = getRowsFromDB();
+        int k=0;
+        //Инициализирвоать массив элементами для поиска
+        String [] resultSearch=new String[]{"",""};
+        if (myCondition.equals("ObjectName")){
+            resultSearch[0] = "Test2017";
         }
-       // System.out.println(resultSearch[1]);
+        //
+        EditSomeDocument getDataFromFileObject = new EditSomeDocument();
+        String [] dataFromFileMass = getDataFromFileObject.getDataFromFile();
+
+        for (BusinessTable item : (List<BusinessTable>) result) {
+            Method method = item.getClass().getMethod("get"+ myCondition);
+            if (method.invoke(item)!= null) {
+                if (method.invoke(item).toString().contains(dataFromFileMass[0])) {
+                    k++;
+                    resultSearch[1] = Integer.toString(k);
+                }
+            }
+        }
+        System.out.println(resultSearch[1]);
         return resultSearch;
     }
 }
