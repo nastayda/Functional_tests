@@ -34,6 +34,7 @@ public class Search extends BaseClass {
       //  searchFromAddress();
         searchFromContractDate( );
         searchFromContractNumber();
+        softAssert.assertAll();
         //dont work
         //searchFromNumberDocument();
         // searchFromContractPrice();
@@ -88,9 +89,10 @@ public class Search extends BaseClass {
     @Step("Поиск по номеру контракта")
     public String searchFromContractNumber( ) throws Exception {
         //Positive test
-        assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientContractNumber" )[ 0 ], "//div[2]/div/div/div/ul/li[9]" ),
+        softAssert.assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientContractNumber" )[ 0 ], "//div[2]/div/div/div/ul/li[9]" ),
                 Integer.parseInt( getSearchConditionCount( "ClientContractNumber" )[ 1 ] )
         );
+        softAssert.assertAll();
         return getSearchConditionCount( "ClientContractNumber" )[ 0 ];
     }
 
