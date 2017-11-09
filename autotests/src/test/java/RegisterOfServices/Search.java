@@ -34,7 +34,6 @@ public class Search extends BaseClass {
       //  searchFromAddress();
         searchFromContractDate( );
         searchFromContractNumber();
-        softAssert.assertAll();
         //dont work
         //searchFromNumberDocument();
         // searchFromContractPrice();
@@ -80,6 +79,8 @@ public class Search extends BaseClass {
         /*assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientContractDate" )[ 0 ], "//div[2]/div/div/div/ul/li[10]" ),
                 Integer.parseInt( getSearchConditionCount( "ClientContractDate" )[ 1 ] )
         );*/
+
+        softAssert.assertAll();
         return getSearchConditionCount( "ClientContractDate" )[ 0 ];
     }
 
