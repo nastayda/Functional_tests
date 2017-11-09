@@ -32,9 +32,9 @@ public class Search extends BaseClass {
        // searchFromContractorName();
        // searchFromWorkType();
       //  searchFromAddress();
-        searchFromContractDate( );
-        searchFromContractNumber();
-        softAssert.assertAll();
+        //searchFromContractDate( );
+       // searchFromContractNumber();
+       // softAssert.assertAll();
         //dont work
         //searchFromNumberDocument();
         // searchFromContractPrice();
@@ -70,7 +70,8 @@ public class Search extends BaseClass {
     }
 */
     @Attachment(value = "Дата контракта", type = "text/plain")
-    @Step("Поиск по дате контракта")
+    @Title("Поиск по дате контракта")
+    @Test
     public String searchFromContractDate( ) throws Exception {
         //Positive test
         //String[] resultSearch = getSearchConditionCount( "ContractorName", 16 );
@@ -81,18 +82,19 @@ public class Search extends BaseClass {
                 Integer.parseInt( getSearchConditionCount( "ClientContractDate" )[ 1 ] )
         );*/
 
-        //softAssert.assertAll();
+        softAssert.assertAll();
         return getSearchConditionCount( "ClientContractDate" )[ 0 ];
     }
 
     @Attachment(value = "Номер контракта", type = "text/plain")
-    @Step("Поиск по номеру контракта")
+    @Title("Поиск по номеру контракта")
+    @Test
     public String searchFromContractNumber( ) throws Exception {
         //Positive test
         softAssert.assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientContractNumber" )[ 0 ], "//div[2]/div/div/div/ul/li[9]" ),
                 Integer.parseInt( getSearchConditionCount( "ClientContractNumber" )[ 1 ] )
         );
-        //softAssert.assertAll();
+        softAssert.assertAll();
         return getSearchConditionCount( "ClientContractNumber" )[ 0 ];
     }
 
