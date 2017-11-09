@@ -33,6 +33,7 @@ public class Search extends BaseClass {
        // searchFromWorkType();
       //  searchFromAddress();
         searchFromContractDate( );
+        softAssert.assertAll();
         searchFromContractNumber();
         softAssert.assertAll();
         //dont work
