@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1510221202915" stop="1510221214183">
+    <name>Тестовый сьют</name>
+    <test-cases>
+        <test-case start="1510221208050" stop="1510221213868" status="passed">
+            <name>CreateDocument</name>
+            <title>Проверка создание дела</title>
+            <steps>
+                <step start="1510221208050" stop="1510221210291" status="passed">
+                    <name>login</name>
+                    <title>Ввод логина и пароля</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1510221208050" stop="1510221208372" status="passed">
+                            <name>enterLogin</name>
+                            <title>Ввод логина</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1510221208372" stop="1510221208709" status="passed">
+                            <name>enterPassword</name>
+                            <title>Ввод пароля</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1510221208709" stop="1510221209108" status="passed">
+                            <name>signInClick</name>
+                            <title>Нажать на Войти</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1510221209108" stop="1510221210291" status="passed">
+                            <name>waitTableAndGoToPage</name>
+                            <title>Ждем пока появится таблица и переходм на основную станицу</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start="1510221210600" stop="1510221213726" status="passed">
+                    <name>createNewDocument</name>
+                    <title>Создание нового дела</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1510221210600" stop="1510221211561" status="passed">
+                            <name>addButtonClick</name>
+                            <title>1. Нажать на кнопку Добавить</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1510221211561" stop="1510221212127" status="passed">
+                            <name>createButtonClick</name>
+                            <title>2. Нажать на кнопку Создать</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1510221212127" stop="1510221213336" status="passed">
+                            <name>fillObjectName</name>
+                            <title>3. Заполнение имени объекта Test2017-11-09T12_53_30.600</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start="1510221213336" stop="1510221213726" status="passed">
+                            <name>okButtonClick</name>
+                            <title>4. Нажать на кнопку Сохранить</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <labels/>
+        </test-case>
+    </test-cases>
+    <labels/>
+</ns2:test-suite>

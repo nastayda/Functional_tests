@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1510221189874" stop="1510221202635">
+    <name>Тестовый сьют</name>
+    <test-cases>
+        <test-case start="1510221199573" stop="1510221202208" status="passed">
+            <name>TestAuthorization</name>
+            <title>Авторизация пользователя</title>
+            <steps>
+                <step start="1510221199584" stop="1510221202206" status="passed">
+                    <name>TestAuthorization</name>
+                    <title>Вызов метода авторизации</title>
+                    <attachments/>
+                    <steps>
+                        <step start="1510221199585" stop="1510221202151" status="passed">
+                            <name>login</name>
+                            <title>Ввод логина и пароля</title>
+                            <attachments/>
+                            <steps>
+<step start="1510221199585" stop="1510221199895" status="passed">
+    <name>enterLogin</name>
+    <title>Ввод логина</title>
+    <attachments/>
+    <steps/>
+</step>
+<step start="1510221199895" stop="1510221200161" status="passed">
+    <name>enterPassword</name>
+    <title>Ввод пароля</title>
+    <attachments/>
+    <steps/>
+</step>
+<step start="1510221200161" stop="1510221200716" status="passed">
+    <name>signInClick</name>
+    <title>Нажать на Войти</title>
+    <attachments/>
+    <steps/>
+</step>
+<step start="1510221200716" stop="1510221202151" status="passed">
+    <name>waitTableAndGoToPage</name>
+    <title>Ждем пока появится таблица и переходм на основную станицу</title>
+    <attachments/>
+    <steps/>
+</step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <labels/>
+        </test-case>
+    </test-cases>
+    <labels/>
+</ns2:test-suite>

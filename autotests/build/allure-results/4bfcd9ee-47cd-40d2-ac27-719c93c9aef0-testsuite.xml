@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1510214694839" stop="1510214712484">
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1510221302897" stop="1510221317854">
     <name>Default Suite</name>
     <test-cases>
-        <test-case start="1510214700228" stop="1510214712074" status="passed">
+        <test-case start="1510221308572" stop="1510221317354" status="passed">
             <name>Search</name>
             <title>Поиск по различным критериям</title>
             <steps/>

@@ -22,17 +22,17 @@ public class Search extends BaseClass {
     @Test
     public void Search( ) throws Exception {
         login( "userName", "password", "admin", "admin" );
-        //searchFromrResponsibleName();
-        //searchFromClientName();
-        //searchFromObjectName();
-        //searchFromContractorName();
-        //searchFromWorkType();
-        //searchFromAddress();
-        //searchFromContractNumber();
-        //searchFromContractDate();
+        searchFromrResponsibleName();
+        searchFromClientName();
+        searchFromObjectName();
+        searchFromContractorName();
+        searchFromWorkType();
+        searchFromAddress();
+        searchFromContractNumber();
+        searchFromContractDate( );
         //dont work
         //searchFromNumberDocument();
-        searchFromContractPrice();
+        // searchFromContractPrice();
     }
 /*
 Везде
@@ -55,7 +55,7 @@ public class Search extends BaseClass {
                  Integer.parseInt( getSearchConditionCount("id")[1])
          );
      }*/
-    @Step("Поиск по цене контракта")
+  /*  @Step("Поиск по цене контракта")
     public void searchFromContractPrice( ) throws Exception {
         //Positive test
         //String[] resultSearch = getSearchConditionCount( "ContractorName", 16 );
@@ -63,31 +63,29 @@ public class Search extends BaseClass {
                 Integer.parseInt( getSearchConditionCount( "ClientContractPrice", 0 )[ 1 ] )
         );
     }
-
+*/
     @Step("Поиск по дате контракта")
     public void searchFromContractDate( ) throws Exception {
         //Positive test
         //String[] resultSearch = getSearchConditionCount( "ContractorName", 16 );
-        assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientContractDate", 0 )[ 0 ], "//div[2]/div/div/div/ul/li[10]" ),
-                Integer.parseInt( getSearchConditionCount( "ClientContractDate", 0 )[ 1 ] )
+        assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientContractDate" )[ 0 ], "//div[2]/div/div/div/ul/li[10]" ),
+                Integer.parseInt( getSearchConditionCount( "ClientContractDate" )[ 1 ] )
         );
     }
 
     @Step("Поиск по номеру контракта")
     public void searchFromContractNumber( ) throws Exception {
         //Positive test
-        //String[] resultSearch = getSearchConditionCount( "ContractorName", 16 );
-        assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientContractNumber", 11 )[ 0 ], "//div[2]/div/div/div/ul/li[9]" ),
-                Integer.parseInt( getSearchConditionCount( "ClientContractNumber", 11 )[ 1 ] )
+        assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientContractNumber" )[ 0 ], "//div[2]/div/div/div/ul/li[9]" ),
+                Integer.parseInt( getSearchConditionCount( "ClientContractNumber" )[ 1 ] )
         );
     }
 
     @Step("Поиск по адресу")
     public void searchFromAddress( ) throws Exception {
         //Positive test
-        //String[] resultSearch = getSearchConditionCount( "ContractorName", 16 );
-        assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ObjectAdress", 8 )[ 0 ], "//div[2]/div/div/div/ul/li[8]" ),
-                Integer.parseInt( getSearchConditionCount( "ObjectAdress", 8 )[ 1 ] )
+        assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ObjectAdress" )[ 0 ], "//div[2]/div/div/div/ul/li[8]" ),
+                Integer.parseInt( getSearchConditionCount( "ObjectAdress" )[ 1 ] )
         );
     }
 
@@ -95,8 +93,8 @@ public class Search extends BaseClass {
     public void searchFromContractorName( ) throws Exception {
         //Positive test
         //String[] resultSearch = getSearchConditionCount( "ContractorName", 16 );
-        assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ContractorName", 16 )[ 0 ], "//div[2]/div/div/div/ul/li[5]" ),
-                Integer.parseInt( getSearchConditionCount( "ContractorName", 16 )[ 1 ] )
+        assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ContractorName" )[ 0 ], "//div[2]/div/div/div/ul/li[5]" ),
+                Integer.parseInt( getSearchConditionCount( "ContractorName" )[ 1 ] )
         );
     }
 
@@ -104,32 +102,32 @@ public class Search extends BaseClass {
     public void searchFromWorkType( ) throws Exception {
         //Positive test
         //String[] resultSearch = getSearchConditionCount( "WorkType", 0 );
-        assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "WorkType", 0 )[ 0 ], "//div[2]/div/div/div/ul/li[7]" ),
-                Integer.parseInt( getSearchConditionCount( "WorkType", 0 )[ 1 ] )
+        assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "WorkType" )[ 0 ], "//div[2]/div/div/div/ul/li[7]" ),
+                Integer.parseInt( getSearchConditionCount( "WorkType" )[ 1 ] )
         );
     }
 
     @Step("Поиск по номеру дела")
     public void searchFromNumberDocument( ) throws Exception {
         //Positive test
-        assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientContractNumber", 11 )[ 0 ], "//div[2]/div/div/div/ul/li[2]" ),
-                Integer.parseInt( getSearchConditionCount( "ClientContractNumber", 11 )[ 1 ] )
+        assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientContractNumber" )[ 0 ], "//div[2]/div/div/div/ul/li[2]" ),
+                Integer.parseInt( getSearchConditionCount( "ClientContractNumber" )[ 1 ] )
         );
     }
 
     @Step("Поиск по имени заказчика")
     public void searchFromClientName( ) throws Exception {
         //Positive test
-        assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientName", 0 )[ 0 ], "//div[2]/div/div/div/ul/li[3]" ),
-                Integer.parseInt( getSearchConditionCount( "ClientName", 0 )[ 1 ] )
+        assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientName" )[ 0 ], "//div[2]/div/div/div/ul/li[3]" ),
+                Integer.parseInt( getSearchConditionCount( "ClientName" )[ 1 ] )
         );
     }
 
     @Step("Поиск по ФИО ответсвенного")
     public void searchFromrResponsibleName( ) throws Exception {
         //Positive test
-        assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ResponsibleName", 5 )[ 0 ], "//div[2]/div/div/div/ul/li[4]" ),
-                Integer.parseInt( getSearchConditionCount( "ResponsibleName", 5 )[ 1 ] )
+        assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ResponsibleName" )[ 0 ], "//div[2]/div/div/div/ul/li[4]" ),
+                Integer.parseInt( getSearchConditionCount( "ResponsibleName" )[ 1 ] )
         );
     }
 
@@ -137,8 +135,8 @@ public class Search extends BaseClass {
     public void searchFromObjectName( ) throws Exception {
         //Positive test
         // String[] resultSearch = getSearchConditionCount( "ObjectName", 0 );
-        assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ObjectName", 0 )[ 0 ], "//div[2]/div/div/div/ul/li[6]" ),
-                Integer.parseInt( getSearchConditionCount( "ObjectName", 0 )[ 1 ] )
+        assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ObjectName" )[ 0 ], "//div[2]/div/div/div/ul/li[6]" ),
+                Integer.parseInt( getSearchConditionCount( "ObjectName" )[ 1 ] )
         );
     }
 
@@ -204,24 +202,25 @@ public class Search extends BaseClass {
     }
 
     //@Step("1. Получить первое ненулевое условие поиска из БД searchResult[0] + число повторений этого условия в наборе данных из бд searchResult[1]")
-    public String[] getSearchConditionCountOldV1( String condition ) throws Exception {
+    public String[] getSearchConditionCount( String condition ) throws Exception {
         //Получить все элементы из бд
         List result = getRowsFromDB( );
         int k = 0;
-        //Из базового класса вытащили метод, который вернет текст из файла
-        String[] dataFromFileMass = getDataFromFile( );
         //Инициализирвоать массив элементами для поиска
         String[] resultSearch = new String[]{ "", "" };
 
         for (BusinessTable item : (List<BusinessTable>) result) {
             Method method = item.getClass( ).getMethod( "get" + condition );
             if (method.invoke( item ) != null) {
-                resultSearch[ 0 ] = method.invoke( item ).toString( );
+                if (resultSearch[ 0 ].isEmpty( )) {
+                    resultSearch[ 0 ] = method.invoke( item ).toString( );
+                }
+                if (!resultSearch[ 0 ].isEmpty( ) & method.invoke( item ).toString( ).contains( resultSearch[ 0 ] )) {
+                    k++;
+                    resultSearch[ 1 ] = Integer.toString( k );
+                }
             }
         }
-        //System.out.println(resultSearch[1]);
-        //return resultSearch;
-        //System.out.println(resultSearch[1]);
         return resultSearch;
     }
 
@@ -342,7 +341,7 @@ public class Search extends BaseClass {
         return resultSearch;
     }
 
-    public String[] getSearchConditionCount( String myCondition, int indexOfCondition ) throws Exception {
+   /* public String[] getSearchConditionCountOldV3( String myCondition, int indexOfCondition ) throws Exception {
         //Получить все элементы из бд
         List result = getRowsFromDB( );
         int k = 0;
@@ -355,11 +354,10 @@ public class Search extends BaseClass {
         } else if (myCondition.equals( "WorkType" )) {
             resultSearch[ 0 ] = "Механическая безопасность";
         } else if (myCondition.equals( "ClientContractDate" )) {
-            resultSearch[ 0 ] = getSearchConditionCountOldV1("ClientContractDate")[0];
-        } else if (myCondition.equals( "ClientContractPrice" )){
-            resultSearch[ 0 ] = getSearchConditionCountOldV1("ClientContractPrice")[0];
-        }
-        else {
+            resultSearch[ 0 ] = getSearchConditionCountOldV1( "ClientContractDate" )[ 0 ];
+        } else if (myCondition.equals( "ClientContractPrice" )) {
+            resultSearch[ 0 ] = getSearchConditionCountOldV1( "ClientContractPrice" )[ 0 ];
+        } else {
             resultSearch[ 0 ] = dataFromFileMass[ indexOfCondition ];
         }
 
@@ -374,5 +372,5 @@ public class Search extends BaseClass {
         }
         //System.out.println(resultSearch[1]);
         return resultSearch;
-    }
+    }*/
 }

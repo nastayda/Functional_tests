@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1510217653434" stop="1510217683302">
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1510221395406" stop="1510221419869">
     <name>Default Suite</name>
     <test-cases>
-        <test-case start="1510217659212" stop="1510217682858" status="broken">
+        <test-case start="1510221400907" stop="1510221419287" status="failed">
             <name>Search</name>
             <title>Поиск по различным критериям</title>
             <failure>
-                <message>NumberFormatException: For input string: ""</message>
-                <stack-trace>java.lang.NumberFormatException: For input string: ""
-	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.lang.Integer.parseInt(Integer.java:592)
-	at java.lang.Integer.parseInt(Integer.java:615)
-	at RegisterOfServices.Search.searchFromContractDate(Search.java:62)
-	at RegisterOfServices.Search.Search(Search.java:32)
+                <message>AssertionError: expected [7] but found [0]</message>
+                <stack-trace>java.lang.AssertionError: expected [7] but found [0]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:388)
+	at org.testng.Assert.assertEquals(Assert.java:398)
+	at RegisterOfServices.Search.searchFromNumberDocument(Search.java:115)
+	at RegisterOfServices.Search.Search(Search.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
