@@ -58,13 +58,8 @@ public class Search extends BaseClass {
         //Positive test
         //String[] resultSearch = getSearchConditionCount( "ContractorName", 16 );
         softAssert.assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientContractDate" )[ 0 ], "//div[2]/div/div/div/ul/li[10]" ),
-                Integer.parseInt( getSearchConditionCount( "ClientContractDate" )[ 1 ] ),"searchFromContractDate"
+                Integer.parseInt( getSearchConditionCount( "ClientContractDate" )[ 1 ] ),"Поиск по дате "+getSearchConditionCount( "ClientContractDate" )[ 0 ]+" провален"
         );
-
-        /*assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientContractDate" )[ 0 ], "//div[2]/div/div/div/ul/li[10]" ),
-                Integer.parseInt( getSearchConditionCount( "ClientContractDate" )[ 1 ] )
-        );*/
-        //softAssert.assertAll();
     }
 
    // @Attachment(value = "Номер контракта", type = "text/plain")
@@ -74,7 +69,6 @@ public class Search extends BaseClass {
         softAssert.assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientContractNumber" )[ 0 ], "//div[2]/div/div/div/ul/li[9]" ),
                 Integer.parseInt( getSearchConditionCount( "ClientContractNumber" )[ 1 ] ), "searchFromContractNumber"
         );
-        //softAssert.assertAll();
     }
 
 
