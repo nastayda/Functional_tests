@@ -26,7 +26,7 @@ public class EditSomeDocument extends BaseClass {
 
     @Step("2. Получить данные со страницы")
     public String[] getDataFromPage( ) {
-        String[] dataFromPage = new String[ 16 ];
+        String[] dataFromPage = new String[ 18 ];
         //Возьмем последнюю строку в таблице для редактирования
         wd.findElement( By.xpath( "//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[last()]" ) ).click( );
 
@@ -48,6 +48,8 @@ public class EditSomeDocument extends BaseClass {
             dataFromPage[ 13 ] = wd.findElement( By.xpath( "//*[@id=\"root\"]/div/div/div[2]/div/div[3]/div/div/div/div[8]/div[2]/p/span" ) ).getText( );
             dataFromPage[ 14 ] = wd.findElement( By.xpath( "//*[@id=\"root\"]/div/div/div[2]/div/div[3]/div/div/div/div[8]/div[3]" ) ).getText( ).substring( 3 );
             dataFromPage[ 15 ] = wd.findElement( By.xpath( "//*[@id=\"root\"]/div/div/div[2]/div/div[3]/div/div/div/div[12]/pre" ) ).getText( );
+            dataFromPage[ 16 ] = wd.findElement( By.xpath( "//*[@id=\"root\"]/div/div/div[2]/div/div[3]/div/div/div/div[3]/div/div[7]/div[2]/div" ) ).getText( );
+            dataFromPage[ 17 ] = wd.findElement( By.xpath( "//*[@id=\"root\"]/div/div/div[2]/div/div[3]/div/div/div/div[2]/div/div[4]/div[2]/div/pre/span" ) ).getText( );
         }
         return dataFromPage;
     }
@@ -77,7 +79,7 @@ public class EditSomeDocument extends BaseClass {
         //Читаем из файла адрес сервера
         WriteReadFromFile readDataForCompare = new WriteReadFromFile( testFile.getAbsolutePath( ) );
         //Заполнить массив тестовыми данными
-        String[] dataFromFile = new String[ 16 ];
+        String[] dataFromFile = new String[ readDataForCompare.readFromFile( ).size( ) ];
         for (int i = 0; i < readDataForCompare.readFromFile( ).size( ); i++) {
             dataFromFile[ i ] = readDataForCompare.readFromFile( ).get( i );
         }
@@ -98,11 +100,13 @@ public class EditSomeDocument extends BaseClass {
         checkSomeBox( );
         fillClientContractorPrice( dataFromFile[ 10 ] );
         fillClientContractorNumber( dataFromFile[ 11 ] );
+        fillContractorName( dataFromFile[ 16 ] );
+        fillExpertName( dataFromFile[ 17 ] );
         fillPrepaymentAndStages( dataFromFile );
         return nameObject;
     }
 
-    @Step("18. Заполнить вкладки Аванс, 1-й этап, 2-й этап")
+    @Step("20. Заполнить вкладки Аванс, 1-й этап, 2-й этап")
     public void fillPrepaymentAndStages( String[] dataFromFile ) {
         wd.findElement( By.xpath( "//div[@class='ant-modal-body']/form/div[7]/div[4]/div/div[2]/div/span/div/input" ) ).click( );
         wd.findElement( By.xpath( "//div[@class='ant-modal-body']/form/div[7]/div[4]/div/div[2]/div/span/div/input" ) ).sendKeys( dataFromFile[ 12 ] );
@@ -156,6 +160,20 @@ public class EditSomeDocument extends BaseClass {
         wd.findElement( By.id( "note" ) ).sendKeys( dataFromFile[ 15 ] );
         //Сохранить
         wd.findElement( By.xpath( "//html/body/div[2]/div/div[2]/div/div[1]/div[3]/div/div/div[2]/button[2]" ) ).click( );
+    }
+
+    @Step("19. Заполнить имя эксперта {0}")
+    public void fillExpertName( String s ) {
+        wd.findElement( By.id( "expert_name" ) ).click( );
+        wd.findElement( By.id( "expert_name" ) ).clear( );
+        wd.findElement( By.id( "expert_name" ) ).sendKeys( s );
+    }
+
+    @Step("18. Заполнить имя подрядчика {0}")
+    public void fillContractorName( String s ) {
+        wd.findElement( By.id( "contractor_name" ) ).click( );
+        wd.findElement( By.id( "contractor_name" ) ).clear( );
+        wd.findElement( By.id( "contractor_name" ) ).sendKeys( s );
     }
 
     @Step("17. Заполнить номер основного договора {0}")

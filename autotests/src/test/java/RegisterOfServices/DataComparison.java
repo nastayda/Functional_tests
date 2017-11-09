@@ -11,7 +11,7 @@ import ru.yandex.qatools.allure.annotations.Title;
 import java.io.File;
 
 import static org.testng.Assert.assertEquals;
-
+//NOT USE
 @Title("Сравнение отображаемых данных и введенных")
 public class DataComparison extends BaseClass {
     @Test

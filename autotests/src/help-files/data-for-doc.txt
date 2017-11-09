@@ -15,4 +15,4 @@ testAddress
 2
 OtherIfo
 Testov4
-//*[@id="contractor_name"]
+Testov5
