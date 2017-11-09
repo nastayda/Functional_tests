@@ -19,6 +19,8 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 public class Search extends BaseClass {
+
+    private SoftAssert softAssert = new SoftAssert();
     @Title("Поиск по различным критериям")
     @Test
     public void Search( ) throws Exception {
@@ -31,6 +33,7 @@ public class Search extends BaseClass {
       //  searchFromAddress();
         searchFromContractDate( );
         searchFromContractNumber();
+        softAssert.assertAll();
         //dont work
         //searchFromNumberDocument();
         // searchFromContractPrice();
@@ -65,7 +68,6 @@ public class Search extends BaseClass {
         );
     }
 */
-    private SoftAssert softAssert = new SoftAssert();
     @Step("Поиск по дате контракта")
     public void searchFromContractDate( ) throws Exception {
         //Positive test
@@ -73,7 +75,6 @@ public class Search extends BaseClass {
         softAssert.assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientContractDate" )[ 0 ], "//div[2]/div/div/div/ul/li[10]" ),
                 Integer.parseInt( getSearchConditionCount( "ClientContractDate" )[ 1 ] )
         );
-        softAssert.assertAll();
         /*assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientContractDate" )[ 0 ], "//div[2]/div/div/div/ul/li[10]" ),
                 Integer.parseInt( getSearchConditionCount( "ClientContractDate" )[ 1 ] )
         );*/

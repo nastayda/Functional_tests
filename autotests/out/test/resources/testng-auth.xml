@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Тестовый сьют" verbose="1" >
-   <test name="Вызов класса RegisterOfServices.TestAuthorization" >
+  <!--  <test name="Вызов класса RegisterOfServices.TestAuthorization" >
         <classes>
             <class name="RegisterOfServices.TestAuthorization" />
         </classes>
@@ -17,7 +17,7 @@
         <classes>
             <class name="RegisterOfServices.EditSomeDocument" />
         </classes>
-    </test>
+    </test> -->
 
     <test name="Вызов класса RegisterOfServices.Search">
         <classes>
@@ -25,7 +25,7 @@
         </classes>
     </test>
 
-  <test name="Вызов класса RegisterOfServices.StatusComparison">
+  <!--  <test name="Вызов класса RegisterOfServices.StatusComparison">
         <classes>
             <class name="RegisterOfServices.StatusComparison" />
         </classes>
@@ -35,5 +35,5 @@
         <classes>
             <class name="RegisterOfServices.DeleteDocument" />
         </classes>
-    </test>
+    </test> -->
 </suite>
