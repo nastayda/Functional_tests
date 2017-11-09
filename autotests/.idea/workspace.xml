@@ -75,7 +75,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/Search.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="82" column="68" lean-forward="false" selection-start-line="82" selection-start-column="68" selection-end-line="82" selection-end-column="68" />
+              <caret line="82" column="65" lean-forward="false" selection-start-line="82" selection-start-column="65" selection-end-line="82" selection-end-column="65" />
               <folding>
                 <element signature="method#searchFromContractNumber#0;class#Search#0" expanded="false" />
                 <element signature="method#searchFromAddress#0;class#Search#0" expanded="false" />
@@ -92,7 +92,7 @@
                 <element signature="method#getRowsFromDB#0;class#Search#0" expanded="false" />
                 <element signature="method#getSearchConditionCount#0;class#Search#0" expanded="false" />
                 <element signature="method#getSearchConditionCountOldV2#0;class#Search#0" expanded="false" />
-                <marker date="1510223239836" expanded="false" signature="2022:2385" ph="{...}" />
+                <marker date="1510223292870" expanded="false" signature="2022:2385" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -1492,7 +1492,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/Search.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="82" column="68" lean-forward="false" selection-start-line="82" selection-start-column="68" selection-end-line="82" selection-end-column="68" />
+          <caret line="82" column="65" lean-forward="false" selection-start-line="82" selection-start-column="65" selection-end-line="82" selection-end-column="65" />
           <folding>
             <element signature="method#searchFromContractNumber#0;class#Search#0" expanded="false" />
             <element signature="method#searchFromAddress#0;class#Search#0" expanded="false" />
@@ -1509,7 +1509,7 @@
             <element signature="method#getRowsFromDB#0;class#Search#0" expanded="false" />
             <element signature="method#getSearchConditionCount#0;class#Search#0" expanded="false" />
             <element signature="method#getSearchConditionCountOldV2#0;class#Search#0" expanded="false" />
-            <marker date="1510223239836" expanded="false" signature="2022:2385" ph="{...}" />
+            <marker date="1510223292870" expanded="false" signature="2022:2385" ph="{...}" />
           </folding>
         </state>
       </provider>

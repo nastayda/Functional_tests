@@ -80,7 +80,7 @@ public class Search extends BaseClass {
         /*assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientContractDate" )[ 0 ], "//div[2]/div/div/div/ul/li[10]" ),
                 Integer.parseInt( getSearchConditionCount( "ClientContractDate" )[ 1 ] )
         );*/
-        return getSearchConditionCount( "ClientContractDate" )[ 1 ];
+        return getSearchConditionCount( "ClientContractDate" )[ 0 ];
     }
 
     @Step("Поиск по номеру контракта")
