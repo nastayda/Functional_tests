@@ -57,6 +57,7 @@ public class BusinessTable {
     public String getObjectAdress() {
         return objectAdress;
     }
+
     //Договор № clientContractNumber
     @Column(name = "client_contract_number")
     private String clientContractNumber;
