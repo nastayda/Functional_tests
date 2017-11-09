@@ -81,7 +81,7 @@ public class Search extends BaseClass {
                 Integer.parseInt( getSearchConditionCount( "ClientContractDate" )[ 1 ] )
         );*/
 
-        softAssert.assertAll();
+        //softAssert.assertAll();
         return getSearchConditionCount( "ClientContractDate" )[ 0 ];
     }
 
@@ -92,7 +92,7 @@ public class Search extends BaseClass {
         softAssert.assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientContractNumber" )[ 0 ], "//div[2]/div/div/div/ul/li[9]" ),
                 Integer.parseInt( getSearchConditionCount( "ClientContractNumber" )[ 1 ] )
         );
-        softAssert.assertAll();
+        //softAssert.assertAll();
         return getSearchConditionCount( "ClientContractNumber" )[ 0 ];
     }
 
