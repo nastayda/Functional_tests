@@ -32,8 +32,8 @@ public class Search extends BaseClass {
        // searchFromContractorName();
        // searchFromWorkType();
       //  searchFromAddress();
-        //searchFromContractDate( );
-       // searchFromContractNumber();
+        searchFromContractDate( );
+        searchFromContractNumber();
        // softAssert.assertAll();
         //dont work
         //searchFromNumberDocument();
