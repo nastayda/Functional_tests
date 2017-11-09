@@ -74,8 +74,8 @@
       <file leaf-file-name="Search.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/Search.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+            <state relative-caret-position="408">
+              <caret line="86" column="8" lean-forward="false" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
               <folding>
                 <element signature="method#searchFromAddress#0;class#Search#0" expanded="false" />
                 <element signature="method#searchFromContractorName#0;class#Search#0" expanded="false" />
@@ -87,11 +87,11 @@
                 <element signature="method#searchWithFilterFromBrowser#0;class#Search#0" expanded="false" />
                 <element signature="method#getSearchConditionOldVersion#0;class#Search#0" expanded="false" />
                 <element signature="method#getNumbersFromTable#0;class#Search#0" expanded="false" />
-                <element signature="e#8739#8748#0" expanded="true" />
+                <element signature="e#8854#8863#0" expanded="true" />
                 <element signature="method#getRowsFromDB#0;class#Search#0" expanded="false" />
                 <element signature="method#getSearchConditionCount#0;class#Search#0" expanded="false" />
                 <element signature="method#getSearchConditionCountOldV2#0;class#Search#0" expanded="false" />
-                <marker date="1510225983650" expanded="false" signature="2054:2417" ph="{...}" />
+                <marker date="1510226912575" expanded="false" signature="2029:2392" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -1041,34 +1041,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Search_Search - 2017.11.09 at 12h 57m 00s.xml">
-      <configuration name="Search.Search" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Search_Search - 2017.11.09 at 12h 59m 31s.xml">
-      <configuration name="Search.Search" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Search_Search - 2017.11.09 at 13h 00m 20s.xml">
-      <configuration name="Search.Search" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Search_Search - 2017.11.09 at 13h 01m 05s.xml">
-      <configuration name="Search.Search" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Search_Search - 2017.11.09 at 13h 01m 50s.xml">
-      <configuration name="Search.Search" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Search_Search - 2017.11.09 at 13h 03m 47s.xml">
-      <configuration name="Search.Search" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Search_Search - 2017.11.09 at 13h 15m 14s.xml">
-      <configuration name="Search.Search" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Search_Search - 2017.11.09 at 13h 16m 17s.xml">
-      <configuration name="Search.Search" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="Search_Search - 2017.11.09 at 13h 17m 38s.xml">
       <configuration name="Search.Search" configurationId="TestNG" />
     </history-entry>
     <history-entry file="Search_Search - 2017.11.09 at 13h 24m 39s.xml">
+      <configuration name="Search.Search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Search_Search - 2017.11.09 at 14h 15m 29s.xml">
+      <configuration name="Search.Search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Search_Search - 2017.11.09 at 14h 16m 31s.xml">
+      <configuration name="Search.Search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Search_Search - 2017.11.09 at 14h 18m 55s.xml">
+      <configuration name="Search.Search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Search_Search - 2017.11.09 at 14h 19m 21s.xml">
+      <configuration name="Search.Search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Search_Search - 2017.11.09 at 14h 19m 45s.xml">
+      <configuration name="Search.Search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Search_Search - 2017.11.09 at 14h 20m 31s.xml">
+      <configuration name="Search.Search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Search_Search - 2017.11.09 at 14h 24m 46s.xml">
+      <configuration name="Search.Search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Search_Search - 2017.11.09 at 14h 29m 20s.xml">
       <configuration name="Search.Search" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -1094,7 +1094,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25976768" sideWeight="0.50416666" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25757575" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26406926" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1529,8 +1529,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/Search.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+        <state relative-caret-position="408">
+          <caret line="86" column="8" lean-forward="false" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
           <folding>
             <element signature="method#searchFromAddress#0;class#Search#0" expanded="false" />
             <element signature="method#searchFromContractorName#0;class#Search#0" expanded="false" />
@@ -1542,11 +1542,11 @@
             <element signature="method#searchWithFilterFromBrowser#0;class#Search#0" expanded="false" />
             <element signature="method#getSearchConditionOldVersion#0;class#Search#0" expanded="false" />
             <element signature="method#getNumbersFromTable#0;class#Search#0" expanded="false" />
-            <element signature="e#8739#8748#0" expanded="true" />
+            <element signature="e#8854#8863#0" expanded="true" />
             <element signature="method#getRowsFromDB#0;class#Search#0" expanded="false" />
             <element signature="method#getSearchConditionCount#0;class#Search#0" expanded="false" />
             <element signature="method#getSearchConditionCountOldV2#0;class#Search#0" expanded="false" />
-            <marker date="1510225983650" expanded="false" signature="2054:2417" ph="{...}" />
+            <marker date="1510226912575" expanded="false" signature="2029:2392" ph="{...}" />
           </folding>
         </state>
       </provider>
