@@ -32,15 +32,15 @@ public class Search extends BaseClass {
        // searchFromContractorName();
        // searchFromWorkType();
       //  searchFromAddress();
-        //searchFromContractDate( );
-       // searchFromContractNumber();
-       // softAssert.assertAll();
+        searchFromContractDate( );
+        searchFromContractNumber();
+        softAssert.assertAll();
         //dont work
         //searchFromNumberDocument();
         // searchFromContractPrice();
     }
 /*
-Везде
+!!!Везде
 -№ дела id
 -Заказчик client_name
 -ФИО отвественного responsible_name
@@ -52,53 +52,29 @@ public class Search extends BaseClass {
 -Дата договора client_contract_name
 -Цена договора client_contract_price
  */
-
-    /* @Step("Поиск везде")
-     public void searchFromEverywhere() throws Exception {
-         //Positive test
-         assertEquals( searchWithFilterFromBrowser( getSearchConditionCount("id")[0], "//div[2]/div/div/div/ul/li[1]"),
-                 Integer.parseInt( getSearchConditionCount("id")[1])
-         );
-     }*/
-  /*  @Step("Поиск по цене контракта")
-    public void searchFromContractPrice( ) throws Exception {
-        //Positive test
-        //String[] resultSearch = getSearchConditionCount( "ContractorName", 16 );
-        assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientContractPrice", 0 )[ 0 ], "//div[2]/div/div/div/ul/li[11]" ),
-                Integer.parseInt( getSearchConditionCount( "ClientContractPrice", 0 )[ 1 ] )
-        );
-    }
-*/
-    @Test
    // @Attachment(value = "Дата контракта", type = "text/plain")
     @Step("Поиск по дате контракта")
     public void searchFromContractDate( ) throws Exception {
-        login( "userName", "password", "admin", "admin" );
         //Positive test
         //String[] resultSearch = getSearchConditionCount( "ContractorName", 16 );
         softAssert.assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientContractDate" )[ 0 ], "//div[2]/div/div/div/ul/li[10]" ),
-                Integer.parseInt( getSearchConditionCount( "ClientContractDate" )[ 1 ] )
+                Integer.parseInt( getSearchConditionCount( "ClientContractDate" )[ 1 ] ),"Hola"
         );
 
         /*assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientContractDate" )[ 0 ], "//div[2]/div/div/div/ul/li[10]" ),
                 Integer.parseInt( getSearchConditionCount( "ClientContractDate" )[ 1 ] )
         );*/
-
-        softAssert.assertAll();
-        //return getSearchConditionCount( "ClientContractDate" )[ 0 ];
+        //softAssert.assertAll();
     }
 
-    @Test
    // @Attachment(value = "Номер контракта", type = "text/plain")
     @Step("Поиск по номеру контракта")
     public void searchFromContractNumber( ) throws Exception {
-        login( "userName", "password", "admin", "admin" );
         //Positive test
         softAssert.assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientContractNumber" )[ 0 ], "//div[2]/div/div/div/ul/li[9]" ),
                 Integer.parseInt( getSearchConditionCount( "ClientContractNumber" )[ 1 ] )
         );
-        softAssert.assertAll();
-        //return getSearchConditionCount( "ClientContractNumber" )[ 0 ];
+        //softAssert.assertAll();
     }
 
 

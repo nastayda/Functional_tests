@@ -74,8 +74,8 @@
       <file leaf-file-name="Search.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/Search.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="86" column="8" lean-forward="false" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
+            <state relative-caret-position="-238">
+              <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
               <folding>
                 <element signature="method#searchFromAddress#0;class#Search#0" expanded="false" />
                 <element signature="method#searchFromContractorName#0;class#Search#0" expanded="false" />
@@ -87,11 +87,10 @@
                 <element signature="method#searchWithFilterFromBrowser#0;class#Search#0" expanded="false" />
                 <element signature="method#getSearchConditionOldVersion#0;class#Search#0" expanded="false" />
                 <element signature="method#getNumbersFromTable#0;class#Search#0" expanded="false" />
-                <element signature="e#8854#8863#0" expanded="true" />
+                <element signature="e#7790#7799#0" expanded="true" />
                 <element signature="method#getRowsFromDB#0;class#Search#0" expanded="false" />
                 <element signature="method#getSearchConditionCount#0;class#Search#0" expanded="false" />
                 <element signature="method#getSearchConditionCountOldV2#0;class#Search#0" expanded="false" />
-                <marker date="1510226912575" expanded="false" signature="2029:2392" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -737,7 +736,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.Search.Search">
+  <component name="RunManager" selected="TestNG.Search.Search1">
     <configuration name="EditSomeDocument.EditDocument" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -866,17 +865,22 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="TestAuthorizationNew" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="Desktop-autotests_test" />
+    <configuration name="Search.Search1" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="RegisterOfServices.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="autotests_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestAuthorizationNew" />
-      <option name="METHOD_NAME" />
+      <option name="PACKAGE_NAME" value="RegisterOfServices" />
+      <option name="MAIN_CLASS_NAME" value="RegisterOfServices.Search" />
+      <option name="METHOD_NAME" value="Search1" />
       <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -893,22 +897,17 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="TestAuthorization.TestAuthorization" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="RegisterOfServices.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="autotests_test" />
+    <configuration name="TestAuthorizationNew" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Desktop-autotests_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="RegisterOfServices" />
-      <option name="MAIN_CLASS_NAME" value="RegisterOfServices.TestAuthorization" />
-      <option name="METHOD_NAME" value="TestAuthorization" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestAuthorizationNew" />
+      <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -1008,19 +1007,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="TestNG.TestAuthorizationNew" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.TestAuthorization.TestAuthorization" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.Search.Search" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.EditSomeDocument.EditDocument" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.OffInternetAndCheck.testsKendoUI" />
-      <item index="5" class="java.lang.String" itemvalue="TestNG.OffInternetAndCheck.offInternet" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.Search.Search" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.EditSomeDocument.EditDocument" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.OffInternetAndCheck.testsKendoUI" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.OffInternetAndCheck.offInternet" />
+      <item index="5" class="java.lang.String" itemvalue="TestNG.Search.Search1" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.Search.Search" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.EditSomeDocument.EditDocument" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.OffInternetAndCheck.offInternet" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.OffInternetAndCheck.testsKendoUI" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.TestAuthorization.TestAuthorization" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.Search.Search1" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.Search.Search" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.EditSomeDocument.EditDocument" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.OffInternetAndCheck.offInternet" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.OffInternetAndCheck.testsKendoUI" />
       </list>
     </recent_temporary>
   </component>
@@ -1041,15 +1040,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Search_Search - 2017.11.09 at 13h 17m 38s.xml">
-      <configuration name="Search.Search" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Search_Search - 2017.11.09 at 13h 24m 39s.xml">
-      <configuration name="Search.Search" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Search_Search - 2017.11.09 at 14h 15m 29s.xml">
-      <configuration name="Search.Search" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="Search_Search - 2017.11.09 at 14h 16m 31s.xml">
       <configuration name="Search.Search" configurationId="TestNG" />
     </history-entry>
@@ -1071,6 +1061,15 @@
     <history-entry file="Search_Search - 2017.11.09 at 14h 29m 20s.xml">
       <configuration name="Search.Search" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="Search_Search - 2017.11.09 at 14h 33m 35s.xml">
+      <configuration name="Search.Search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Search_Search - 2017.11.09 at 14h 34m 40s.xml">
+      <configuration name="Search.Search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Search_Search1 - 2017.11.09 at 14h 45m 33s.xml">
+      <configuration name="Search.Search1" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1083,7 +1082,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1094,7 +1092,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25976768" sideWeight="0.50416666" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26406926" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.63419914" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1529,8 +1527,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/Search.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="86" column="8" lean-forward="false" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
+        <state relative-caret-position="-238">
+          <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
           <folding>
             <element signature="method#searchFromAddress#0;class#Search#0" expanded="false" />
             <element signature="method#searchFromContractorName#0;class#Search#0" expanded="false" />
@@ -1542,11 +1540,10 @@
             <element signature="method#searchWithFilterFromBrowser#0;class#Search#0" expanded="false" />
             <element signature="method#getSearchConditionOldVersion#0;class#Search#0" expanded="false" />
             <element signature="method#getNumbersFromTable#0;class#Search#0" expanded="false" />
-            <element signature="e#8854#8863#0" expanded="true" />
+            <element signature="e#7790#7799#0" expanded="true" />
             <element signature="method#getRowsFromDB#0;class#Search#0" expanded="false" />
             <element signature="method#getSearchConditionCount#0;class#Search#0" expanded="false" />
             <element signature="method#getSearchConditionCountOldV2#0;class#Search#0" expanded="false" />
-            <marker date="1510226912575" expanded="false" signature="2029:2392" ph="{...}" />
           </folding>
         </state>
       </provider>
