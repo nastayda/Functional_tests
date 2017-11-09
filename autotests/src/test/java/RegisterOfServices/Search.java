@@ -8,6 +8,7 @@ import org.hibernate.SessionFactory;
 import org.openqa.selenium.*;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+import ru.yandex.qatools.allure.annotations.Attachment;
 import ru.yandex.qatools.allure.annotations.Step;
 import ru.yandex.qatools.allure.annotations.Title;
 
@@ -68,8 +69,9 @@ public class Search extends BaseClass {
         );
     }
 */
+    @Attachment(value = "Date contract", type = "text/plain")
     @Step("Поиск по дате контракта")
-    public void searchFromContractDate( ) throws Exception {
+    public String searchFromContractDate( ) throws Exception {
         //Positive test
         //String[] resultSearch = getSearchConditionCount( "ContractorName", 16 );
         softAssert.assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientContractDate" )[ 0 ], "//div[2]/div/div/div/ul/li[10]" ),
@@ -78,6 +80,7 @@ public class Search extends BaseClass {
         /*assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientContractDate" )[ 0 ], "//div[2]/div/div/div/ul/li[10]" ),
                 Integer.parseInt( getSearchConditionCount( "ClientContractDate" )[ 1 ] )
         );*/
+        return getSearchConditionCount( "ClientContractDate" )[ 1 ];
     }
 
     @Step("Поиск по номеру контракта")
