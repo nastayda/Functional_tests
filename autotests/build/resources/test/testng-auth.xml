@@ -1,15 +1,39 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Успешная авторизация" verbose="1" >
-    <test name="Вызов класса RegisterOfServices.TestAuthorization" >
+<suite name="Тестовый сьют" verbose="1" >
+  <!--  <test name="Вызов класса RegisterOfServices.TestAuthorization" >
         <classes>
             <class name="RegisterOfServices.TestAuthorization" />
         </classes>
     </test>
 
-    <test name="Вызов класса TestAuthorizationNew">
+    <test name="Вызов класса RegisterOfServices.CreateDocument">
         <classes>
-            <class name="RegisterOfServices.TestAuthorization" />
+            <class name="RegisterOfServices.CreateDocument" />
         </classes>
     </test>
+
+    <test name="Вызов класса RegisterOfServices.EditSomeDocument">
+        <classes>
+            <class name="RegisterOfServices.EditSomeDocument" />
+        </classes>
+    </test> -->
+
+    <test name="Вызов класса RegisterOfServices.Search">
+        <classes>
+            <class name="RegisterOfServices.Search" />
+        </classes>
+    </test>
+
+  <!--  <test name="Вызов класса RegisterOfServices.StatusComparison">
+        <classes>
+            <class name="RegisterOfServices.StatusComparison" />
+        </classes>
+    </test>
+
+    <test name="Вызов класса RegisterOfServices.DeleteDocument">
+        <classes>
+            <class name="RegisterOfServices.DeleteDocument" />
+        </classes>
+    </test> -->
 </suite>
