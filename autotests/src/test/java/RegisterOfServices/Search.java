@@ -29,8 +29,10 @@ public class Search extends BaseClass {
         //searchFromWorkType();
         //searchFromAddress();
         //searchFromContractNumber();
+        //searchFromContractDate();
         //dont work
         //searchFromNumberDocument();
+        searchFromContractPrice();
     }
 /*
 Везде
@@ -43,7 +45,7 @@ public class Search extends BaseClass {
 -Адрес object_adress
 -Договор № client_contract_number
 -Дата договора client_contract_name
-Цена договора client_contract_price
+-Цена договора client_contract_price
  */
 
     /* @Step("Поиск везде")
@@ -53,14 +55,24 @@ public class Search extends BaseClass {
                  Integer.parseInt( getSearchConditionCount("id")[1])
          );
      }*/
+    @Step("Поиск по цене контракта")
+    public void searchFromContractPrice( ) throws Exception {
+        //Positive test
+        //String[] resultSearch = getSearchConditionCount( "ContractorName", 16 );
+        assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientContractPrice", 0 )[ 0 ], "//div[2]/div/div/div/ul/li[11]" ),
+                Integer.parseInt( getSearchConditionCount( "ClientContractPrice", 0 )[ 1 ] )
+        );
+    }
+
     @Step("Поиск по дате контракта")
     public void searchFromContractDate( ) throws Exception {
         //Positive test
         //String[] resultSearch = getSearchConditionCount( "ContractorName", 16 );
-        assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ContractDate", 0 )[ 0 ], "//div[2]/div/div/div/ul/li[10]" ),
-                Integer.parseInt( getSearchConditionCount( "ContractDate", 0 )[ 1 ] )
+        assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientContractDate", 0 )[ 0 ], "//div[2]/div/div/div/ul/li[10]" ),
+                Integer.parseInt( getSearchConditionCount( "ClientContractDate", 0 )[ 1 ] )
         );
     }
+
     @Step("Поиск по номеру контракта")
     public void searchFromContractNumber( ) throws Exception {
         //Positive test
@@ -124,7 +136,7 @@ public class Search extends BaseClass {
     @Step("Поиск по имени объекта")
     public void searchFromObjectName( ) throws Exception {
         //Positive test
-       // String[] resultSearch = getSearchConditionCount( "ObjectName", 0 );
+        // String[] resultSearch = getSearchConditionCount( "ObjectName", 0 );
         assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ObjectName", 0 )[ 0 ], "//div[2]/div/div/div/ul/li[6]" ),
                 Integer.parseInt( getSearchConditionCount( "ObjectName", 0 )[ 1 ] )
         );
@@ -200,19 +212,13 @@ public class Search extends BaseClass {
         String[] dataFromFileMass = getDataFromFile( );
         //Инициализирвоать массив элементами для поиска
         String[] resultSearch = new String[]{ "", "" };
-        if (condition.equals( "ObjectName" )) {
-            resultSearch[ 0 ] = "Test2017";
-            k++;
-        } else {
-            // resultSearch[0] = dataFromFileMass[ indexOfCondition ];
-        }
-//ContractDate
+
         for (BusinessTable item : (List<BusinessTable>) result) {
             Method method = item.getClass( ).getMethod( "get" + condition );
             if (method.invoke( item ) != null) {
-                    resultSearch[ 0 ] = item.toString();
-                }
+                resultSearch[ 0 ] = method.invoke( item ).toString( );
             }
+        }
         //System.out.println(resultSearch[1]);
         //return resultSearch;
         //System.out.println(resultSearch[1]);
@@ -346,10 +352,12 @@ public class Search extends BaseClass {
         String[] resultSearch = new String[]{ "", "" };
         if (myCondition.equals( "ObjectName" )) {
             resultSearch[ 0 ] = "Test2017";
-            //k++;
-        }else if(myCondition.equals("WorkType")){
+        } else if (myCondition.equals( "WorkType" )) {
             resultSearch[ 0 ] = "Механическая безопасность";
-            //k++;
+        } else if (myCondition.equals( "ClientContractDate" )) {
+            resultSearch[ 0 ] = getSearchConditionCountOldV1("ClientContractDate")[0];
+        } else if (myCondition.equals( "ClientContractPrice" )){
+            resultSearch[ 0 ] = getSearchConditionCountOldV1("ClientContractPrice")[0];
         }
         else {
             resultSearch[ 0 ] = dataFromFileMass[ indexOfCondition ];
