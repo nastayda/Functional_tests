@@ -58,7 +58,7 @@ public class Search extends BaseClass {
         //Positive test
         //String[] resultSearch = getSearchConditionCount( "ContractorName", 16 );
         softAssert.assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientContractDate" )[ 0 ], "//div[2]/div/div/div/ul/li[10]" ),
-                Integer.parseInt( getSearchConditionCount( "ClientContractDate" )[ 1 ] ),"Hola"
+                Integer.parseInt( getSearchConditionCount( "ClientContractDate" )[ 1 ] ),"searchFromContractDate"
         );
 
         /*assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientContractDate" )[ 0 ], "//div[2]/div/div/div/ul/li[10]" ),
@@ -72,7 +72,7 @@ public class Search extends BaseClass {
     public void searchFromContractNumber( ) throws Exception {
         //Positive test
         softAssert.assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientContractNumber" )[ 0 ], "//div[2]/div/div/div/ul/li[9]" ),
-                Integer.parseInt( getSearchConditionCount( "ClientContractNumber" )[ 1 ] )
+                Integer.parseInt( getSearchConditionCount( "ClientContractNumber" )[ 1 ] ), "searchFromContractNumber"
         );
         //softAssert.assertAll();
     }
