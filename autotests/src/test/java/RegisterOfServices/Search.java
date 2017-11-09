@@ -69,7 +69,7 @@ public class Search extends BaseClass {
         );
     }
 */
-    @Attachment(value = "Date contract", type = "text/plain")
+    @Attachment(value = "Дата контракта", type = "text/plain")
     @Step("Поиск по дате контракта")
     public String searchFromContractDate( ) throws Exception {
         //Positive test
@@ -83,12 +83,14 @@ public class Search extends BaseClass {
         return getSearchConditionCount( "ClientContractDate" )[ 0 ];
     }
 
+    @Attachment(value = "Номер контракта", type = "text/plain")
     @Step("Поиск по номеру контракта")
-    public void searchFromContractNumber( ) throws Exception {
+    public String searchFromContractNumber( ) throws Exception {
         //Positive test
         assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientContractNumber" )[ 0 ], "//div[2]/div/div/div/ul/li[9]" ),
                 Integer.parseInt( getSearchConditionCount( "ClientContractNumber" )[ 1 ] )
         );
+        return getSearchConditionCount( "ClientContractNumber" )[ 0 ];
     }
 
     @Step("Поиск по адресу")
