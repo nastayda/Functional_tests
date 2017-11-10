@@ -31,5 +31,18 @@ class test {
       e.printStackTrace();
     }*/
 
+    /* //@Test
+    public void testsKendoUI( ) throws InterruptedException {
+        // private WebDriver wd;
+        ReturnListObject message;
+        message = new ReturnListObject( );
+        PageFactory.initElements( wd, message );
+        wd.manage( ).timeouts( ).implicitlyWait( 0, TimeUnit.SECONDS );
+        if (message.getTable( ).size( ) > 0) {
+            for (WebElement sm : message.getTable( )) {
+                System.out.println( sm.getText( ) );
+            }
+        }
+    }*/
   }
 }

@@ -40,7 +40,7 @@ public class Search extends BaseClass {
                 getSearchConditionCount( "WorkType", rowsFromDB )[ 1 ] );
         searchFromAddress( getSearchConditionCount( "ObjectAdress", rowsFromDB )[ 0 ],
                 getSearchConditionCount( "ObjectAdress", rowsFromDB )[ 1 ] );
-        searchFromContractDate( getSearchConditionCount( "ClientContractDate", rowsFromDB )[ 0 ],
+        searchByContractDate( getSearchConditionCount( "ClientContractDate", rowsFromDB )[ 0 ],
                 getSearchConditionCount( "ClientContractDate", rowsFromDB )[ 1 ] );
         searchFromContractNumber( getSearchConditionCount( "ClientContractNumber", rowsFromDB )[ 0 ],
                 getSearchConditionCount( "ClientContractNumber", rowsFromDB )[ 1 ] );
@@ -52,7 +52,7 @@ public class Search extends BaseClass {
         softAssert.assertAll( );
     }
 
-    @Step("Поиск везде !!!!")
+    @Step("Поиск везде(по всем 11 критериям)")
     public void searchByEverywhere( List rowsFromDB ) throws Exception {
         String[] massCriteria = {
                 "ResponsibleName", "ClientName", "ObjectName", "ContractorName", "WorkType",
@@ -61,33 +61,32 @@ public class Search extends BaseClass {
         for (String item : massCriteria) {
             softAssert.assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( item, rowsFromDB )[ 0 ], "//div[2]/div/div/div/ul/li[1]" ),
                     Integer.parseInt( getSearchConditionCount( item, rowsFromDB )[ 1 ] ),
-                   "Поиск по критерию " + item + " " + getSearchConditionCount( item, rowsFromDB )[ 0 ] + " провален"
+                   "Поиск везде по критерию " + item + " " + getSearchConditionCount( item, rowsFromDB )[ 0 ] + " провален"
             );
         }
     }
 
     @Step("Поиск по дате контракта {0}")
-    public void searchFromContractDate( String clientContractDate, String countFromDB ) throws Exception {
+    public void searchByContractDate( String clientContractDate, String countFromDB ) throws Exception {
         //Positive test
         softAssert.assertEquals( searchWithFilterFromBrowser( clientContractDate, "//div[2]/div/div/div/ul/li[10]" ),
-                Integer.parseInt( countFromDB ), "Поиск по дате " + clientContractDate + " провален"
+                Integer.parseInt( countFromDB ), "Поиск по дате контракта " + clientContractDate + " провален"
         );
     }
 
-    @Step("Поиск по номеру контракта {0}")
+    @Step("Поиск по номеру договора {0}")
     public void searchFromContractNumber( String clientContractNumber, String countFromDB ) throws Exception {
         //Positive test
         softAssert.assertEquals( searchWithFilterFromBrowser( clientContractNumber, "//div[2]/div/div/div/ul/li[9]" ),
-                Integer.parseInt( countFromDB ), "Поиск по номеру контракта " + clientContractNumber + " провален"
+                Integer.parseInt( countFromDB ), "Поиск по номеру договора " + clientContractNumber + " провален"
         );
     }
 
-    @Step("Поиск по цене контракта {0}")
+    @Step("Поиск по цене договора {0}")
     public void searchFromContractPrice( String clientContractPrice, String countFromDB ) throws Exception {
         //Positive test
-        //String[] resultSearch = getSearchConditionCount( "ContractorName", 16 );
         softAssert.assertEquals( searchWithFilterFromBrowser( clientContractPrice, "//div[2]/div/div/div/ul/li[11]" ),
-                Integer.parseInt( countFromDB ), "Поиск по цене контракта " + clientContractPrice + " провален"
+                Integer.parseInt( countFromDB ), "Поиск по цене договора " + clientContractPrice + " провален"
         );
     }
 
@@ -165,17 +164,6 @@ public class Search extends BaseClass {
         return k;
     }
 
-    //@Step("Получить первое ненулевое условие поиска из браузера oldVersion")
-    public String getSearchConditionOldVersion( int j ) {
-        for (int i = 1; i <= wd.findElements( By.xpath( "//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr" ) ).size( ); i++) {
-            String searchCondition = wd.findElement( By.xpath( "//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[" + i + "]/td[" + j + "]" ) ).getText( );
-            if (!searchCondition.equals( "" )) {
-                return searchCondition;
-            }
-        }
-        return "";
-    }
-
     //@Step("3. Получить все номера дел из браузера")
     public ArrayList<Integer> getNumbersFromTable( ) {
         //Клик по левому меню "Обращения"
@@ -234,5 +222,5 @@ public class Search extends BaseClass {
         }
         return resultSearch;
     }
-        
+
 }

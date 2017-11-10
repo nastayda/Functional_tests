@@ -17,7 +17,7 @@
         <classes>
             <class name="RegisterOfServices.EditSomeDocument" />
         </classes>
-    </test> -->
+    </test>
 
     <test name="Вызов класса RegisterOfServices.Search">
         <classes>
@@ -25,7 +25,7 @@
         </classes>
     </test>
 
-  <!--  <test name="Вызов класса RegisterOfServices.StatusComparison">
+    <test name="Вызов класса RegisterOfServices.StatusComparison">
         <classes>
             <class name="RegisterOfServices.StatusComparison" />
         </classes>
@@ -36,4 +36,9 @@
             <class name="RegisterOfServices.DeleteDocument" />
         </classes>
     </test> -->
+    <test name="Вызов класса RegisterOfServices.OffInternetAndCheck" >
+        <classes>
+            <class name="RegisterOfServices.OffInternetAndCheck" />
+        </classes>
+    </test>
 </suite>
