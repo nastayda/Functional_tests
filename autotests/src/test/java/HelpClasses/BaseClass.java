@@ -51,7 +51,11 @@ public class BaseClass {
     }
 
     @Step("Ввод логина и пароля")
-    protected void login(String elementUserName, String elementPassword, String nameLogin, String passwordLogin) {
+    protected void login() {;
+       String elementUserName ="userName";
+        String elementPassword ="password";
+        String nameLogin = "admin";
+        String  passwordLogin = "admin";
         enterLogin(elementUserName, nameLogin);
         enterPassword(elementPassword, passwordLogin);
         signInClick();

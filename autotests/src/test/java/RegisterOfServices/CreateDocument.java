@@ -16,7 +16,7 @@ public class CreateDocument extends BaseClass {
     @Test
     @Title("Проверка создание дела")
     public void CreateDocument() throws Exception {
-        login("userName", "password", "admin", "admin");
+        login();
         //Переход на страницу с делами - иногда не работает
         wd.navigate().to("http://vm-107-stu-dev.ursip.ru/");
         //Тестовое имя объекта

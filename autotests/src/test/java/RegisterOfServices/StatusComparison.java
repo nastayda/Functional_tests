@@ -19,7 +19,7 @@ public class StatusComparison extends BaseClass {
     @Test
     @Title("Проверка по статусам")
     public void StatusComparison() throws Exception {
-        login("userName", "password", "admin", "admin");
+        login( );
         //getNumbersFromTable("//div[@class='departments-tree']/div/ul/li[1]/div/div[2]");
         //Проверка документов со статусом 77 Обращение,78 Коммерческое предложение, 79 Проект договора,
         // 80 Заключение договора и аванс, 81 Отказ, 82 1-й этап работ, 121 2-й этап работ, 122 Архив завершённых дел

@@ -15,7 +15,7 @@ public class TestAuthorization extends BaseClass {
     @Test
     @Step("Вызов метода авторизации")
     public void TestAuthorization() {
-        login("userName", "password", "admin", "admin");
+        login();
       //Завязываемся на отображение таблицы
         assertTrue(wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table")).isEnabled());
     }

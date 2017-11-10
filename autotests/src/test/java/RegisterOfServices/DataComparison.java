@@ -16,7 +16,7 @@ import static org.testng.Assert.assertEquals;
 public class DataComparison extends BaseClass {
     @Test
     public void DataComparison(){
-        login("userName", "password", "admin", "admin");
+        login();
         assertEquals(getDataFromFile(),getDataFromPage());
     }
     @Step("Получить данные со страницы")

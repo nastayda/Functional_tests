@@ -25,7 +25,7 @@ public class Search extends BaseClass {
     @Title("Поиск по различным критериям")
     @Test
     public void Search( ) throws Exception {
-        login( "userName", "password", "admin", "admin" );
+        login( );
         ArrayList<Integer> idList = getNumbersFromTable( );
         List rowsFromDB = getRowsFromDB( idList );
         searchFromrResponsibleName( getSearchConditionCount( "ResponsibleName", rowsFromDB )[ 0 ],
@@ -52,7 +52,7 @@ public class Search extends BaseClass {
         softAssert.assertAll( );
     }
 
-    @Step("Поиск везде(по всем 11 критериям)")
+    @Step("Поиск везде(по всем 10 критериям)")
     public void searchByEverywhere( List rowsFromDB ) throws Exception {
         String[] massCriteria = {
                 "ResponsibleName", "ClientName", "ObjectName", "ContractorName", "WorkType",

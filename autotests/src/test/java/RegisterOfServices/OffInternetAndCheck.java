@@ -26,7 +26,7 @@ public class OffInternetAndCheck extends BaseClass {
         OnOffNetAdapter state = new OnOffNetAdapter( );
         //state.onOffInternet( "enable" );
         wd.navigate( ).refresh( );
-        login( "userName", "password", "admin", "admin" );
+        login( );
         state.onOffInternet( "disable" );
         clickToMenu( );
         state.onOffInternet( "enable" );

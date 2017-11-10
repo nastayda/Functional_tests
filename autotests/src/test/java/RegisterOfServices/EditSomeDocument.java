@@ -19,7 +19,7 @@ public class EditSomeDocument extends BaseClass {
     @Title("Редактирование данных и сравнение с отображаемыми данными")
     @Test
     public void EditDocument( ) {
-        login( "userName", "password", "admin", "admin" );
+        login();
         pasteData( );
         assertEquals( getDataFromPage( ), getDataFromFile( ) );
     }

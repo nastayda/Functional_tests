@@ -21,7 +21,7 @@ public class DeleteDocument extends BaseClass {
     @Test
     @Title("Удалить строку")
     public void DeleteDocument() throws Exception {
-        login("userName", "password", "admin", "admin");
+        login();
         //Переход на страницу с делами
         wd.navigate().to("http://vm-107-stu-dev.ursip.ru/");
         System.out.println("id=" +wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[last()]/td[2]")).getText());
