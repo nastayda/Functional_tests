@@ -67,7 +67,7 @@ public class Search extends BaseClass {
     public void searchFromContractNumber( ) throws Exception {
         //Positive test
         softAssert.assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientContractNumber" )[ 0 ], "//div[2]/div/div/div/ul/li[9]" ),
-                Integer.parseInt( getSearchConditionCount( "ClientContractNumber" )[ 1 ] ), "searchFromContractNumber"
+                Integer.parseInt( getSearchConditionCount( "ClientContractNumber" )[ 1 ] ), "Поиск по номеру контракта"+getSearchConditionCount( "ClientContractNumber" )[ 0 ]+" провален"
         );
     }
 

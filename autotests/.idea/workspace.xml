@@ -74,8 +74,8 @@
       <file leaf-file-name="Search.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/Search.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="60" column="169" lean-forward="false" selection-start-line="60" selection-start-column="169" selection-end-line="60" selection-end-column="169" />
+            <state relative-caret-position="476">
+              <caret line="69" column="186" lean-forward="false" selection-start-line="69" selection-start-column="186" selection-end-line="69" selection-end-column="186" />
               <folding>
                 <element signature="method#searchFromAddress#0;class#Search#0" expanded="false" />
                 <element signature="method#searchFromContractorName#0;class#Search#0" expanded="false" />
@@ -87,7 +87,7 @@
                 <element signature="method#searchWithFilterFromBrowser#0;class#Search#0" expanded="false" />
                 <element signature="method#getSearchConditionOldVersion#0;class#Search#0" expanded="false" />
                 <element signature="method#getNumbersFromTable#0;class#Search#0" expanded="false" />
-                <element signature="e#7579#7588#0" expanded="true" />
+                <element signature="e#7647#7656#0" expanded="true" />
                 <element signature="method#getRowsFromDB#0;class#Search#0" expanded="false" />
                 <element signature="method#getSearchConditionCount#0;class#Search#0" expanded="false" />
                 <element signature="method#getSearchConditionCountOldV2#0;class#Search#0" expanded="false" />
@@ -1528,8 +1528,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/Search.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="60" column="169" lean-forward="false" selection-start-line="60" selection-start-column="169" selection-end-line="60" selection-end-column="169" />
+        <state relative-caret-position="476">
+          <caret line="69" column="186" lean-forward="false" selection-start-line="69" selection-start-column="186" selection-end-line="69" selection-end-column="186" />
           <folding>
             <element signature="method#searchFromAddress#0;class#Search#0" expanded="false" />
             <element signature="method#searchFromContractorName#0;class#Search#0" expanded="false" />
@@ -1541,7 +1541,7 @@
             <element signature="method#searchWithFilterFromBrowser#0;class#Search#0" expanded="false" />
             <element signature="method#getSearchConditionOldVersion#0;class#Search#0" expanded="false" />
             <element signature="method#getNumbersFromTable#0;class#Search#0" expanded="false" />
-            <element signature="e#7579#7588#0" expanded="true" />
+            <element signature="e#7647#7656#0" expanded="true" />
             <element signature="method#getRowsFromDB#0;class#Search#0" expanded="false" />
             <element signature="method#getSearchConditionCount#0;class#Search#0" expanded="false" />
             <element signature="method#getSearchConditionCountOldV2#0;class#Search#0" expanded="false" />
