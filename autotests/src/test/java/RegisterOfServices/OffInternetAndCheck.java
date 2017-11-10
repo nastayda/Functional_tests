@@ -24,7 +24,7 @@ public class OffInternetAndCheck extends BaseClass {
     @Title("Проверка отображения эелемнтов после отключения интернета")
     public void test( ) throws NoSuchMethodException {
         OnOffNetAdapter state = new OnOffNetAdapter( );
-        state.onOffInternet( "enable" );
+        //state.onOffInternet( "enable" );
         wd.navigate( ).refresh( );
         login( "userName", "password", "admin", "admin" );
         state.onOffInternet( "disable" );
