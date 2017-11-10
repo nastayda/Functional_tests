@@ -29,7 +29,8 @@ public class BaseClass {
 
     @BeforeMethod
     public void setUp() throws Exception {
-
+        OnOffNetAdapter state = new OnOffNetAdapter();
+        state.onOffInternet( "enable" );
         //Получить реальный путь к geco
         File gecoFile = new File("src/help-files/geckodriver.exe");
         String pathToGeckoDriver = gecoFile.getAbsolutePath();

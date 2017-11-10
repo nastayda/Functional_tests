@@ -26,74 +26,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EditSomeDocument.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/EditSomeDocument.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="30" column="49" lean-forward="false" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#getDataFromFile#0;class#EditSomeDocument#0" expanded="false" />
-                <element signature="method#pasteData#0;class#EditSomeDocument#0" expanded="false" />
-                <element signature="method#fillPrepaymentAndStages#0;class#EditSomeDocument#0" expanded="false" />
-                <element signature="method#fillExpertName#0;class#EditSomeDocument#0" expanded="false" />
-                <element signature="method#fillContractorName#0;class#EditSomeDocument#0" expanded="false" />
-                <element signature="method#fillClientContractorNumber#0;class#EditSomeDocument#0" expanded="false" />
-                <element signature="method#fillClientContractorPrice#0;class#EditSomeDocument#0" expanded="false" />
-                <element signature="method#checkSomeBox#0;class#EditSomeDocument#0" expanded="false" />
-                <element signature="method#fillDate#0;class#EditSomeDocument#0" expanded="false" />
-                <element signature="method#fillOfferPrice#0;class#EditSomeDocument#0" expanded="false" />
-                <element signature="method#fillObjectAddress#0;class#EditSomeDocument#0" expanded="false" />
-                <element signature="method#choseWorkType#0;class#EditSomeDocument#0" expanded="false" />
-                <element signature="method#fillRespEmail#0;class#EditSomeDocument#0" expanded="false" />
-                <element signature="method#fillClientEmail#0;class#EditSomeDocument#0" expanded="false" />
-                <element signature="method#fillRespName#0;class#EditSomeDocument#0" expanded="false" />
-                <element signature="method#fillClientPhone2#0;class#EditSomeDocument#0" expanded="false" />
-                <element signature="method#fillClientPhone#0;class#EditSomeDocument#0" expanded="false" />
-                <element signature="method#fillClientContractor2#0;class#EditSomeDocument#0" expanded="false" />
-                <element signature="method#fillClientContractor#0;class#EditSomeDocument#0" expanded="false" />
-                <element signature="method#fillClientName#0;class#EditSomeDocument#0" expanded="false" />
-                <element signature="method#fillObjectName#0;class#EditSomeDocument#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="OffInternetAndCheck.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/OffInternetAndCheck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="27" column="35" lean-forward="false" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-              <folding>
-                <element signature="method#test#0;class#OffInternetAndCheck#0" expanded="false" />
-                <element signature="method#clickToMenu#0;class#OffInternetAndCheck#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="offinternet.bat" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/help-files/offinternet.bat">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+            <state relative-caret-position="510">
+              <caret line="45" column="5" lean-forward="false" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseClass.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/HelpClasses/BaseClass.java">
+      <file leaf-file-name="OnOffNetAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/HelpClasses/OnOffNetAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="99" column="70" lean-forward="true" selection-start-line="99" selection-start-column="8" selection-end-line="99" selection-end-column="70" />
+            <state relative-caret-position="340">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
-                <element signature="method#isAlertPresent#0;class#BaseClass#0" expanded="false" />
-                <element signature="method#setUp#0;class#BaseClass#0" expanded="false" />
-                <element signature="method#login#0;class#BaseClass#0" expanded="false" />
-                <element signature="method#waitTableAndGoToPage#0;class#BaseClass#0" expanded="false" />
-                <element signature="method#enterPassword#0;class#BaseClass#0" expanded="false" />
-                <element signature="method#enterLogin#0;class#BaseClass#0" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -523,7 +472,6 @@
         <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/StatusComparison.java" />
         <option value="$PROJECT_DIR$/src/test/java/HelpClasses/ReturnListObject.java" />
         <option value="$PROJECT_DIR$/src/test/java/HelpClasses/WriteReadFromFile.java" />
-        <option value="$PROJECT_DIR$/src/test/java/HelpClasses/BaseClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/EditSomeDocument.java" />
         <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/DataComparison.java" />
         <option value="$PROJECT_DIR$/src/help-files/data-for-doc.txt" />
@@ -532,6 +480,8 @@
         <option value="$PROJECT_DIR$/src/main/java/test.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testng-auth.xml" />
         <option value="$PROJECT_DIR$/src/help-files/offinternet.bat" />
+        <option value="$PROJECT_DIR$/src/test/java/HelpClasses/OnOffNetAdapter.java" />
+        <option value="$PROJECT_DIR$/src/test/java/HelpClasses/BaseClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/OffInternetAndCheck.java" />
       </list>
     </option>
@@ -601,6 +551,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="autotests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="autotests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="HelpClasses" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="autotests" type="b2602c69:ProjectViewProjectNode" />
@@ -995,34 +953,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="OffInternetAndCheck_test - 2017.11.10 at 13h 41m 20s.xml">
+    <history-entry file="OffInternetAndCheck_test - 2017.11.10 at 15h 10m 14s.xml">
       <configuration name="OffInternetAndCheck.test" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="OffInternetAndCheck_test - 2017.11.10 at 13h 41m 53s.xml">
+    <history-entry file="OffInternetAndCheck_test - 2017.11.10 at 15h 11m 10s.xml">
       <configuration name="OffInternetAndCheck.test" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="OffInternetAndCheck_test - 2017.11.10 at 13h 42m 19s.xml">
+    <history-entry file="OffInternetAndCheck_test - 2017.11.10 at 15h 15m 46s.xml">
       <configuration name="OffInternetAndCheck.test" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="OffInternetAndCheck_test - 2017.11.10 at 13h 47m 10s.xml">
+    <history-entry file="OffInternetAndCheck_test - 2017.11.10 at 15h 20m 47s.xml">
       <configuration name="OffInternetAndCheck.test" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="OffInternetAndCheck_test - 2017.11.10 at 13h 47m 50s.xml">
+    <history-entry file="OffInternetAndCheck_test - 2017.11.10 at 15h 21m 10s.xml">
       <configuration name="OffInternetAndCheck.test" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="OffInternetAndCheck_test - 2017.11.10 at 13h 48m 38s.xml">
+    <history-entry file="OffInternetAndCheck_test - 2017.11.10 at 15h 21m 43s.xml">
       <configuration name="OffInternetAndCheck.test" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="OffInternetAndCheck_test - 2017.11.10 at 13h 55m 21s.xml">
+    <history-entry file="OffInternetAndCheck_test - 2017.11.10 at 15h 22m 04s.xml">
       <configuration name="OffInternetAndCheck.test" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="OffInternetAndCheck_test - 2017.11.10 at 13h 56m 16s.xml">
+    <history-entry file="OffInternetAndCheck_test - 2017.11.10 at 15h 25m 35s.xml">
       <configuration name="OffInternetAndCheck.test" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="OffInternetAndCheck_test - 2017.11.10 at 13h 58m 08s.xml">
+    <history-entry file="OffInternetAndCheck_test - 2017.11.10 at 15h 26m 10s.xml">
       <configuration name="OffInternetAndCheck.test" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="OffInternetAndCheck_test - 2017.11.10 at 13h 58m 35s.xml">
+    <history-entry file="OffInternetAndCheck_test - 2017.11.10 at 15h 26m 41s.xml">
       <configuration name="OffInternetAndCheck.test" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -1047,7 +1005,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25976768" sideWeight="0.50416666" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33874458" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24350649" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1083,7 +1041,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/resources/asd-asd.xml" />
     <entry file="file://$PROJECT_DIR$/src/test/resources/testng-auth2.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1345,6 +1302,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="346" column="31" lean-forward="true" selection-start-line="346" selection-start-column="31" selection-end-line="346" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1415,25 +1373,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/HelpClasses/BaseClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="99" column="70" lean-forward="true" selection-start-line="99" selection-start-column="8" selection-end-line="99" selection-end-column="70" />
-          <folding>
-            <element signature="method#isAlertPresent#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#setUp#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#login#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#waitTableAndGoToPage#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#enterPassword#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#enterLogin#0;class#BaseClass#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/help-files/auth-info.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/help-files/offinternet.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -1469,22 +1420,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/help-files/offinternet.bat">
+    <entry file="file://$PROJECT_DIR$/src/test/java/HelpClasses/BaseClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="173">
+          <caret line="30" column="41" lean-forward="false" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+          <folding>
+            <element signature="method#isAlertPresent#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#setUp#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#login#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#waitTableAndGoToPage#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#enterPassword#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#enterLogin#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#getDataFromFile#0;class#BaseClass#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/HelpClasses/OnOffNetAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/OffInternetAndCheck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="27" column="35" lean-forward="false" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-          <folding>
-            <element signature="method#test#0;class#OffInternetAndCheck#0" expanded="false" />
-            <element signature="method#clickToMenu#0;class#OffInternetAndCheck#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="510">
+          <caret line="45" column="5" lean-forward="false" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
