@@ -8,7 +8,6 @@ import org.hibernate.SessionFactory;
 import org.openqa.selenium.*;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import ru.yandex.qatools.allure.annotations.Attachment;
 import ru.yandex.qatools.allure.annotations.Step;
 import ru.yandex.qatools.allure.annotations.Title;
 
@@ -21,114 +20,124 @@ import static org.testng.Assert.assertTrue;
 
 public class Search extends BaseClass {
 
-    private SoftAssert softAssert = new SoftAssert();
+    private SoftAssert softAssert = new SoftAssert( );
+
     @Title("Поиск по различным критериям")
     @Test
     public void Search1( ) throws Exception {
         login( "userName", "password", "admin", "admin" );
-        //searchFromrResponsibleName();
-        //searchFromClientName();
-        //searchFromObjectName();
-       // searchFromContractorName();
-       // searchFromWorkType();
-      //  searchFromAddress();
-        searchFromContractDate( );
-        searchFromContractNumber();
-        softAssert.assertAll();
-        //dont work
-        //searchFromNumberDocument();
-        // searchFromContractPrice();
+        searchFromrResponsibleName( getSearchConditionCount( "ResponsibleName" )[ 0 ] );
+        searchFromClientName( getSearchConditionCount( "ClientName" )[ 0 ] );
+        searchFromObjectName( getSearchConditionCount( "ObjectName" )[ 0 ] );
+        searchFromContractorName( getSearchConditionCount( "ContractorName" )[ 0 ] );
+        searchFromWorkType( getSearchConditionCount( "WorkType" )[ 0 ] );
+        searchFromAddress( getSearchConditionCount( "ObjectAdress" )[ 0 ] );
+        searchFromContractDate( getSearchConditionCount( "ClientContractDate" )[ 0 ] );
+        searchFromContractNumber( getSearchConditionCount( "ClientContractNumber" )[ 0 ] );
+        searchFromNumberDocument( getSearchConditionCount( "ClientContractNumber" )[ 0 ] );
+        searchFromContractPrice( getSearchConditionCount( "ClientContractPrice" )[ 0 ] );
+        softAssert.assertAll( );
     }
-/*
-!!!Везде
--№ дела id
--Заказчик client_name
--ФИО отвественного responsible_name
--Объект object_name
--Подрядчик contractor_name
--Вид работ work_type Механическая безопасность
--Адрес object_adress
--Договор № client_contract_number
--Дата договора client_contract_name
--Цена договора client_contract_price
- */
-   // @Attachment(value = "Дата контракта", type = "text/plain")
-    @Step("Поиск по дате контракта")
-    public void searchFromContractDate( ) throws Exception {
-        //Positive test
-        //String[] resultSearch = getSearchConditionCount( "ContractorName", 16 );
+
+    /*
+    !!!Везде
+    -№ дела id
+    -Заказчик client_name
+    -ФИО отвественного responsible_name
+    -Объект object_name
+    -Подрядчик contractor_name
+    -Вид работ work_type Механическая безопасность
+    -Адрес object_adress
+    -Договор № client_contract_number
+    -Дата договора client_contract_name
+    -Цена договора client_contract_price
+     */
+    public void searchByEverywhere( ) throws Exception {
+
         softAssert.assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientContractDate" )[ 0 ], "//div[2]/div/div/div/ul/li[10]" ),
-                Integer.parseInt( getSearchConditionCount( "ClientContractDate" )[ 1 ] ),"Поиск по дате "+getSearchConditionCount( "ClientContractDate" )[ 0 ]+" провален"
+                Integer.parseInt( getSearchConditionCount( "ClientContractDate" )[ 1 ] ), "Поиск по дате " + getSearchConditionCount( "ClientContractDate" )[ 0 ] + " провален"
         );
     }
 
-   // @Attachment(value = "Номер контракта", type = "text/plain")
-    @Step("Поиск по номеру контракта")
-    public void searchFromContractNumber( ) throws Exception {
-        //Positive test
-        softAssert.assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientContractNumber" )[ 0 ], "//div[2]/div/div/div/ul/li[9]" ),
-                Integer.parseInt( getSearchConditionCount( "ClientContractNumber" )[ 1 ] ), "Поиск по номеру контракта"+getSearchConditionCount( "ClientContractNumber" )[ 0 ]+" провален"
-        );
-    }
-
-
-
-    @Step("Поиск по адресу")
-    public void searchFromAddress( ) throws Exception {
-        //Positive test
-        assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ObjectAdress" )[ 0 ], "//div[2]/div/div/div/ul/li[8]" ),
-                Integer.parseInt( getSearchConditionCount( "ObjectAdress" )[ 1 ] )
-        );
-    }
-
-    @Step("Поиск по имени подрядчика")
-    public void searchFromContractorName( ) throws Exception {
+    @Step("Поиск по дате контракта {0}")
+    public void searchFromContractDate( String clientContractDate ) throws Exception {
         //Positive test
         //String[] resultSearch = getSearchConditionCount( "ContractorName", 16 );
-        assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ContractorName" )[ 0 ], "//div[2]/div/div/div/ul/li[5]" ),
-                Integer.parseInt( getSearchConditionCount( "ContractorName" )[ 1 ] )
+        softAssert.assertEquals( searchWithFilterFromBrowser( clientContractDate, "//div[2]/div/div/div/ul/li[10]" ),
+                Integer.parseInt( getSearchConditionCount( "ClientContractDate" )[ 1 ] ), "Поиск по дате " + clientContractDate + " провален"
         );
     }
 
-    @Step("Поиск по виду работ")
-    public void searchFromWorkType( ) throws Exception {
+    @Step("Поиск по номеру контракта {0}")
+    public void searchFromContractNumber( String clientContractNumber ) throws Exception {
         //Positive test
-        //String[] resultSearch = getSearchConditionCount( "WorkType", 0 );
-        assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "WorkType" )[ 0 ], "//div[2]/div/div/div/ul/li[7]" ),
-                Integer.parseInt( getSearchConditionCount( "WorkType" )[ 1 ] )
+        softAssert.assertEquals( searchWithFilterFromBrowser( clientContractNumber, "//div[2]/div/div/div/ul/li[9]" ),
+                Integer.parseInt( getSearchConditionCount( "ClientContractNumber" )[ 1 ] ), "Поиск по номеру контракта " + clientContractNumber + " провален"
         );
     }
 
-    @Step("Поиск по номеру дела")
-    public void searchFromNumberDocument( ) throws Exception {
+    @Step("Поиск по цене контракта {0}")
+    public void searchFromContractPrice( String clientContractPrice ) throws Exception {
         //Positive test
-        assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientContractNumber" )[ 0 ], "//div[2]/div/div/div/ul/li[2]" ),
-                Integer.parseInt( getSearchConditionCount( "ClientContractNumber" )[ 1 ] )
+        //String[] resultSearch = getSearchConditionCount( "ContractorName", 16 );
+        softAssert.assertEquals( searchWithFilterFromBrowser( clientContractPrice, "//div[2]/div/div/div/ul/li[11]" ),
+                Integer.parseInt( getSearchConditionCount( "ClientContractPrice" )[ 1 ] ), "Поиск по цене контракта " + clientContractPrice + " провален"
         );
     }
 
-    @Step("Поиск по имени заказчика")
-    public void searchFromClientName( ) throws Exception {
+    @Step("Поиск по адресу {0}")
+    public void searchFromAddress( String objectAdress ) throws Exception {
         //Positive test
-        assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ClientName" )[ 0 ], "//div[2]/div/div/div/ul/li[3]" ),
-                Integer.parseInt( getSearchConditionCount( "ClientName" )[ 1 ] )
+        softAssert.assertEquals( searchWithFilterFromBrowser( objectAdress, "//div[2]/div/div/div/ul/li[8]" ),
+                Integer.parseInt( getSearchConditionCount( "ObjectAdress" )[ 1 ] ), "Поиск по по адресу " + objectAdress + " провален"
         );
     }
 
-    @Step("Поиск по ФИО ответсвенного")
-    public void searchFromrResponsibleName( ) throws Exception {
+    @Step("Поиск по имени подрядчика {0}")
+    public void searchFromContractorName( String contractorName ) throws Exception {
         //Positive test
-        assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ResponsibleName" )[ 0 ], "//div[2]/div/div/div/ul/li[4]" ),
-                Integer.parseInt( getSearchConditionCount( "ResponsibleName" )[ 1 ] )
+        softAssert.assertEquals( searchWithFilterFromBrowser( contractorName, "//div[2]/div/div/div/ul/li[5]" ),
+                Integer.parseInt( getSearchConditionCount( "ContractorName" )[ 1 ] ), "Поиск по имени подрядчика " + contractorName + " провален"
         );
     }
 
-    @Step("Поиск по имени объекта")
-    public void searchFromObjectName( ) throws Exception {
+    @Step("Поиск по виду работ {0}")
+    public void searchFromWorkType( String workType ) throws Exception {
         //Positive test
-        // String[] resultSearch = getSearchConditionCount( "ObjectName", 0 );
-        assertEquals( searchWithFilterFromBrowser( getSearchConditionCount( "ObjectName" )[ 0 ], "//div[2]/div/div/div/ul/li[6]" ),
-                Integer.parseInt( getSearchConditionCount( "ObjectName" )[ 1 ] )
+        softAssert.assertEquals( searchWithFilterFromBrowser( workType, "//div[2]/div/div/div/ul/li[7]" ),
+                Integer.parseInt( getSearchConditionCount( "WorkType" )[ 1 ] ), "Поиск по номеру контракта " + workType + " провален"
+        );
+    }
+
+    @Step("Поиск по номеру дела {0}")
+    public void searchFromNumberDocument( String clientContractNumber ) throws Exception {
+        //Positive test
+        softAssert.assertEquals( searchWithFilterFromBrowser( clientContractNumber, "//div[2]/div/div/div/ul/li[2]" ),
+                Integer.parseInt( getSearchConditionCount( "ClientContractNumber" )[ 1 ] ), "Поиск по номеру дела " + clientContractNumber + " провален"
+        );
+    }
+
+    @Step("Поиск по имени заказчика {0}")
+    public void searchFromClientName( String clientName ) throws Exception {
+        //Positive test
+        softAssert.assertEquals( searchWithFilterFromBrowser( clientName, "//div[2]/div/div/div/ul/li[3]" ),
+                Integer.parseInt( getSearchConditionCount( "ClientName" )[ 1 ] ), "Поиск по имени заказчика " + clientName + " провален"
+        );
+    }
+
+    @Step("Поиск по ФИО ответсвенного {0}")
+    public void searchFromrResponsibleName( String responsibleName ) throws Exception {
+        //Positive test
+        softAssert.assertEquals( searchWithFilterFromBrowser( responsibleName, "//div[2]/div/div/div/ul/li[4]" ),
+                Integer.parseInt( getSearchConditionCount( "ResponsibleName" )[ 1 ] ), "Поиск по ФИО ответсвенного " + responsibleName + " провален"
+        );
+    }
+
+    @Step("Поиск по имени объекта {0}")
+    public void searchFromObjectName( String objectName ) throws Exception {
+        //Positive test
+        softAssert.assertEquals( searchWithFilterFromBrowser( objectName, "//div[2]/div/div/div/ul/li[6]" ),
+                Integer.parseInt( getSearchConditionCount( "ObjectName" )[ 1 ] ), "Поиск по имени объекта " + objectName + " провален"
         );
     }
 
