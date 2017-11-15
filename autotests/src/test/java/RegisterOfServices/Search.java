@@ -171,11 +171,11 @@ public class Search extends BaseClass {
         wd.findElement( By.cssSelector( "div.ant-select-selection__rendered" ) ).click( );
         wd.findElement( By.xpath( "//div[2]/div/div/div/ul/li[1]" ) ).click( );
         wd.findElement( By.cssSelector( "input.ant-input" ) ).click( );
-        int countRows = wd.findElements( By.xpath( "//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr" ) ).size( );
+        int countRows = wd.findElements( By.xpath( "//table/tbody/tr" ) ).size( );
         ;
         ArrayList<Integer> ids = new ArrayList<Integer>( countRows );
         for (int i = 1; i <= countRows; i++) {
-            ids.add( i - 1, Integer.parseInt( wd.findElement( By.xpath( "//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[" + i + "]/td[2]" ) ).getText( ) ) );
+            ids.add( i - 1, Integer.parseInt( wd.findElement( By.xpath( "//table/tbody/tr[" + i + "]/td[2]" ) ).getText( ) ) );
         }
         return ids;
     }

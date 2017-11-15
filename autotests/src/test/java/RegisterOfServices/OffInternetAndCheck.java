@@ -24,7 +24,6 @@ public class OffInternetAndCheck extends BaseClass {
     @Title("Проверка отображения эелемнтов после отключения интернета")
     public void test( ) throws NoSuchMethodException {
         OnOffNetAdapter state = new OnOffNetAdapter( );
-        //state.onOffInternet( "enable" );
         wd.navigate( ).refresh( );
         login( );
         state.onOffInternet( "disable" );
@@ -40,7 +39,7 @@ public class OffInternetAndCheck extends BaseClass {
         softAssert.assertTrue( el.size( ) > 50, "Переход по пунктам меню провален" );
         if (el.size( ) > 50) {
             for (int i = 1; i < 9; i++) {
-                wd.findElement( By.xpath( "//div[@class='departments-tree']/div/ul/li[" + i + "]/div/div[2]" ) ).click( );
+                wd.findElement( By.xpath( "//ul/li[" + i + "]/div/div[2]" ) ).click( );
             }
         }
     }

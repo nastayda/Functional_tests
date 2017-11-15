@@ -24,11 +24,11 @@ public class DeleteDocument extends BaseClass {
         login();
         //Переход на страницу с делами
         wd.navigate().to("http://vm-107-stu-dev.ursip.ru/");
-        System.out.println("id=" +wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[last()]/td[2]")).getText());
+       // System.out.println("id=" +wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[last()]/td[2]")).getText());
         int countBefore = getCountBefore();
         //Установить соединение к БД и удалить последний элемент в таблице
         setUpConnection();
-        deleteRow(wd.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[last()]/td[2]")).getText());
+        deleteRow(wd.findElement(By.xpath("//table/tbody/tr[last()]/td[2]")).getText());
         //Обновить страницу. Посчитать число строк в таблице после удаления
         wd.navigate().to("http://vm-107-stu-dev.ursip.ru/");
         int countAfter = getCountBefore();
@@ -38,7 +38,7 @@ public class DeleteDocument extends BaseClass {
     @Step("Получить число элементов со страницы")
     public int getCountBefore() {
         //Посчитать число строк в таблице до удаления
-        return wd.findElements(By.xpath("//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr")).size();
+        return wd.findElements(By.xpath("//table/tbody/tr")).size();
     }
 
     SessionFactory sessionFactory;
@@ -74,11 +74,11 @@ public class DeleteDocument extends BaseClass {
     }
 
     @Step("Удаление созданной строки")
-    public void deleteRow(String nameObject){
+    public void deleteRow(String id){
         Session session = sessionFactory.openSession();
         session.beginTransaction();
-        String hql = "delete from BusinessTable where id = :name";
-        session.createQuery(hql).setString("name", nameObject).executeUpdate();
+        String hql = "delete from BusinessTable where id = :id";
+        session.createQuery(hql).setString("id", id).executeUpdate();
         session.getTransaction().commit();
         session.close();
     }

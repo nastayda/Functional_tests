@@ -26,13 +26,118 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EditSomeDocument.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestAuthorization.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/TestAuthorization.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReturnListObject.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/HelpClasses/ReturnListObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="8" column="119" lean-forward="false" selection-start-line="8" selection-start-column="119" selection-end-line="8" selection-end-column="119" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeleteDocument.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/DeleteDocument.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="61" column="38" lean-forward="true" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
+              <folding>
+                <element signature="method#DeleteDocument#0;class#DeleteDocument#0" expanded="false" />
+                <element signature="method#setUpConnection#0;class#DeleteDocument#0" expanded="false" />
+                <element signature="method#getRows#0;class#DeleteDocument#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateDocument.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/CreateDocument.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+              <folding>
+                <element signature="method#createNewDocument#0;class#CreateDocument#0" expanded="false" />
+                <element signature="method#okButtonClick#0;class#CreateDocument#0" expanded="false" />
+                <element signature="method#fillObjectName#0;class#CreateDocument#0" expanded="false" />
+                <element signature="method#addButtonClick#0;class#CreateDocument#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StatusComparison.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/StatusComparison.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="92" column="69" lean-forward="false" selection-start-line="92" selection-start-column="69" selection-end-line="92" selection-end-column="69" />
+              <folding>
+                <element signature="method#checkStatus81#0;class#StatusComparison#0" expanded="false" />
+                <element signature="method#checkStatus122#0;class#StatusComparison#0" expanded="false" />
+                <element signature="method#checkStatus121#0;class#StatusComparison#0" expanded="false" />
+                <element signature="method#checkStatus82#0;class#StatusComparison#0" expanded="false" />
+                <element signature="method#checkStatus80#0;class#StatusComparison#0" expanded="false" />
+                <element signature="method#checkStatus79#0;class#StatusComparison#0" expanded="false" />
+                <element signature="method#checkStatus78#0;class#StatusComparison#0" expanded="false" />
+                <element signature="method#chekStatus77#0;class#StatusComparison#0" expanded="false" />
+                <element signature="method#getNumbersFromTable#0;class#StatusComparison#0" expanded="false" />
+                <element signature="method#getCountStatus#0;class#StatusComparison#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Search.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/Search.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="118">
+              <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+              <folding>
+                <element signature="method#searchByEverywhere#0;class#Search#0" expanded="false" />
+                <element signature="method#searchByContractDate#0;class#Search#0" expanded="false" />
+                <element signature="method#searchFromContractNumber#0;class#Search#0" expanded="false" />
+                <element signature="method#searchFromContractPrice#0;class#Search#0" expanded="false" />
+                <element signature="method#searchFromAddress#0;class#Search#0" expanded="false" />
+                <element signature="method#searchFromContractorName#0;class#Search#0" expanded="false" />
+                <element signature="method#searchFromWorkType#0;class#Search#0" expanded="false" />
+                <element signature="method#searchFromNumberDocument#0;class#Search#0" expanded="false" />
+                <element signature="method#searchFromClientName#0;class#Search#0" expanded="false" />
+                <element signature="method#searchFromrResponsibleName#0;class#Search#0" expanded="false" />
+                <element signature="method#searchFromObjectName#0;class#Search#0" expanded="false" />
+                <element signature="method#searchWithFilterFromBrowser#0;class#Search#0" expanded="false" />
+                <element signature="method#getNumbersFromTable#0;class#Search#0" expanded="false" />
+                <element signature="method#getRowsFromDB#0;class#Search#0" expanded="false" />
+                <element signature="method#getSearchConditionCount#0;class#Search#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OffInternetAndCheck.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/OffInternetAndCheck.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="41" column="87" lean-forward="false" selection-start-line="41" selection-start-column="87" selection-end-line="41" selection-end-column="87" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EditSomeDocument.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/EditSomeDocument.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+            <state relative-caret-position="-198">
+              <caret line="27" column="39" lean-forward="false" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="method#EditDocument#0;class#EditSomeDocument#0" expanded="false" />
                 <element signature="method#getDataFromPage#0;class#EditSomeDocument#0" expanded="false" />
                 <element signature="method#getDataFromFile#0;class#EditSomeDocument#0" expanded="false" />
@@ -57,148 +162,6 @@
                 <element signature="method#fillClientName#0;class#EditSomeDocument#0" expanded="false" />
                 <element signature="method#fillObjectName#0;class#EditSomeDocument#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OffInternetAndCheck.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/OffInternetAndCheck.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="24" column="53" lean-forward="false" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
-              <folding>
-                <element signature="method#test#0;class#OffInternetAndCheck#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testng-auth.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/testng-auth.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseClass.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/HelpClasses/BaseClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="53" column="25" lean-forward="false" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
-              <folding>
-                <element signature="method#isAlertPresent#0;class#BaseClass#0" expanded="false" />
-                <element signature="method#setUp#0;class#BaseClass#0" expanded="false" />
-                <element signature="method#waitTableAndGoToPage#0;class#BaseClass#0" expanded="false" />
-                <element signature="method#enterPassword#0;class#BaseClass#0" expanded="false" />
-                <element signature="method#enterLogin#0;class#BaseClass#0" expanded="false" />
-                <element signature="method#getDataFromFile#0;class#BaseClass#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreateDocument.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/CreateDocument.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-              <folding>
-                <element signature="method#createNewDocument#0;class#CreateDocument#0" expanded="false" />
-                <element signature="method#okButtonClick#0;class#CreateDocument#0" expanded="false" />
-                <element signature="method#fillObjectName#0;class#CreateDocument#0" expanded="false" />
-                <element signature="method#addButtonClick#0;class#CreateDocument#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataComparison.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/DataComparison.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-              <folding>
-                <element signature="method#DataComparison#0;class#DataComparison#0" expanded="false" />
-                <element signature="method#getDataFromPage#0;class#DataComparison#0" expanded="false" />
-                <element signature="method#getDataFromFile#0;class#DataComparison#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeleteDocument.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/DeleteDocument.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="22" column="50" lean-forward="false" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
-              <folding>
-                <element signature="method#DeleteDocument#0;class#DeleteDocument#0" expanded="false" />
-                <element signature="method#getCountBefore#0;class#DeleteDocument#0" expanded="false" />
-                <element signature="method#setUpConnection#0;class#DeleteDocument#0" expanded="false" />
-                <element signature="method#getRows#0;class#DeleteDocument#0" expanded="false" />
-                <element signature="method#deleteRow#0;class#DeleteDocument#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Search.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/Search.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="27" column="14" lean-forward="false" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-              <folding>
-                <element signature="method#searchByEverywhere#0;class#Search#0" expanded="false" />
-                <element signature="method#searchByContractDate#0;class#Search#0" expanded="false" />
-                <element signature="method#searchFromContractNumber#0;class#Search#0" expanded="false" />
-                <element signature="method#searchFromContractPrice#0;class#Search#0" expanded="false" />
-                <element signature="method#searchFromAddress#0;class#Search#0" expanded="false" />
-                <element signature="method#searchFromContractorName#0;class#Search#0" expanded="false" />
-                <element signature="method#searchFromWorkType#0;class#Search#0" expanded="false" />
-                <element signature="method#searchFromNumberDocument#0;class#Search#0" expanded="false" />
-                <element signature="method#searchFromClientName#0;class#Search#0" expanded="false" />
-                <element signature="method#searchFromrResponsibleName#0;class#Search#0" expanded="false" />
-                <element signature="method#searchFromObjectName#0;class#Search#0" expanded="false" />
-                <element signature="method#searchWithFilterFromBrowser#0;class#Search#0" expanded="false" />
-                <element signature="method#getNumbersFromTable#0;class#Search#0" expanded="false" />
-                <element signature="e#9384#9393#0" expanded="true" />
-                <element signature="method#getRowsFromDB#0;class#Search#0" expanded="false" />
-                <element signature="method#getSearchConditionCount#0;class#Search#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StatusComparison.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/StatusComparison.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
-              <folding>
-                <element signature="method#checkStatus81#0;class#StatusComparison#0" expanded="false" />
-                <element signature="method#checkStatus122#0;class#StatusComparison#0" expanded="false" />
-                <element signature="method#checkStatus121#0;class#StatusComparison#0" expanded="false" />
-                <element signature="method#checkStatus82#0;class#StatusComparison#0" expanded="false" />
-                <element signature="method#checkStatus80#0;class#StatusComparison#0" expanded="false" />
-                <element signature="method#checkStatus79#0;class#StatusComparison#0" expanded="false" />
-                <element signature="method#checkStatus78#0;class#StatusComparison#0" expanded="false" />
-                <element signature="method#chekStatus77#0;class#StatusComparison#0" expanded="false" />
-                <element signature="method#getNumbersFromTable#0;class#StatusComparison#0" expanded="false" />
-                <element signature="method#getCountStatus#0;class#StatusComparison#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestAuthorization.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/TestAuthorization.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -567,7 +530,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/autotests (2).cs" />
         <option value="$PROJECT_DIR$/src/test/java/Test_auth.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestClassAuth.java" />
         <option value="$PROJECT_DIR$/src/test/java/WrieReadFromFile.java" />
@@ -610,20 +572,21 @@
         <option value="$PROJECT_DIR$/src/test/java/HelpClasses/OnOffNetAdapter.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testng-auth.xml" />
         <option value="$PROJECT_DIR$/src/test/java/HelpClasses/BaseClass.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/CreateDocument.java" />
         <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/DataComparison.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/DeleteDocument.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/EditSomeDocument.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/OffInternetAndCheck.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/Search.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/StatusComparison.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ControlStatus/UploadFile.java" />
         <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/TestAuthorization.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/DeleteDocument.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/CreateDocument.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/StatusComparison.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/Search.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/OffInternetAndCheck.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RegisterOfServices/EditSomeDocument.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="413" />
-    <option name="y" value="-9" />
+    <option name="x" value="-193" />
+    <option name="y" value="26" />
     <option name="width" value="1727" />
     <option name="height" value="1040" />
   </component>
@@ -643,6 +606,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -659,25 +623,6 @@
               <item name="autotests" type="b2602c69:ProjectViewProjectNode" />
               <item name="autotests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="help-files" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autotests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autotests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="autotests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autotests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autotests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autotests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -686,14 +631,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="autotests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autotests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="HelpClasses" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="autotests" type="b2602c69:ProjectViewProjectNode" />
@@ -703,19 +640,12 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="RegisterOfServices" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="autotests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="autotests" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -737,7 +667,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -784,8 +713,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.OffInternetAndCheck.test">
-    <configuration name="EditSomeDocument.EditDocument" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.EditSomeDocument.EditDocument">
+    <configuration name="CreateDocument.CreateDocument" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="RegisterOfServices.*" />
@@ -797,8 +726,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="RegisterOfServices" />
-      <option name="MAIN_CLASS_NAME" value="RegisterOfServices.EditSomeDocument" />
-      <option name="METHOD_NAME" value="EditDocument" />
+      <option name="MAIN_CLASS_NAME" value="RegisterOfServices.CreateDocument" />
+      <option name="METHOD_NAME" value="CreateDocument" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -817,7 +746,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="OffInternetAndCheck.onOffInternet" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="EditSomeDocument.EditDocument" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="RegisterOfServices.*" />
@@ -829,8 +758,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="RegisterOfServices" />
-      <option name="MAIN_CLASS_NAME" value="RegisterOfServices.OffInternetAndCheck" />
-      <option name="METHOD_NAME" value="onOffInternet" />
+      <option name="MAIN_CLASS_NAME" value="RegisterOfServices.EditSomeDocument" />
+      <option name="METHOD_NAME" value="EditDocument" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -913,7 +842,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="Search.Search1" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="StatusComparison.StatusComparison" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="RegisterOfServices.*" />
@@ -925,8 +854,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="RegisterOfServices" />
-      <option name="MAIN_CLASS_NAME" value="RegisterOfServices.Search" />
-      <option name="METHOD_NAME" value="Search1" />
+      <option name="MAIN_CLASS_NAME" value="RegisterOfServices.StatusComparison" />
+      <option name="METHOD_NAME" value="StatusComparison" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -1055,19 +984,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="TestNG.TestAuthorizationNew" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.Search.Search" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.EditSomeDocument.EditDocument" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.OffInternetAndCheck.onOffInternet" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.Search.Search1" />
-      <item index="5" class="java.lang.String" itemvalue="TestNG.OffInternetAndCheck.test" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.CreateDocument.CreateDocument" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.StatusComparison.StatusComparison" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.Search.Search" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.OffInternetAndCheck.test" />
+      <item index="5" class="java.lang.String" itemvalue="TestNG.EditSomeDocument.EditDocument" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.OffInternetAndCheck.test" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.OffInternetAndCheck.onOffInternet" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.EditSomeDocument.EditDocument" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.OffInternetAndCheck.test" />
         <item index="2" class="java.lang.String" itemvalue="TestNG.Search.Search" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.Search.Search1" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.EditSomeDocument.EditDocument" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.StatusComparison.StatusComparison" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.CreateDocument.CreateDocument" />
       </list>
     </recent_temporary>
   </component>
@@ -1088,35 +1017,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="OffInternetAndCheck_test - 2017.11.10 at 15h 10m 14s.xml">
+    <history-entry file="CreateDocument_CreateDocument - 2017.11.15 at 12h 17m 03s.xml">
+      <configuration name="CreateDocument.CreateDocument" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="CreateDocument_CreateDocument - 2017.11.15 at 12h 17m 40s.xml">
+      <configuration name="CreateDocument.CreateDocument" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="CreateDocument_CreateDocument - 2017.11.15 at 12h 18m 31s.xml">
+      <configuration name="CreateDocument.CreateDocument" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DeleteDocument_DeleteDocument - 2017.11.15 at 12h 15m 45s.xml">
+      <configuration name="DeleteDocument.DeleteDocument" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="DeleteDocument_DeleteDocument - 2017.11.15 at 12h 16m 31s.xml">
+      <configuration name="DeleteDocument.DeleteDocument" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="EditSomeDocument_EditDocument - 2017.11.15 at 12h 49m 25s.xml">
+      <configuration name="EditSomeDocument.EditDocument" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="OffInternetAndCheck_test - 2017.11.15 at 12h 39m 50s.xml">
       <configuration name="OffInternetAndCheck.test" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="OffInternetAndCheck_test - 2017.11.10 at 15h 11m 10s.xml">
-      <configuration name="OffInternetAndCheck.test" configurationId="TestNG" />
+    <history-entry file="Search_Search - 2017.11.15 at 12h 32m 35s.xml">
+      <configuration name="Search.Search" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="OffInternetAndCheck_test - 2017.11.10 at 15h 15m 46s.xml">
-      <configuration name="OffInternetAndCheck.test" configurationId="TestNG" />
+    <history-entry file="StatusComparison_StatusComparison - 2017.11.15 at 12h 24m 05s.xml">
+      <configuration name="StatusComparison.StatusComparison" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="OffInternetAndCheck_test - 2017.11.10 at 15h 20m 47s.xml">
-      <configuration name="OffInternetAndCheck.test" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="OffInternetAndCheck_test - 2017.11.10 at 15h 21m 10s.xml">
-      <configuration name="OffInternetAndCheck.test" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="OffInternetAndCheck_test - 2017.11.10 at 15h 21m 43s.xml">
-      <configuration name="OffInternetAndCheck.test" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="OffInternetAndCheck_test - 2017.11.10 at 15h 22m 04s.xml">
-      <configuration name="OffInternetAndCheck.test" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="OffInternetAndCheck_test - 2017.11.10 at 15h 25m 35s.xml">
-      <configuration name="OffInternetAndCheck.test" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="OffInternetAndCheck_test - 2017.11.10 at 15h 26m 10s.xml">
-      <configuration name="OffInternetAndCheck.test" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="OffInternetAndCheck_test - 2017.11.10 at 15h 26m 41s.xml">
-      <configuration name="OffInternetAndCheck.test" configurationId="TestNG" />
+    <history-entry file="StatusComparison_StatusComparison - 2017.11.15 at 12h 25m 48s.xml">
+      <configuration name="StatusComparison.StatusComparison" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1140,12 +1069,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25976768" sideWeight="0.50416666" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24350649" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2391775" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16577825" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16897655" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1171,19 +1100,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="110" />
+      <option name="time" value="117" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-auth2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ProxyAuthenticator.java" />
     <entry file="file://$PROJECT_DIR$/src/test/resources/allure.properties">
       <provider selected="true" editor-type-id="text-editor">
@@ -1259,7 +1180,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="80" lean-forward="false" selection-start-line="17" selection-start-column="80" selection-end-line="17" selection-end-column="80" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1267,7 +1187,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="42" lean-forward="false" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1297,7 +1216,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="30" column="18" lean-forward="true" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1356,29 +1274,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.11/77da7afb24d57b640d9803593a6222c7de12dd4e/testng-6.11-sources.jar!/org/testng/internal/Invoker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="669" column="0" lean-forward="false" selection-start-line="669" selection-start-column="0" selection-end-line="669" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.11/77da7afb24d57b640d9803593a6222c7de12dd4e/testng-6.11-sources.jar!/org/testng/Assert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="136" column="22" lean-forward="false" selection-start-line="136" selection-start-column="22" selection-end-line="136" selection-end-column="22" />
-          <folding>
-            <element signature="e#13366#13367#0" expanded="false" />
-            <element signature="e#13412#13413#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.11/77da7afb24d57b640d9803593a6222c7de12dd4e/testng-6.11-sources.jar!/org/testng/asserts/Assertion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="346" column="31" lean-forward="true" selection-start-line="346" selection-start-column="31" selection-end-line="346" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1389,14 +1288,6 @@
           <folding>
             <element signature="method#toString#0;class#BusinessTable#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/HelpClasses/ReturnListObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1411,15 +1302,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="44" column="9" lean-forward="true" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/help-files/auth-info.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1427,53 +1309,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-auth.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/HelpClasses/OnOffNetAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/HelpClasses/BaseClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="53" column="25" lean-forward="false" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
-          <folding>
-            <element signature="method#isAlertPresent#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#setUp#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#waitTableAndGoToPage#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#enterPassword#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#enterLogin#0;class#BaseClass#0" expanded="false" />
-            <element signature="method#getDataFromFile#0;class#BaseClass#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/CreateDocument.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-          <folding>
-            <element signature="method#createNewDocument#0;class#CreateDocument#0" expanded="false" />
-            <element signature="method#okButtonClick#0;class#CreateDocument#0" expanded="false" />
-            <element signature="method#fillObjectName#0;class#CreateDocument#0" expanded="false" />
-            <element signature="method#addButtonClick#0;class#CreateDocument#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1489,26 +1324,165 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.11/77da7afb24d57b640d9803593a6222c7de12dd4e/testng-6.11-sources.jar!/org/testng/Assert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="741" column="21" lean-forward="false" selection-start-line="741" selection-start-column="21" selection-end-line="741" selection-end-column="21" />
+          <folding>
+            <element signature="e#24561#24562#0" expanded="false" />
+            <element signature="e#24607#24608#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/HelpClasses/BaseClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="53" column="19" lean-forward="false" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+          <folding>
+            <element signature="method#isAlertPresent#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#waitTableAndGoToPage#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#enterPassword#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#enterLogin#0;class#BaseClass#0" expanded="false" />
+            <element signature="method#getDataFromFile#0;class#BaseClass#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testng-auth.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="34" column="17" lean-forward="false" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/help-files/auth-info.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ControlStatus/UploadFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/TestAuthorization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/DeleteDocument.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="22" column="50" lean-forward="false" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+        <state relative-caret-position="323">
+          <caret line="61" column="38" lean-forward="true" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
           <folding>
             <element signature="method#DeleteDocument#0;class#DeleteDocument#0" expanded="false" />
-            <element signature="method#getCountBefore#0;class#DeleteDocument#0" expanded="false" />
             <element signature="method#setUpConnection#0;class#DeleteDocument#0" expanded="false" />
             <element signature="method#getRows#0;class#DeleteDocument#0" expanded="false" />
-            <element signature="method#deleteRow#0;class#DeleteDocument#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/HelpClasses/ReturnListObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="119" lean-forward="false" selection-start-line="8" selection-start-column="119" selection-end-line="8" selection-end-column="119" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.11/77da7afb24d57b640d9803593a6222c7de12dd4e/testng-6.11-sources.jar!/org/testng/internal/Invoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="670" column="0" lean-forward="false" selection-start-line="670" selection-start-column="0" selection-end-line="670" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/CreateDocument.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+          <folding>
+            <element signature="method#createNewDocument#0;class#CreateDocument#0" expanded="false" />
+            <element signature="method#okButtonClick#0;class#CreateDocument#0" expanded="false" />
+            <element signature="method#fillObjectName#0;class#CreateDocument#0" expanded="false" />
+            <element signature="method#addButtonClick#0;class#CreateDocument#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/StatusComparison.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="92" column="69" lean-forward="false" selection-start-line="92" selection-start-column="69" selection-end-line="92" selection-end-column="69" />
+          <folding>
+            <element signature="method#checkStatus81#0;class#StatusComparison#0" expanded="false" />
+            <element signature="method#checkStatus122#0;class#StatusComparison#0" expanded="false" />
+            <element signature="method#checkStatus121#0;class#StatusComparison#0" expanded="false" />
+            <element signature="method#checkStatus82#0;class#StatusComparison#0" expanded="false" />
+            <element signature="method#checkStatus80#0;class#StatusComparison#0" expanded="false" />
+            <element signature="method#checkStatus79#0;class#StatusComparison#0" expanded="false" />
+            <element signature="method#checkStatus78#0;class#StatusComparison#0" expanded="false" />
+            <element signature="method#chekStatus77#0;class#StatusComparison#0" expanded="false" />
+            <element signature="method#getNumbersFromTable#0;class#StatusComparison#0" expanded="false" />
+            <element signature="method#getCountStatus#0;class#StatusComparison#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/Search.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding>
+            <element signature="method#searchByEverywhere#0;class#Search#0" expanded="false" />
+            <element signature="method#searchByContractDate#0;class#Search#0" expanded="false" />
+            <element signature="method#searchFromContractNumber#0;class#Search#0" expanded="false" />
+            <element signature="method#searchFromContractPrice#0;class#Search#0" expanded="false" />
+            <element signature="method#searchFromAddress#0;class#Search#0" expanded="false" />
+            <element signature="method#searchFromContractorName#0;class#Search#0" expanded="false" />
+            <element signature="method#searchFromWorkType#0;class#Search#0" expanded="false" />
+            <element signature="method#searchFromNumberDocument#0;class#Search#0" expanded="false" />
+            <element signature="method#searchFromClientName#0;class#Search#0" expanded="false" />
+            <element signature="method#searchFromrResponsibleName#0;class#Search#0" expanded="false" />
+            <element signature="method#searchFromObjectName#0;class#Search#0" expanded="false" />
+            <element signature="method#searchWithFilterFromBrowser#0;class#Search#0" expanded="false" />
+            <element signature="method#getNumbersFromTable#0;class#Search#0" expanded="false" />
+            <element signature="method#getRowsFromDB#0;class#Search#0" expanded="false" />
+            <element signature="method#getSearchConditionCount#0;class#Search#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/HelpClasses/OnOffNetAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/OffInternetAndCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="41" column="87" lean-forward="false" selection-start-line="41" selection-start-column="87" selection-end-line="41" selection-end-column="87" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/EditSomeDocument.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+        <state relative-caret-position="-198">
+          <caret line="27" column="39" lean-forward="false" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#EditDocument#0;class#EditSomeDocument#0" expanded="false" />
             <element signature="method#getDataFromPage#0;class#EditSomeDocument#0" expanded="false" />
             <element signature="method#getDataFromFile#0;class#EditSomeDocument#0" expanded="false" />
@@ -1533,68 +1507,6 @@
             <element signature="method#fillClientName#0;class#EditSomeDocument#0" expanded="false" />
             <element signature="method#fillObjectName#0;class#EditSomeDocument#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/OffInternetAndCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="24" column="53" lean-forward="false" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
-          <folding>
-            <element signature="method#test#0;class#OffInternetAndCheck#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/Search.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="27" column="14" lean-forward="false" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-          <folding>
-            <element signature="method#searchByEverywhere#0;class#Search#0" expanded="false" />
-            <element signature="method#searchByContractDate#0;class#Search#0" expanded="false" />
-            <element signature="method#searchFromContractNumber#0;class#Search#0" expanded="false" />
-            <element signature="method#searchFromContractPrice#0;class#Search#0" expanded="false" />
-            <element signature="method#searchFromAddress#0;class#Search#0" expanded="false" />
-            <element signature="method#searchFromContractorName#0;class#Search#0" expanded="false" />
-            <element signature="method#searchFromWorkType#0;class#Search#0" expanded="false" />
-            <element signature="method#searchFromNumberDocument#0;class#Search#0" expanded="false" />
-            <element signature="method#searchFromClientName#0;class#Search#0" expanded="false" />
-            <element signature="method#searchFromrResponsibleName#0;class#Search#0" expanded="false" />
-            <element signature="method#searchFromObjectName#0;class#Search#0" expanded="false" />
-            <element signature="method#searchWithFilterFromBrowser#0;class#Search#0" expanded="false" />
-            <element signature="method#getNumbersFromTable#0;class#Search#0" expanded="false" />
-            <element signature="e#9384#9393#0" expanded="true" />
-            <element signature="method#getRowsFromDB#0;class#Search#0" expanded="false" />
-            <element signature="method#getSearchConditionCount#0;class#Search#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/StatusComparison.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
-          <folding>
-            <element signature="method#checkStatus81#0;class#StatusComparison#0" expanded="false" />
-            <element signature="method#checkStatus122#0;class#StatusComparison#0" expanded="false" />
-            <element signature="method#checkStatus121#0;class#StatusComparison#0" expanded="false" />
-            <element signature="method#checkStatus82#0;class#StatusComparison#0" expanded="false" />
-            <element signature="method#checkStatus80#0;class#StatusComparison#0" expanded="false" />
-            <element signature="method#checkStatus79#0;class#StatusComparison#0" expanded="false" />
-            <element signature="method#checkStatus78#0;class#StatusComparison#0" expanded="false" />
-            <element signature="method#chekStatus77#0;class#StatusComparison#0" expanded="false" />
-            <element signature="method#getNumbersFromTable#0;class#StatusComparison#0" expanded="false" />
-            <element signature="method#getCountStatus#0;class#StatusComparison#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RegisterOfServices/TestAuthorization.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>

@@ -28,7 +28,7 @@ public class EditSomeDocument extends BaseClass {
     public String[] getDataFromPage( ) {
         String[] dataFromPage = new String[ 18 ];
         //Возьмем последнюю строку в таблице для редактирования
-        wd.findElement( By.xpath( "//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[last()]" ) ).click( );
+        wd.findElement( By.xpath( "//table/tbody/tr[last()]" ) ).click( );
 
         if (wd.findElement( By.xpath( "//*[@id=\"root\"]/div/div/div[2]/div/div[3]/div/div/div/div[2]/div/div[1]/div[2]/div/span[1]" ) ).getText( ).equals(
                 wd.findElement( By.xpath( "//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[last()]/td[2]" ) ).getText( ) )) {
@@ -282,7 +282,7 @@ public class EditSomeDocument extends BaseClass {
     @Step("2. Заполнить имя объекта {0}")
     public void fillObjectName( String nameObject ) {
         //Возьмем последнюю строку в таблице для редактирования
-        wd.findElement( By.xpath( "//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr[last()]" ) ).click( );
+        wd.findElement( By.xpath( "//table/tbody/tr[last()]" ) ).click( );
         wd.findElement( By.id( "change" ) ).click( );
         wd.findElement( By.id( "object_name" ) ).click( );
         wd.findElement( By.id( "object_name" ) ).clear( );
