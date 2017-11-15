@@ -12,7 +12,9 @@ import java.time.LocalDateTime;
 import org.openqa.selenium.*;
 import ru.yandex.qatools.allure.annotations.Step;
 import ru.yandex.qatools.allure.annotations.Title;
-
+//вопрос "Почему этот класс содержит так много неуниверсальных параметров и прочего" и "Почему он написан так в лоб"
+//ответ "Потому что мне нужно сравнить конкретные данные из конкретных ячеек из карточки после заполнения,
+//как динамически получить эти данные после заполнения - НИКАК, поэтому так в лоб и написала, а именно описала каждую ячейку"
 @Title("Редактирование данных и сравнение с отображаемыми данными")
 public class EditSomeDocument extends BaseClass {
 

@@ -151,16 +151,15 @@ public class Search extends BaseClass {
         wd.findElement( By.cssSelector( "div.departments-tree" ) ).click( );
         wd.findElement( By.cssSelector( "div.ant-select-selection__rendered" ) ).click( );
 
+        //прокрутить до конца выпадающего меню, чтобы получить самый последний элемент
         WebElement target = wd.findElement( By.xpath( filterXpath ) );
         ( (JavascriptExecutor) wd ).executeScript( "arguments[0].scrollIntoView(true);", target );
-        // Thread.sleep(500); //not sure why the sleep was needed, but it was needed or it wouldnt work :(
         target.click( );
 
-        // wd.findElement( By.xpath( filterXpath ) ).click( );
         wd.findElement( By.cssSelector( "input.ant-input" ) ).click( );
         wd.findElement( By.cssSelector( "input.ant-input" ) ).clear( );
         wd.findElement( By.cssSelector( "input.ant-input" ) ).sendKeys( searchCondition );
-        int k = wd.findElements( By.xpath( "//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div/div/div[2]/table/tbody/tr" ) ).size( );
+        int k = wd.findElements( By.xpath( "//table/tbody/tr" ) ).size( );
         return k;
     }
 
@@ -172,7 +171,7 @@ public class Search extends BaseClass {
         wd.findElement( By.xpath( "//div[2]/div/div/div/ul/li[1]" ) ).click( );
         wd.findElement( By.cssSelector( "input.ant-input" ) ).click( );
         int countRows = wd.findElements( By.xpath( "//table/tbody/tr" ) ).size( );
-        ;
+
         ArrayList<Integer> ids = new ArrayList<Integer>( countRows );
         for (int i = 1; i <= countRows; i++) {
             ids.add( i - 1, Integer.parseInt( wd.findElement( By.xpath( "//table/tbody/tr[" + i + "]/td[2]" ) ).getText( ) ) );
@@ -192,9 +191,6 @@ public class Search extends BaseClass {
 
         String hql = "from BusinessTable where id IN :id";
         List result = session.createQuery( hql ).setParameter( "id", idList ).list( );
-        for (BusinessTable document : (List<BusinessTable>) result) {
-            // System.out.println(document.getId());
-        }
         session.getTransaction( ).commit( );
         session.close( );
         return result;

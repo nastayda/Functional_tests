@@ -51,11 +51,11 @@ public class BaseClass {
     }
 
     @Step("Ввод логина и пароля")
-    protected void login() {;
+    protected void login() {
        String elementUserName ="userName";
         String elementPassword ="password";
-        String nameLogin = "admin";
-        String  passwordLogin = "admin";
+        String nameLogin = readData.readFromFile().get(1);;
+        String  passwordLogin = readData.readFromFile().get(2);
         enterLogin(elementUserName, nameLogin);
         enterPassword(elementPassword, passwordLogin);
         signInClick();
